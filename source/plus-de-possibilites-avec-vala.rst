@@ -52,20 +52,19 @@ Regardez bien, on a donc une grille de position verticale et avec un label dans 
 Maintenant voyons un autre exemple :
 
 .. code-block:: vala
-   :linenos:
+    :linenos:
    
-   var grid = new Gtk.Grid ();
-   grid.orientation = Gtk.Orientation.VERTICAL;
-   grid.row_spacing = 6;
+    var grid = new Gtk.Grid ();
+    grid.orientation = Gtk.Orientation.VERTICAL;
+    grid.row_spacing = 6;
    
-   var button = new Gtk.Button.with_label ("Click me!");
-   var label = new Gtk.Label (null);
+    var button = new Gtk.Button.with_label ("Click me!");
+    var label = new Gtk.Label (null);
    
-   grid.add (button);
-   grid.add (label);
+    grid.add (button);
+    grid.add (label);
    
-   
-   window.add (grid);
+    window.add (grid);
 
 Toujours une grille verticale et avec un espacement de 6 pour chaque cellule. On ajoute un
 bouton (avec le label Click me !) et un label vide. Puis on ajoute les variables button et label à la
@@ -104,17 +103,17 @@ Nous allons voir la méthode de placement des widgets par la fonction attach.
 On vas tester une autre grille :
 
 .. code-block:: vala
-   :linenos:
+    :linenos:
    
-   var layout = new Gtk.Grid ();
-   layout.column_spacing = 6;
-   layout.row_spacing = 6;
+    var layout = new Gtk.Grid ();
+    layout.column_spacing = 6;
+    layout.row_spacing = 6;
    
-   var hello_button = new Gtk.Button.with_label ("Say Hello");
-   var hello_label = new Gtk.Label (null);
+    var hello_button = new Gtk.Button.with_label ("Say Hello");
+    var hello_label = new Gtk.Label (null);
    
-   var rotate_button = new Gtk.Button.with_label ("Rotate");
-   var rotate_label = new Gtk.Label ("Horizontal");
+    var rotate_button = new Gtk.Button.with_label ("Rotate");
+    var rotate_label = new Gtk.Label ("Horizontal");
 
 Nous avons :
 - une grille nommé layout
@@ -127,14 +126,14 @@ Nous avons :
 Ensuite n'oubliez pas qu'il faut ajouter tout ce petit monde en respectant le nom des variables :
 
 .. code-block:: vala
-   :linenos:
+    :linenos:
    
-   layout.add (hello_button);
-   layout.add (hello_label);
-   layout.add (rotate_button);
-   layout.add (rotate_label);
+    layout.add (hello_button);
+    layout.add (hello_label);
+    layout.add (rotate_button);
+    layout.add (rotate_label);
    
-   window.add (layout);
+    window.add (layout);
 
 Voilà le résultat :
 
@@ -150,25 +149,25 @@ possibilités, regardons cela !
 Remplacez ce morceau :
 
 .. code-block:: vala
-   :linenos:
+    :linenos:
    
-   layout.add (hello_button);
-   layout.add (hello_label);
-   layout.add (rotate_button);
-   layout.add (rotate_label);
+    layout.add (hello_button);
+    layout.add (hello_label);
+    layout.add (rotate_button);
+    layout.add (rotate_label);
 
 Par :
 
 .. code-block:: vala
-   :linenos:
+    :linenos:
    
-   // ajout d'un premier lot de widgets
-   layout.attach (hello_button, 0, 0, 1, 1);
-   layout.attach_next_to (hello_label, hello_button, Gtk.PositionType.RIGHT, 1, 1);
+    // ajout d'un premier lot de widgets
+    layout.attach (hello_button, 0, 0, 1, 1);
+    layout.attach_next_to (hello_label, hello_button, Gtk.PositionType.RIGHT, 1, 1);
    
-   // ajout d'un second lot de widgets
-   layout.attach (rotate_button, 0, 1, 1, 1);
-   layout.attach_next_to (rotate_label, rotate_button, Gtk.PositionType.RIGHT, 1, 1);
+    // ajout d'un second lot de widgets
+    layout.attach (rotate_button, 0, 1, 1, 1);
+    layout.attach_next_to (rotate_label, rotate_button, Gtk.PositionType.RIGHT, 1, 1);
 
 Dans un premier temps on rajoute hello_button puis on lui attache hello_label positionné à sa
 droite.
@@ -191,20 +190,20 @@ Dans l'ordre :
 On peut aussi ajouter des fonctions à nos boutons le code suivant après le window.add (layout) ;
 
 .. code-block:: vala
-   :linenos:
+    :linenos:
    
-   hello_button.clicked.connect (() => {
-     hello_label.label = "Hello World!";
-     hello_button.sensitive = false;
+    hello_button.clicked.connect (() => {
+      hello_label.label = "Hello World!";
+      hello_button.sensitive = false;
    
-   });
+    });
    
-   rotate_button.clicked.connect (() => {
-     rotate_label.angle = 90;
-     rotate_label.label = "Vertical";
-     rotate_button.sensitive = false;
+    rotate_button.clicked.connect (() => {
+      rotate_label.angle = 90;
+      rotate_label.label = "Vertical";
+      rotate_button.sensitive = false;
    
-   });
+    });
 
 Le bouton hello_button affichera un label Hello World ! Il restera enfoncé.
 Le bouton rotate_button affichera un label Vertical pivoté à 90° et restera enfoncé.
