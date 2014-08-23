@@ -95,7 +95,7 @@ nom de variable entre les parenthèses.
 Au final vous devriez obtenir ceci :
 
 
-.. figure:: _static/exemple-simple-de-projet/gtk-hello.vala.png
+.. figure:: _static/exemple-simple-de-projet/gtk-hello-vala.png
     :align: center
 
 Maintenant on vas compiler notre fichier vala (qui va créer un fichier éxécutable) et le tester. Si
