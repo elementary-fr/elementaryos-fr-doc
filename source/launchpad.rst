@@ -37,7 +37,7 @@ On vas installer l'outil nécessaire pour générer la clé et ensuite créer ce
 
    $ sudo apt-get install openssh-client
    $ ssh-keygen -t rsa
-￼
+
 Suivez les instructions, à un moment on vous demandera une passphrase, retenez le bien car
 c'est le mot de passe qui sera demandé quand vous enverrez vos modifications de code vers Launchpad.
 
