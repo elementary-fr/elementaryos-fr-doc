@@ -95,6 +95,70 @@ nom de variable entre les parenthèses.
 Au final vous devriez obtenir ceci :
 
 
-.. figure:: _static/exemple-simple-de-projet/click-me.png
+.. figure:: _static/exemple-simple-de-projet/gtk-hello.vala.png
     :align: center
 
+Maintenant on vas compiler notre fichier vala (qui va créer un fichier éxécutable) et le tester. Si
+des erreurs sont signalées, revérifiez votre code.
+
+.. code-block:: bash
+
+   $ valac --pkg gtk+-3.0 gtk-hello.vala
+   $ ./gtk-hello
+   
+Et donc vous devriez avoir votre petite application :
+
+.. figure:: _static/exemple-simple-de-projet/Click-me.png
+    :align: center
+
+Sympa non ?
+Poussons notre code sur Launchpad maintenant !
+
+
+2.2 Bazaar
+==========
+
+Comme je l'avais dit plutôt Bazaar est le gestionnaire qui vas vous permettre d'envoyer votre
+code source sur un dépôt de code (à ne pas confondre avec les dépôts PPA) sur Launchpad.
+Placez votre terminal au niveau de ~/Projects/gtk-hello,
+On vas déjà déclarer votre Pseudo et votre email, ceci est à faire une seule fois.
+
+.. code-block:: bash
+
+    $ bzr whoami "toto <toto@mail.com>"
+
+Et là on remplace toto par votre pseudo et le mail qui vas bien ;-)
+On vas initialiser notre dossier pour bzr
+
+.. code-block:: bash
+
+    $bzr whoami "Devil505 <devil505linux@gmail.com>"
+    $ bzr init
+
+
+Et on vas ajouter notre fichier (le dossier src sera aussi ajouté)
+
+.. code-block:: bash
+
+    $ bzr add src/gtk-hello.vala
+
+
+Puis on vas écrire un commit (message très résumé des modifications apportées au code)
+
+.. code-block:: bash
+
+    $ bzr commit -m "Create initial structure. Create window with button."
+
+
+Et là on envoie notre fichier sur nôtre dépôt +junk/gtk-hello chez Launchpad, pensez à indiquer
+votre login Launchpad dans la commande :
+
+.. code-block:: bash
+
+    $ bzr push lp:~votre-login-launchpad/+junk/gtk-helloEt
+
+voilà, jetez un coup d'oeil sur Launchpad :
+https://code.launchpad.net/people/+me/
+
+Bien joué !
+Il est temps de faire une application un peu plus complexe et surtout plus complète, et d'ensuite d'en faire un paquet.
