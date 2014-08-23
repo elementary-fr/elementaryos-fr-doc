@@ -95,6 +95,6 @@ nom de variable entre les parenthèses.
 Au final vous devriez obtenir ceci :
 
 
-.. figure:: _static/exemple-simple-de-projet/gtk-hello.vala.png
+.. figure:: _static/exemple-simple-de-projet/click-me.png
     :align: center
 
