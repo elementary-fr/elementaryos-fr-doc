@@ -1,13 +1,12 @@
-************************
-Exemple simple de projet
-************************
+2. Exemple simple de projet
+===========================
 
 Dans un premier temps nous allons créer dans le dossier personnel, un dossier où seront situés
 tout vos projets et on le nommera Projects comme les pros sur elementary:D
 
 .. code-block:: bash
 
-   $ mkdir ~/Projects
+   mkdir ~/Projects
 
 Nos outils seront l'éditeur de texte Scratch pour écrire notre code et Terminal pour éxécuter
 certaines commandes. Ces deux applications sont installées apr défaut sur elementary OS.
@@ -15,13 +14,13 @@ Cependant nous allons avoir besoin de quelques biblihotèques de développement 
 
 .. code-block:: bash
 
-   $ sudo apt-get build-dep granite-demo
+   sudo apt-get build-dep granite-demo
 
 Avec cette commande nous allons installer les dépendances de construction de granite-demo qui
 seront suffisantes pour compiler un projet de base.
 
-Bases de Vala
-===============
+2.1 Bases de Vala
+=================
 
 Nous allons créer un petit projet tout simple en Vala, le code utilisé pour les applications
 elementary. Notre projet sera un simple Hello World dans une fenêtre GTK.
@@ -30,17 +29,17 @@ comportant notre code.
 
 .. code-block:: bash
 
-   $ cd ~/Projects
-   $ mkdir gtk-hello
-   $ cd gtk-hello
-   $ mkdir src
+   cd ~/Projects
+   mkdir gtk-hello
+   cd gtk-hello
+   mkdir src
 
 Avec Scratch nous allons créer notre fichier vala et commencer son écriture :
 
 .. code-block:: bash
 
-   $ cd src
-   $ scratch-text-editor gtk-hello.vala
+   cd src
+   scratch-text-editor gtk-hello.vala
 
 Passons à l'écriture, tout d'abord nous mettons ce code pour initialiser notre code vala :
 
@@ -94,3 +93,8 @@ Donc ici, on ajoute un bouton nommé par la variable button_hello, qui aura comm
 Donc les deux dernières, on ajoute notre bouton à notre fenêtre, notez qu'on a réutilisé le même
 nom de variable entre les parenthèses.
 Au final vous devriez obtenir ceci :
+
+
+.. figure:: _static/exemple-simple-de-projet/gtk-hello.vala.png
+    :align: center
+
