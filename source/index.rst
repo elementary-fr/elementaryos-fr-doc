@@ -21,6 +21,7 @@ Contenu:
    launchpad
    simple-projet
    premiere-application
+   plus-de-possibilites-avec-vala
 
 
 
