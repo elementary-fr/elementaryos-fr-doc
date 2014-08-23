@@ -39,7 +39,7 @@ On vas installer l'outil nécessaire pour générer la clé et ensuite créer ce
    ssh-keygen -t rsa
 ￼
 ￼
-Block de code multiligne _
+Block de code multiligne
 
 .. code-block:: vala
    :linenos:
