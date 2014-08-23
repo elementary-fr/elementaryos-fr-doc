@@ -20,6 +20,7 @@ Contenu:
 
    launchpad
    simple-projet
+   premiere-application
 
 
 
