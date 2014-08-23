@@ -1,5 +1,6 @@
-2. Exemple simple de projet
-===========================
+************************
+Exemple simple de projet
+************************
 
 Dans un premier temps nous allons créer dans le dossier personnel, un dossier où seront situés
 tout vos projets et on le nommera Projects comme les pros sur elementary:D
@@ -19,8 +20,8 @@ Cependant nous allons avoir besoin de quelques biblihotèques de développement 
 Avec cette commande nous allons installer les dépendances de construction de granite-demo qui
 seront suffisantes pour compiler un projet de base.
 
-2.1 Bases de Vala
-=================
+Bases de Vala
+===============
 
 Nous allons créer un petit projet tout simple en Vala, le code utilisé pour les applications
 elementary. Notre projet sera un simple Hello World dans une fenêtre GTK.
