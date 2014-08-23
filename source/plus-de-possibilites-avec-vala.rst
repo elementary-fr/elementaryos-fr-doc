@@ -1,13 +1,13 @@
-4. Plus de possibilités avec Vala
-=================================
+Plus de possibilités avec Vala
+==============================
 
 Dans cette partie nous allons nous amuser un peu avec Vala ets es possibilités vis à vis de Gtk.
 Nous verrons la fonction Gtk.Grid et Attach. Bien sûr vous trouverez plein d'infos sur
 http://valadoc.org/
 Reprenez votre fichier hello-again.vala
 
-4.1 Gtk.Grid
-============
+Gtk.Grid
+========
 
 Cette fois au lieu d'ajouter un bouton ou label, nous allons utiliser Gtk.Grid qui peut être
 considéré comme une sorte de grille. Voici le code à insérer :
@@ -96,8 +96,8 @@ Démonstration :
 Amusez-vous à changer des valeurs, par exemple le sensitive sur true, virer la ligne de position
 verticale...etc :-)
 
-4.2 Attach
-==========
+Attach
+======
 
 Nous allons voir la méthode de placement des widgets par la fonction attach.
 On vas tester une autre grille :
