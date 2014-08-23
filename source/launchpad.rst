@@ -10,14 +10,14 @@ est la plateforme de Canonical pour l'hébergement de projet, suivi de bugs..etc
 
 Bien sûr si vous avez déjà un compte launchpad, vous pouvez passer cette partie.
 
-.. figure:: _static/launchpad.png
+.. figure:: _static/compte-launchpad/launchpad.png
     :align: center
     
     
 Pour créer un compte cliquez en haut à droite sur Create account.ou aller 
 directement sur https://login.launchpad.net/+login
 
-.. figure:: _static/launchpad-login.png
+.. figure:: _static/compte-launchpad/launchpad-login.png
     :align: center
 
 
@@ -53,7 +53,7 @@ Avec Terminal, nous allons ouvrir le fichier comportant la clé publique :
    
 Copier le contenu du fichier pour le coller dans la zone adéquate sur la page Launchpad :
 
-.. figure:: _static/ssh-key.png
+.. figure:: _static/compte-launchpad/ssh-key.png
     :align: center
 
 Ensuite vous n'avez plus qu'à cliquer sur le bouton. Si vous comptez développer sur plusieurs machines,
