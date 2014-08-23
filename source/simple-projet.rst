@@ -66,11 +66,13 @@ précédent, donc avant le } ajoutez ceci :
    Gtk.main ();
    return 0;
 
+
 Donc en résumé, on crée une fenêtre portant la variable window, qui aura pour titre HelloWorld !, avec une bordure de 12, positionner au centre de l'écran, avec une taille de 350x70, et
 enfin si on ferme cette fenêtre l'action sera que l'on quitte l'application.
 
 Ce n'est pas encore terminé, nous avons fenêtre principale mais nous allons lui ajouter un
 bouton donc avant Gtk,main() on y ajoute ceci :
+
 
 .. code-block:: vala
    :linenos:
@@ -84,8 +86,10 @@ bouton donc avant Gtk,main() on y ajoute ceci :
    window.add (button_hello);
    window.show_all ();
 
+
 Donc ici, on ajoute un bouton nommé par la variable button_hello, qui aura comme étiquette
 (label) Click Me ! Et quand on clique dessus cela affichera le label Hello World !.
+
 Donc les deux dernières, on ajoute notre bouton à notre fenêtre, notez qu'on a réutilisé le même
 nom de variable entre les parenthèses.
 Au final vous devriez obtenir ceci :
