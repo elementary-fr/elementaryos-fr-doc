@@ -48,5 +48,6 @@ Block de code multiligne
    
        public void hello_world(){
            stdout.printf("Hello Wolrd");
+           stoudt.printf("Test de synchro");
        }
    }
