@@ -1,13 +1,12 @@
-************************
-Exemple simple de projet
-************************
+2. Exemple simple de projet
+===========================
 
 Dans un premier temps nous allons créer dans le dossier personnel, un dossier où seront situés
 tout vos projets et on le nommera Projects comme les pros sur elementary:D
 
 .. code-block:: bash
 
-   $ mkdir ~/Projects
+   mkdir ~/Projects
 
 Nos outils seront l'éditeur de texte Scratch pour écrire notre code et Terminal pour éxécuter
 certaines commandes. Ces deux applications sont installées apr défaut sur elementary OS.
@@ -15,13 +14,13 @@ Cependant nous allons avoir besoin de quelques biblihotèques de développement 
 
 .. code-block:: bash
 
-   $ sudo apt-get build-dep granite-demo
+   sudo apt-get build-dep granite-demo
 
 Avec cette commande nous allons installer les dépendances de construction de granite-demo qui
 seront suffisantes pour compiler un projet de base.
 
-Bases de Vala
-===============
+2.1 Bases de Vala
+=================
 
 Nous allons créer un petit projet tout simple en Vala, le code utilisé pour les applications
 elementary. Notre projet sera un simple Hello World dans une fenêtre GTK.
@@ -30,17 +29,17 @@ comportant notre code.
 
 .. code-block:: bash
 
-   $ cd ~/Projects
-   $ mkdir gtk-hello
-   $ cd gtk-hello
-   $ mkdir src
+   cd ~/Projects
+   mkdir gtk-hello
+   cd gtk-hello
+   mkdir src
 
 Avec Scratch nous allons créer notre fichier vala et commencer son écriture :
 
 .. code-block:: bash
 
-   $ cd src
-   $ scratch-text-editor gtk-hello.vala
+   cd src
+   scratch-text-editor gtk-hello.vala
 
 Passons à l'écriture, tout d'abord nous mettons ce code pour initialiser notre code vala :
 
@@ -94,3 +93,72 @@ Donc ici, on ajoute un bouton nommé par la variable button_hello, qui aura comm
 Donc les deux dernières, on ajoute notre bouton à notre fenêtre, notez qu'on a réutilisé le même
 nom de variable entre les parenthèses.
 Au final vous devriez obtenir ceci :
+
+
+.. figure:: _static/exemple-simple-de-projet/gtk-hello.vala.png
+    :align: center
+
+Maintenant on vas compiler notre fichier vala (qui va créer un fichier éxécutable) et le tester. Si
+des erreurs sont signalées, revérifiez votre code.
+
+.. code-block:: bash
+
+   $ valac --pkg gtk+-3.0 gtk-hello.vala
+   $ ./gtk-hello
+   
+Et donc vous devriez avoir votre petite application :
+
+.. figure:: _static/exemple-simple-de-projet/Click-me.png
+    :align: center
+
+Sympa non ?
+Poussons notre code sur Launchpad maintenant !
+
+
+2.2 Bazaar
+==========
+
+Comme je l'avais dit plutôt Bazaar est le gestionnaire qui vas vous permettre d'envoyer votre
+code source sur un dépôt de code (à ne pas confondre avec les dépôts PPA) sur Launchpad.
+Placez votre terminal au niveau de ~/Projects/gtk-hello,
+On vas déjà déclarer votre Pseudo et votre email, ceci est à faire une seule fois.
+
+.. code-block:: bash
+
+    $ bzr whoami "toto <toto@mail.com>"
+
+Et là on remplace toto par votre pseudo et le mail qui vas bien ;-)
+On vas initialiser notre dossier pour bzr
+
+.. code-block:: bash
+
+    $bzr whoami "Devil505 <devil505linux@gmail.com>"
+    $ bzr init
+
+
+Et on vas ajouter notre fichier (le dossier src sera aussi ajouté)
+
+.. code-block:: bash
+
+    $ bzr add src/gtk-hello.vala
+
+
+Puis on vas écrire un commit (message très résumé des modifications apportées au code)
+
+.. code-block:: bash
+
+    $ bzr commit -m "Create initial structure. Create window with button."
+
+
+Et là on envoie notre fichier sur nôtre dépôt +junk/gtk-hello chez Launchpad, pensez à indiquer
+votre login Launchpad dans la commande :
+
+.. code-block:: bash
+
+    $ bzr push lp:~votre-login-launchpad/+junk/gtk-helloEt
+
+voilà, jetez un coup d'oeil sur Launchpad :
+https://code.launchpad.net/people/+me/
+
+Bien joué !
+Il est temps de faire une application un peu plus complexe et surtout plus complète, et d'ensuite d'en faire un paquet.
