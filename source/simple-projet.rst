@@ -133,7 +133,7 @@ On vas initialiser notre dossier pour bzr
 
 .. code-block:: bash
 
-    $bzr whoami "Devil505 <devil505linux@gmail.com>"
+    $ bzr whoami "Devil505 <devil505linux@gmail.com>"
     $ bzr init
 
 
