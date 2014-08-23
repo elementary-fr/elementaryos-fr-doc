@@ -17,7 +17,7 @@ Bien sûr si vous avez déjà un compte launchpad, vous pouvez passer cette part
 Pour créer un compte cliquez en haut à droite sur Create account.ou aller 
 directement sur https://login.launchpad.net/+login
 
-.. figure:: _static/launchpad_login.png
+.. figure:: _static/launchpad-login.png
     :align: center
 
 
@@ -35,19 +35,33 @@ On vas installer l'outil nécessaire pour générer la clé et ensuite créer ce
 
 .. code-block:: bash
 
-   sudo apt-get install openssh-client
-   ssh-keygen -t rsa
+   $ sudo apt-get install openssh-client
+   $ ssh-keygen -t rsa
 ￼
-￼
-Block de code multiligne
+Suivez les instructions, à un moment on vous demandera une passphrase, retenez le bien car
+c'est le mot de passe qui sera demandé quand vous enverrez vos modifications de code vers Launchpad.
 
-.. code-block:: vala
-   :linenos:
+Votre clé publique est donc créée et nous allons l'ajouter à Launchpad.
 
-   class Bonjour : Gtk.Widget, MonInterface {
+Rendez-vous sur votre page Launchpad de clé SSH : https://launchpad.net/people/+me/+editsshkeys
+
+Avec Terminal, nous allons ouvrir le fichier comportant la clé publique :
+
+.. code-block:: bash
+
+   $ scratch-text-editor ~/.ssh/id_rsa.pub
    
-       public void hello_world(){
-           stdout.printf("Hello Wolrd");
-           stoudt.printf("Test de synchro");
-       }
-   }
+Copier le contenu du fichier pour le coller dans la zone adéquate sur la page Launchpad :
+
+.. figure:: _static/ssh-key.png
+    :align: center
+
+Ensuite vous n'avez plus qu'à cliquer sur le bouton. Si vous comptez développer sur plusieurs machines,
+il faudra importer chaque clé par ordinateur.
+
+Maintenant on peut vérifier si tout vas bien avec bzr. Bazaar (ou bzr en ligne de commande)
+est le gestionnaire de gestion de code utilisé sur Launchpad, nous verrons plus loin comment
+l'utiliser avec Launchpad. Toutefois, on peut déjà signaler à bzr quel est notre identité Launchpad,
+Remplacez your-launchpad-id par votre nom d'utilisateur Launchpad.
+
+Nous avons déjà quelques outils, commençons par créer un exemple de projets.
