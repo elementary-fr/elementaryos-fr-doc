@@ -1,5 +1,6 @@
+******************************
 Plus de possibilités avec Vala
-==============================
+******************************
 
 Dans cette partie nous allons nous amuser un peu avec Vala ets es possibilités vis à vis de Gtk.
 Nous verrons la fonction Gtk.Grid et Attach. Bien sûr vous trouverez plein d'infos sur
