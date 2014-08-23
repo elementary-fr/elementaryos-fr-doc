@@ -48,8 +48,7 @@ Passons à l'écriture, tout d'abord nous mettons ce code pour initialiser notre
    :linenos:
 
    int main (string[] args) {
-
-   Gtk.init (ref args);
+      Gtk.init (ref args);
    }
 
 Maintenant nous allons insérer une fenêtre avec quelques paramètre à l'intérieur du code
