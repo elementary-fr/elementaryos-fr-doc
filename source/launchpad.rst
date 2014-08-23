@@ -46,6 +46,7 @@ Votre clé publique est donc créée et nous allons l'ajouter à Launchpad.
 Rendez-vous sur votre page Launchpad de clé SSH : https://launchpad.net/people/+me/+editsshkeys
 
 Avec Terminal, nous allons ouvrir le fichier comportant la clé publique :
+
 .. code-block:: bash
 
    $ scratch-text-editor ~/.ssh/id_rsa.pub
