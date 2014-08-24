@@ -124,7 +124,7 @@ fichier sur un autre dépôt :
 Cous pouvez vérifier si cela a bien marché en allant sur launchpad :
 https://code.launchpad.net/people/+me/
 
-Maintenant nous allons créer des fichiers indispensable pour agrémenter notre application
+Maintenant nous allons créer des fichiers indispensables pour agrémenter notre application
 
 Les fichiers indispensables
 ===========================
@@ -143,7 +143,7 @@ Entrons dedans et créons un fichier .desktop
    $ cd data
    $ scratch-text-editor hello-again.desktop
 
-Ce type de fichier répond à des normes spécifiques pour elementary, elle sont consultables ici :
+Ce type de fichier répond à des normes spécifiques pour elementary, elles sont consultables ici :
 http://elementaryos.org/docs/human-interface-guidelines/app-launchers
 
 Passons à l'écriture :
@@ -164,7 +164,7 @@ Passons à l'écriture :
    X-GNOME-Keywords=Hello;World;Example;
 
 Don rapidement, on a crée un raccourci par rapport à notre application Hello Again comportant
-un nom, un nom générique, une description, la commande d'éxécution, l'icône qui sera utilisée,
+un nom, un nom générique, une description, la commande d'exécution, l'icône qui sera utilisée,
 le type...
 
 Vous pouvez déjà commiter ce nouveau fichier :
@@ -182,7 +182,7 @@ envoyer les modifications.
 Maintenant nous allons aborder la partie « juridique » de la chose. À la racine du projet on crée
 deux fichiers : AUTHORS et COPYING (en lettres capitales!)
 
-Dans AUTHORS, on indique tout les participants du projet, de cette façon :
+Dans AUTHORS, on indique tous les participants du projet, de cette façon :
 
 .. code-block:: text
    :linenos:
@@ -322,10 +322,10 @@ Regardez dans votre menu Applications :
 Faire un paquet 
 ===============
 
-Nous avons maintenant une application simple mais complète. Essayons d 'en faire un paquet
+Nous avons maintenant une application simple mais complète. Essayons d'en faire un paquet
 qui sera disponible à tous sur votre dépôt PPA.
 
-On vas créer un nouveau dossier dans hello-world dédié au packaging et nous allons l'appeler :
+On va créer un nouveau dossier dans hello-world dédié au packaging et nous allons l'appeler :
 deb-packaging
 
 Dans deb-packaging nous allons copier le contenu de notre application hello-again
@@ -358,7 +358,7 @@ Comme votre application en est sa premiès version, ce fichier doit ressembler �
 
 .. TIP::
 
-   On peux utiliser le programme dch pour générer les entéres
+   On peut utiliser le programme dch pour générer les entées
 
 En premier vous indiquez la version du paquet, la version d'ubuntu (Luna étant basée sur
 Precise) et l'urgence de la construction par les serveurs de Launchpad. Ce n'est pas critique, donc
@@ -368,8 +368,8 @@ Ensuite vous indiquez votre Nom et votre email. Enfin à la dernière ligne vous
 l'heure (ne pas oublier le fuseau horaire) actuelles.
 
 Si vous sortez une nouvelle version de votre paquet, il ne faudra pas effacer ou remplacer ses
-lignes, vous ré-écrivez un nouveau paragraphe de 5 lignes comme l'exemple en haut avec la
-nouveau numéro de version, la nouvelle date/heure...etc
+lignes, vous réécrivez un nouveau paragraphe de 5 lignes comme l'exemple en haut avec le
+nouveau numéro de version, le nouvel horodatage...
 
 Maintenant allons nous occuper du fichier control, ce fichier recueille les infos de votre futur
 paquet .deb. Voici à qui il doit ressembler :
@@ -395,9 +395,9 @@ paquet .deb. Voici à qui il doit ressembler :
     This is a Hello World written in Vala using the Autovala build system.
 
 Donc ici on indique le nom et l'email du mainteneur du paquet, les dépendances de construction,
-les dépendances (notez la séparation par des virgules), la description de l'application...etc
+les dépendances (notez la séparation par des virgules), la description de l'application...
 
-Passons au fichier copyright que l'on vas modifier pour obtenir ceci :
+Passons au fichier copyright que l'on va modifier pour obtenir ceci :
 
 .. code-block:: text
    :linenos:
@@ -433,6 +433,7 @@ http://www.debian.org/doc/debian-policy/
 
 Maintenant, nous allons nous occuper des recettes Launchpad (recipes en anglais) pour la
 construction de votre paquet.
+
 Rendez-vous sur cette page : 
 https://code.launchpad.net/people/+me/+junk/deb-packaging/+new-recipe
 
@@ -448,7 +449,7 @@ Ensuite appuyer sur Create Recipe.
 Les serveurs de Launchpad vont crée les paquets pour les différentes architectures et pour les
 différentes versions d'Ubuntu que vous aurez choisi au moment de la création de la recipe.
 
-Vous devrez pas tarder à voir vos paquet sur votre dépôt PPA :
+Vous ne devrez pas tarder à voir votre paquet sur votre dépôt PPA :
 https://launchpad.net/people/+me/+archive/ubuntu/deb-packaging
 
 Et voilà vous avez packagé votre application !
