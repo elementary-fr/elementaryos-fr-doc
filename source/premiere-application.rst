@@ -12,8 +12,7 @@ tout vos projets et on le nommera Projects comme les pros sur elementary:D
 Nos outils seront l'éditeur de texte Scratch pour écrire notre code et Terminal pour exécuter
 certaines commandes. Ces deux applications sont installées apr défaut sur elementary OS.
 
-Avec cette commande nous allons installer les dépendances de construction de granite-demo qui
-seront suffisantes pour compiler un projet de base.
+
 
 Bases de Vala
 ==============

@@ -87,4 +87,6 @@ Pour installer ces outils de développement, lancer la commande suivante:
 
    $ sudo apt-get build-dep granite-demo
 
-Nous avons déjà quelques outils, commençons par créer un exemple de projets.
+Avec cette commande nous allons installer les dépendances de construction de granite-demo qui
+seront suffisantes pour compiler un projet de base.
+
