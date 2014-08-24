@@ -207,7 +207,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-  ('index', 'Guidenon-officieldudveloppeurEElementaryOS.tex', u'Guide non-officiel du développeur EElementary OS Documentation',
+  ('index', 'Guidenon-officieldudveloppeurEElementaryOS.tex', u'Guide non-officiel du développeur Elementary OS Documentation',
    u'Communauté francophone Elementary OS', 'manual'),
 ]
 
@@ -237,7 +237,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    ('index', 'guidenon-officieldudveloppeureelementaryos', u'Guide non-officiel du développeur EElementary OS Documentation',
+    ('index', 'guidenon-officieldudveloppeureelementaryos', u'Guide non-officiel du développeur Elementary OS Documentation',
      [u'Communauté francophone Elementary OS'], 1)
 ]
 
@@ -251,7 +251,7 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-  ('index', 'Guidenon-officieldudveloppeurEElementaryOS', u'Guide non-officiel du développeur EElementary OS Documentation',
+  ('index', 'Guidenon-officieldudveloppeurEElementaryOS', u'Guide non-officiel du développeur Elementary OS Documentation',
    u'Communauté francophone Elementary OS', 'Guidenon-officieldudveloppeurEElementaryOS', 'One line description of project.',
    'Miscellaneous'),
 ]
@@ -272,7 +272,7 @@ texinfo_documents = [
 # -- Options for Epub output ----------------------------------------------
 
 # Bibliographic Dublin Core info.
-epub_title = u'Guide non-officiel du développeur EElementary OS'
+epub_title = u'Guide non-officiel du développeur Elementary OS'
 epub_author = u'Communauté francophone Elementary OS'
 epub_publisher = u'Communauté francophone Elementary OS'
 epub_copyright = u'2014, Communauté francophone Elementary OS'
