@@ -71,7 +71,7 @@ Remplacez your-launchpad-id par votre nom d'utilisateur Launchpad.
 .. code-block:: bash
 
    $ sudo apt-get install bzr
-￼  $ bzr launchpad-login your-launchpad-id
+   $ bzr launchpad-login your-launchpad-id
 ￼
 
 Installation du SDK d'Elementary OS
