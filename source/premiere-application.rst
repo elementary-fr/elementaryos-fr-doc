@@ -143,11 +143,12 @@ On va déjà déclarer votre Pseudo et votre email, ceci est à faire une seule 
 .. IMPORTANT::
    Cette partie contient des exemples que vous devez modifier avec vos informations.
 
+Et là on remplace "votre-Pseudo" par votre pseudo et le mail qui va bien ;-)
+
 .. code-block:: bash
 
     $ bzr whoami "votre-Pseudo <votre@email.publique>"
 
-Et là on remplace "votre-Pseudo" par votre pseudo et le mail qui va bien ;-)
 On va initialiser notre dossier pour bzr:
 
 .. code-block:: bash
