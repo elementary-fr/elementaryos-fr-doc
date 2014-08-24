@@ -173,9 +173,9 @@ votre login Launchpad dans la commande :
 
 .. code-block:: bash
 
-    $ bzr push lp:~votre-login-launchpad/+junk/gtk-helloEt
+    $ bzr push lp:~votre-login-launchpad/+junk/gtk-hello
 
-voilà, jetez un coup d'oeil sur Launchpad :
+Et voilà, jetez un coup d'oeil sur Launchpad :
 https://code.launchpad.net/people/+me/
 
 Bien joué !
