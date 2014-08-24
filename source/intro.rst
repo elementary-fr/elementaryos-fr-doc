@@ -12,12 +12,16 @@ n'ésitez pas à en demander dans le forum de la
 communauté francophone d'Elementary OS.
 
 Vous accèderez au forum en suivant le lien suivant:
-ttp://forum.elementaryos-fr.org
+http://forum.elementaryos-fr.org
 
 
 .. IMPORTANT::
    Ce guide est encore en cours d'écriture. Il peut
    contenir des informations erronées.
+
+Les erreurs éventuelles peuvent être signaler à l'adresse suivante: https://github.com/Elementary-fr/elementaryos-fr-doc/issues
+
+
 
 Auteurs et Licences
 ===================
