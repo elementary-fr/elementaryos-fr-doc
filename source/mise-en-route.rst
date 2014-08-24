@@ -155,7 +155,7 @@ Ajout de la clef sur Github
 
 De la manière, aller sur la page suivante: https://github.com/settings/ssh
 
-Une fois dessus, un click sur le bouton "Add SSH Keay" va vous permettre
+Une fois dessus, un click sur le bouton "Add SSH Key" va vous permettre
 d'ajouter votre clef.
 
 .. figure:: _static/mise-en-route/github-ssh-key.png
