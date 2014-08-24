@@ -69,6 +69,7 @@ l'utiliser avec Launchpad. Toutefois, on peut déjà signaler à bzr quel est no
 Remplacez your-launchpad-id par votre nom d'utilisateur Launchpad.
 
 .. code-block:: bash
+
    $ sudo apt-get install bzr
 ￼  $ bzr launchpad-login your-launchpad-id
 ￼
