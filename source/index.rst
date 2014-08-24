@@ -16,6 +16,7 @@ Guide non-officiel du développeur Elementary OS
    premiere-application
    premier-projet
    plus-de-possibilites-avec-vala
+   style-code
 
 
 *******************
@@ -25,5 +26,4 @@ Indices and tables
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
-
 
