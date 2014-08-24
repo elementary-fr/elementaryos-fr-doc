@@ -213,7 +213,7 @@ Entête de la license GPL
      with this program. If not, see
    ***/
 
-.. [#1] Créateur du language python (ndt)
-.. [#2] Dans sa version anglaise (ndt)
+.. [#1] Créateur du language python
+.. [#2] Dans sa version anglaise
 .. [#3] One True Brace Style
-.. [#4] Voire http://fr.wikipedia.org/wiki/Notation_hongroise (ndt)
+.. [#4] Voire http://fr.wikipedia.org/wiki/Notation_hongroise
