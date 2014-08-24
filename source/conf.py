@@ -48,7 +48,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'Guide non-officiel du développeur Elementary OS'
-copyright = u'2014, Communauté francophone Elementary OS'
+copyright = u'2014, Communauté francophone Elementary OS - Contenu sous licence CC BY-SA'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -275,7 +275,7 @@ texinfo_documents = [
 epub_title = u'Guide non-officiel du développeur Elementary OS'
 epub_author = u'Communauté francophone Elementary OS'
 epub_publisher = u'Communauté francophone Elementary OS'
-epub_copyright = u'2014, Communauté francophone Elementary OS'
+epub_copyright = u'2014, Communauté francophone Elementary OS - Contenu sous licence CC BY-SA'
 
 # The basename for the epub file. It defaults to the project name.
 #epub_basename = u'Guide non-officiel du développeur EElementary OS'
