@@ -13,28 +13,26 @@ Style de code
 
 Le but de ce guide est de fournir des intructions claires et précises
 sur la manière d'écrire du bon code dans tous les projets elementary.
-C'est ligne directrice doit être suivie sur tous les fichiers, de manière
+Ces lignes directrices doivent être suivie sur tous les fichiers, de manière
 à garder notre code cohérent et lisible.
-Nous héritons aussi de certaine des lignes directrices de Gnome pour Vala,
+Nous héritons aussi de certaines des lignes directrices de Gnome pour Vala,
 de manière à garder notre code cohérent avec les autres programmes Vala.
 
-Si les lignes directrices proposée ici sont suivie, les nouveaux
+Si les lignes directrices proposées ici sont suivie, les nouveaux
 arrivant pourront plus facilement se joindre au développement d'elementary et
 comprendre le code.
-En plus, celà rendra plus facile pour tous les développeurs de travailler sur
-des applications dont ils n'ont pas l'habitude, parceque le code sera conforme
-à leur habitude. Finallement, comme le dit Guido Van Rossum [#1]_ *Le code est
-plus souvent lu qu'écrit* .
-Ainsi, en avoir un bien écrit est crucial.
-
+En plus, celà rendra facilitera le travail des développeurs sur des 
+applications dont ils n'ont pas l'habitude, car le code sera conforme
+à leur attente. Finallement, comme le dit Guido Van Rossum [#1]_ *Le code est
+plus souvent lu qu'écrit*, il est ainsi crucial d'en avoir un bien écrit.
 
 
 Information
 ============
 
-Ce guide n'est pas encores, bien qu'il a été discuté et partiellement approuvé
-par les contributeurs d'elementary. [#2]_ Il est sujet au changement dans un
-futur proche.
+Ce guide n'est pas encores finis, bien qu'il a été discuté et partiellement 
+approuvé par les contributeurs d'elementary. [#2]_ Il est sujet au changement 
+dans un futur proche.
 
 Espace blanc
 ============
@@ -63,7 +61,7 @@ Un espace est mis avant l'ouverture de parentaise:
    Object my_instance = new Object ();
 
 Un espace est mis dans tous les endrois ou des opérations mathématique sont
-utilisée, entre les nombres et les opérateurs.
+utilisées, entre les nombres et les opérateurs.
 
 .. code-block:: vala
    :linenos:
@@ -93,8 +91,8 @@ et une ligne de fermeture de la fonction avec une accolade fermante.
        return e;
    }
 
-Dans les conditions et les boucles, si il n'y a qu'une seule ligne de code, les accolades
-ne sont pas utilisées:
+Dans les conditions et les boucles, si il n'y a qu'une seule ligne de code, les
+accolades ne sont pas utilisées:
 
 .. code-block:: vala
    :linenos:
@@ -121,11 +119,11 @@ Pour les instructions else et else if, on utilise le style emboités.
 Classes et fichiers
 ===================
 
-Il est recommandé de n'avoir qu'un classe par fichier.
+Il est recommandé de n'avoir qu'une classe par fichier.
 
 Tous les fichiers ont le nom de la classe qu'il contiennent.
 
-Le code doit être séparer en classes pour permettre une évolution
+Le code doit être séparé en classes pour permettre une évolution
 plus facile.
 
 
@@ -135,11 +133,9 @@ Commentaires
 Les commentaires sont soit sur la même ligne que le code, soit
 sur une ligne à part.
 
-Les commentaires sont indentés sur le coté du code, et les commentaires
-Comments are either on the same line as the code or in a special line.
+Les commentaires sont indentés sur le coté du code, et les commentaires.
 
-Comments are indented alongside the code. Les commentaires évident doivent
-être éviter. Il font plus de mal que de bien.
+Les commentaires évident doivent être éviter. Il font plus de mal que de bien.
 
 .. code-block:: vala
    :linenos:
@@ -169,13 +165,14 @@ Nom de variables, de classes et de fonctions
        VERY_LONG_OS_NAME
    }
 
-Il faut également convenir, qu'il n'y as pas d'utilisation de la notation Hongroise [#4]_ , ni de mélange
-entre plusieurs sorte de notation.
+Il faut également convenir qu'il n'y as pas d'utilisation de la notation 
+Hongroise [#4]_ , ni de mélange entre plusieurs sorte de notation.
 
 Espace de noms de Vala
 ======================
 
-Se référer à la GLib n'est pas nécessaire. Si vous voulez afficher quelque chose:
+Se référer à la GLib n'est pas nécessaire. Si vous voulez afficher quelque 
+chose:
 
 .. code-block:: vala
    :linenos:
@@ -188,9 +185,10 @@ Choisissez la deuxième méthode, elle est plus propre.
 Nombre de colonne par ligne
 ===========================
 
-Idéalement, il ne devrait pas y avoir plus de 80 caractères par lignes, car c'est la taille
-par défaut du terminal. Cependant, exceptionnellement, plus de caractère peuvent être ajouter,
-parce que les gens ont aujourd'hui des écrans suffisament large.
+Idéalement, il ne devrait pas y avoir plus de 80 caractères par lignes, car 
+c'est la taille par défaut du terminal. Cependant, exceptionnellement, plus de 
+caractère peuvent être ajouter, parce que les gens ont aujourd'hui des écrans 
+suffisament large.
 
 La limite maximale est de 120 caractère.
 
