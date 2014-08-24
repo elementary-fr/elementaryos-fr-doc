@@ -148,7 +148,7 @@ http://elementaryos.org/docs/human-interface-guidelines/app-launchers
 
 Passons à l'écriture :
 
-.. code-block:: desktop
+.. code-block:: text
    :linenos:
 
    [Desktop Entry]
