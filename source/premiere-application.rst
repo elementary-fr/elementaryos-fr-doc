@@ -34,6 +34,7 @@ Avec Scratch nous allons créer notre fichier vala et commencer son écriture :
 .. code-block:: bash
 
    $ cd src
+   $ touch gtk-hello.vala
    $ scratch-text-editor gtk-hello.vala
 
 Passons à l'écriture, tout d'abord nous mettons ce code pour initialiser notre code vala :
@@ -51,14 +52,14 @@ précédent, donc avant le } ajoutez ceci :
 .. code-block:: vala
    :linenos:
 
-   var window = new Gtk.Window ();
-   window.title = "Hello World!";
-   window.set_border_width (12);
-   window.set_position (Gtk.WindowPosition.CENTER);
-   window.set_default_size (350, 70);
-   window.destroy.connect (Gtk.main_quit);
-   Gtk.main ();
-   return 0;
+      var window = new Gtk.Window ();
+      window.title = "Hello World!";
+      window.set_border_width (12);
+      window.set_position (Gtk.WindowPosition.CENTER);
+      window.set_default_size (350, 70);
+      window.destroy.connect (Gtk.main_quit);
+      Gtk.main ();
+      return 0;
 
 
 Donc en résumé, on crée une fenêtre portant la variable window, qui aura pour titre HelloWorld !, avec une bordure de 12, positionner au centre de l'écran, avec une taille de 350x70, et
@@ -71,14 +72,14 @@ bouton donc avant Gtk,main() on y ajoute ceci :
 .. code-block:: vala
    :linenos:
 
-   var button_hello = new Gtk.Button.with_label ("Click me!");
-   button_hello.clicked.connect (() => {
-      button_hello.label = "Hello World!";
-      button_hello.set_sensitive (false);
-   });
+      var button_hello = new Gtk.Button.with_label ("Click me!");
+      button_hello.clicked.connect (() => {
+         button_hello.label = "Hello World!";
+         button_hello.set_sensitive (false);
+      });
    
-   window.add (button_hello);
-   window.show_all ();
+      window.add (button_hello);
+      window.show_all ();
 
 
 Donc ici, on ajoute un bouton nommé par la variable button_hello, qui aura comme étiquette
@@ -88,9 +89,31 @@ Donc les deux dernières, on ajoute notre bouton à notre fenêtre, notez qu'on 
 nom de variable entre les parenthèses.
 Au final vous devriez obtenir ceci :
 
-
-.. figure:: _static/exemple-simple-de-projet/gtk-hello-vala.png
-    :align: center
+.. code-block:: vala
+   :linenos:
+   
+   int main (string[] args){
+       Gtk.init (ref args);
+       
+       var window = new Gtk.Window ();
+       window.title = "Hello World!";
+       window.set_border_width (12);
+       window.set_position (Gtk.WindowPosition.CENTER);
+       window.set_default_size (350, 70);
+       window.destroy.connect (Gtk.main_quit);
+       
+       var button_hello = new Gtk.Button.with_label ("Click me!");
+       button_hello.clicked.connect (() => {
+           button_hello.label = "Hello World!";
+           button_hello.set_sensitive (false);
+       });
+       
+       window.add (button_hello);
+       window.show_all ();
+       
+       Gtk.main();
+       return 0;
+   }
 
 Maintenant on va compiler notre fichier vala (qui va créer un fichier éxécutable) et le tester. Si
 des erreurs sont signalées, revérifiez votre code.
@@ -117,27 +140,27 @@ code source sur un dépôt de code (à ne pas confondre avec les dépôts PPA) s
 Placez votre terminal au niveau de ~/Projects/gtk-hello,
 On va déjà déclarer votre Pseudo et votre email, ceci est à faire une seule fois.
 
-.. code-block:: bash
-
-    $ bzr whoami "toto <toto@mail.com>"
-
-Et là on remplace toto par votre pseudo et le mail qui va bien ;-)
-On va initialiser notre dossier pour bzr
+.. IMPORTANT::
+   Cette partie contient des exemples que vous devez modifier avec vos informations.
 
 .. code-block:: bash
 
-    $ bzr whoami "Devil505 <devil505linux@gmail.com>"
+    $ bzr whoami "votre-Pseudo <votre@email.publique>"
+
+Et là on remplace "votre-Pseudo" par votre pseudo et le mail qui va bien ;-)
+On va initialiser notre dossier pour bzr:
+
+.. code-block:: bash
+
     $ bzr init
 
-
-Et on va ajouter notre fichier (le dossier src sera aussi ajouté)
+Et on va ajouter notre fichier (le dossier src sera aussi ajouté):
 
 .. code-block:: bash
 
     $ bzr add src/gtk-hello.vala
 
-
-Puis on va écrire un commit (message très résumé des modifications apportées au code)
+Puis on va écrire un commit (un bref résumé des modifications apportées au code):
 
 .. code-block:: bash
 
