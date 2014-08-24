@@ -23,25 +23,19 @@ arrivant pourront plus facilement se joindre au développement d'elementary et
 comprendre le code.
 En plus, celà rendra plus facile pour tous les développeurs de travailler sur
 des applications dont ils n'ont pas l'habitude, parceque le code sera conforme
-à leur habitude. Finallement, comme le dit Guido Van Rossum [#] [CIT1]_.
+à leur habitude. Finallement, comme le dit Guido Van Rossum [1] [CIT1]_.
 
-.. [CIT2002] Le code est plus souvent lu qu'écrit
+.. [CIT1] Le code est plus souvent lu qu'écrit
 
-ainsi, avoir un bien écrit est crucial.
+ainsi, em avoir un bien écrit est crucial.
 
-
-
- Besides, it'll make it easier for all developers to work on applications 
-that they don't usually work on, because the code will be consistent. Finally, 
-as Guido Van Rossum said - "Code is much more often read than written", 
-so having nicely written code is crucial.
 
 
 Information
 ============
 
 Ce guide n'est pas encores, bien qu'il a été discuté et partiellement approuvé
-par les contributeurs d'elementary. [#] Il est sujet au changement dans un
+par les contributeurs d'elementary. [2] Il est sujet au changement dans un
 futur proche.
 
 Espace blanc
@@ -85,7 +79,7 @@ Le code en Vala est indenté en utilisant 4 espaces pour la cohérence et la
 lisibilité.
 
 Dans les classes, les fonctions, les boucles et le contrôle du flux, la première
-accolade se met à la fin de la première ligne [#] , suivie par le code indenté
+accolade se met à la fin de la première ligne [3] , suivie par le code indenté
 et une ligne de fermeture de la fonction avec une accolade fermante.
 
 .. code-block:: vala
@@ -179,6 +173,6 @@ You should have received a copy of the GNU General Public License along
 with this program. If not, see
 ***/
 
-.. [#] Créateur du language python (ndt)
-.. [#] Dans sa version anglaise (ndt)
-.. [#] One True Brace Style
+.. [1] Créateur du language python (ndt)
+.. [2] Dans sa version anglaise (ndt)
+.. [3] One True Brace Style
