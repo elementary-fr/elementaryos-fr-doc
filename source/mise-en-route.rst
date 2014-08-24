@@ -1,6 +1,6 @@
-*************************************************
-Mise en route de l'environnement de développement
-*************************************************
+*************
+Mise en route
+*************
 
 Création d'un compte launchpad
 ==============================

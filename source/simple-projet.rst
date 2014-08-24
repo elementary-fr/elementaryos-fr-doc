@@ -1,6 +1,6 @@
-************************
-Exemple simple de projet
-************************
+********************
+Première application
+********************
 
 Dans un premier temps nous allons créer dans le dossier personnel, un dossier où seront situés
 tout vos projets et on le nommera Projects comme les pros sur elementary:D
@@ -9,7 +9,7 @@ tout vos projets et on le nommera Projects comme les pros sur elementary:D
 
    $ mkdir ~/Projects
 
-Nos outils seront l'éditeur de texte Scratch pour écrire notre code et Terminal pour éxécuter
+Nos outils seront l'éditeur de texte Scratch pour écrire notre code et Terminal pour exécuter
 certaines commandes. Ces deux applications sont installées apr défaut sur elementary OS.
 
 Avec cette commande nous allons installer les dépendances de construction de granite-demo qui
@@ -46,7 +46,7 @@ Passons à l'écriture, tout d'abord nous mettons ce code pour initialiser notre
       Gtk.init (ref args);
    }
 
-Maintenant nous allons insérer une fenêtre avec quelques paramètre à l'intérieur du code
+Maintenant nous allons insérer une fenêtre avec quelques paramètres à l'intérieur du code
 précédent, donc avant le } ajoutez ceci :
 
 .. code-block:: vala
@@ -93,7 +93,7 @@ Au final vous devriez obtenir ceci :
 .. figure:: _static/exemple-simple-de-projet/gtk-hello-vala.png
     :align: center
 
-Maintenant on vas compiler notre fichier vala (qui va créer un fichier éxécutable) et le tester. Si
+Maintenant on va compiler notre fichier vala (qui va créer un fichier éxécutable) et le tester. Si
 des erreurs sont signalées, revérifiez votre code.
 
 .. code-block:: bash
@@ -113,17 +113,17 @@ Poussons notre code sur Launchpad maintenant !
 Bazaar
 ======
 
-Comme je l'avais dit plutôt Bazaar est le gestionnaire qui vas vous permettre d'envoyer votre
+Comme je l'avais dit plutôt Bazaar est le gestionnaire qui va vous permettre d'envoyer votre
 code source sur un dépôt de code (à ne pas confondre avec les dépôts PPA) sur Launchpad.
 Placez votre terminal au niveau de ~/Projects/gtk-hello,
-On vas déjà déclarer votre Pseudo et votre email, ceci est à faire une seule fois.
+On va déjà déclarer votre Pseudo et votre email, ceci est à faire une seule fois.
 
 .. code-block:: bash
 
     $ bzr whoami "toto <toto@mail.com>"
 
-Et là on remplace toto par votre pseudo et le mail qui vas bien ;-)
-On vas initialiser notre dossier pour bzr
+Et là on remplace toto par votre pseudo et le mail qui va bien ;-)
+On va initialiser notre dossier pour bzr
 
 .. code-block:: bash
 
@@ -131,14 +131,14 @@ On vas initialiser notre dossier pour bzr
     $ bzr init
 
 
-Et on vas ajouter notre fichier (le dossier src sera aussi ajouté)
+Et on va ajouter notre fichier (le dossier src sera aussi ajouté)
 
 .. code-block:: bash
 
     $ bzr add src/gtk-hello.vala
 
 
-Puis on vas écrire un commit (message très résumé des modifications apportées au code)
+Puis on va écrire un commit (message très résumé des modifications apportées au code)
 
 .. code-block:: bash
 
