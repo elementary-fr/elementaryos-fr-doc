@@ -12,6 +12,7 @@ Guide non-officiel du développeur Elementary OS
    :maxdepth: 2
 
    intro
+   premier-pas-en-vala
    mise-en-route
    premiere-application
    premier-projet
@@ -26,4 +27,3 @@ Indices and tables
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
-
