@@ -1,5 +1,5 @@
 **************
-Premièr projet
+Premier projet
 **************
 
 De retour dans notre dossier Projects, on crée un sous-dossier hello-world
