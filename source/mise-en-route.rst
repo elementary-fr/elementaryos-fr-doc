@@ -19,14 +19,24 @@ peut facilement l'installer avec la commande suivante:
 
    $ sudo apt install git
 
-Avant de passer à l'étape suivante, il faut encore configurer Git. En effet,
-d'un point de vue légale, il est important de savoire qui a fait quoi dans
-un logiciel. Pour se faire, il faut lancer les commandes suivantes:
+Avant de passer à l'étape suivante, il faut encore configurer Git. 
+
+Nous allons tous d'abors ajoutter notre nom réel et notre addresse email.
+C'est très important, d'un point de vue légale, il est important de savoire 
+qui a fait quoi dans un logiciel. Pour se faire, il faut lancer les commandes 
+suivantes:
 
 .. code-block:: bash
 
    $ git config --global user.name "John Smith"
    $ git config --global user.email "votre_email@example.com"
+
+Et avant de continuer, une dernière petite configuration. On va demander
+à Git d'utiliser le mode simple pour la synchronisation avec les serveurs git.
+
+.. code-block:: bash
+
+   git config --global push.default simple
 
 Création d'un compte Github
 ---------------------------
@@ -56,11 +66,17 @@ Et voilà, la création du compte est finie.
 .. figure:: _static/mise-en-route/github-welcome-screen.png
     :align: center
 
-Création d'un compte launchpad
-==============================
+Gestion de la destribution
+==========================
 
-Tout développeur elementary se doit d'avoir un compte sur Launchpad. Launchpad 
-est la plateforme de Canonical pour l'hébergement de projet, suivi de bugs, ...
+Création d'un compte launchpad
+------------------------------
+
+Tout développeur elementary se doit d'avoir un compte sur Launchpad.
+Launchpad est la plateforme de gestion du projet Ubuntu, sur lequel se
+base Elementary OS. Cette plateforme permet de distribuer facilement nos
+logiciels en les intégrants dans l'application Software Center.
+
 
 Bien sûr si vous avez déjà un compte, vous pouvez passer cette partie.
 
@@ -77,8 +93,12 @@ directement sur https://login.launchpad.net/+login
 
 Après rien de bien compliqué, vous pouvez compléter les infos de votre compte à votre guise.
 
-Création d'une clé SSH et ajout au compte Launchpad
-----------------------------------------------------
+
+Authentification par clé SSH
+============================
+
+Création d'une clé SSH
+----------------------
 
 Maintenant nous avons un compte Launchpad, nous allons en profiter pour lui ajouter une paire 
 de clé ssh. Dans un premier temps, nous allons générer ces clés. Ces clés sont une sorte de reconnaissance 
@@ -98,6 +118,9 @@ On va installer l'outil nécessaire pour générer la clé et ensuite créer cet
 
 Suivez les instructions, à un moment on vous demandera un mot de passe, retenez le bien car
 il vous sera demandé lorsque vous enverrez vos modifications de code vers Launchpad.
+
+Ajout de la clef sur Launchpad
+-------------------------------
 
 Votre clé publique est donc créée et nous allons l'ajouter à Launchpad.
 
@@ -126,7 +149,17 @@ Remplacez your-launchpad-id par votre nom d'utilisateur Launchpad.
 
    $ sudo apt-get install bzr
    $ bzr launchpad-login your-launchpad-id
-￼
+
+Ajout de la clef sur Github
+---------------------------
+
+De la manière, aller sur la page suivante: https://github.com/settings/ssh
+
+Une fois dessus, un click sur le bouton "Add SSH Keay" va vous permettre
+d'ajouter votre clef.
+
+.. figure:: _static/mise-en-route/github-ssh-key.png
+    :align: center
 
 Installation du SDK d'Elementary OS
 ===================================
