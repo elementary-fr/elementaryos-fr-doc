@@ -53,6 +53,7 @@ votre email et un mot de passe.
 
 .. figure:: _static/mise-en-route/github-signup.png
     :align: center
+    :figwidth: 50%
 
 Il ne vous reste plus qu'à cliquer sur le bouton signup.
 
@@ -60,11 +61,13 @@ Sur la page suivante, cliquer sur Finish sign up en laissant les choix par défa
 
 .. figure:: _static/mise-en-route/github-signup-plan.png
     :align: center
+    :figwidth: 50%
 
 Et voilà, la création du compte est finie.
 
 .. figure:: _static/mise-en-route/github-welcom-screen.png
     :align: center
+    :figwidth: 50%
 
 Gestion de la distribution
 ==========================
@@ -82,6 +85,7 @@ Bien sûr si vous avez déjà un compte, vous pouvez passer cette partie.
 
 .. figure:: _static/mise-en-route/launchpad.png
     :align: center
+    :figwidth: 50%
     
     
 Pour créer un compte cliquez en haut à droite sur Create account.ou aller 
@@ -89,6 +93,7 @@ directement sur https://login.launchpad.net/+login
 
 .. figure:: _static/mise-en-route/launchpad-login.png
     :align: center
+    :figwidth: 50%
 
 
 Après rien de bien compliqué, vous pouvez compléter les infos de votre compte à votre guise.
@@ -160,6 +165,7 @@ d'ajouter votre clef.
 
 .. figure:: _static/mise-en-route/github-ssh-key.png
     :align: center
+    :figwidth: 50%
 
 Installation du SDK d'Elementary OS
 ===================================
