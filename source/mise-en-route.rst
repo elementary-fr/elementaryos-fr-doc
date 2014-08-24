@@ -2,6 +2,60 @@
 Mise en route
 *************
 
+Gestion du codes
+=================
+
+Installation et configuration de Git
+------------------------------------
+
+Tous projet logiciel sérieux doit utiliser un logiciel de versions. Ce logiciel
+va vous permettre de sauvegarder votre code, de revenir en arrière en cas
+d'erreur et même de travailler en équipe.
+
+Dans la communauté francophone, nous préférons utiliser le logiciel Git. On
+peut facilement l'installer avec la commande suivante:
+
+.. code-block:: bash
+
+   $ sudo apt install git
+
+Avant de passer à l'étape suivante, il faut encore configurer Git. En effet,
+d'un point de vue légale, il est important de savoire qui a fait quoi dans
+un logiciel. Pour se faire, il faut lancer les commandes suivantes:
+
+.. code-block:: bash
+
+   $ git config --global user.name "John Smith"
+   $ git config --global user.email "votre_email@example.com"
+
+Création d'un compte Github
+---------------------------
+
+Afin de toujours avoir une sauvegarde en ligne et de pouvoir travailler à
+plusieur, il est important de publier nos fichiers sur internet. Pour se faire,
+nous utilisons Github, qui est gratuit pour les projets sous licence libre.
+
+Si vous n'avez pas déjà un compte, rendez vous à l'adresse suivante:
+https://github.com/
+
+Sur la page qui apparait, remplisser le formulaire avec un nom d'utilisateur,
+votre email et un mot de passe.
+
+.. figure:: _static/mise-en-route/github-signup.png
+    :align: center
+
+Il ne vous reste plus qu'à cliquer sur le bouton signup.
+
+Sur la page suivante, cliquer sur Finish sign up en laissant les choix par défaut.
+
+.. figure:: _static/mise-en-route/github-signup-plan.png
+    :align: center
+
+Et voilà, la création du compte est finie.
+
+.. figure:: _static/mise-en-route/github-welcome-screen.png
+    :align: center
+
 Création d'un compte launchpad
 ==============================
 
@@ -89,4 +143,3 @@ Pour installer ces outils de développement, lancer la commande suivante:
 
 Avec cette commande nous allons installer les dépendances de construction de granite-demo qui
 seront suffisantes pour compiler un projet de base.
-
