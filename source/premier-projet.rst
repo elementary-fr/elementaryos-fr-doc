@@ -22,6 +22,7 @@ Créeons le dossier src puis éditons notre nouveau fichier hello-again.vala
    $ cd hello-again
    $ mkdir src
    $ cd src
+   $ touch hello-again.vala
    $ scratch-text-editor hello-again.vala
 
 Nous allons écrire un entête pour le copyright comme pour une vraie application :
@@ -48,15 +49,14 @@ Nous allons écrire un entête pour le copyright comme pour une vraie applicatio
     along with Hello Again. If not, see <http://www.gnu.org/licenses/>.
    ***/
     
-Cette fois on reprend la même structure de base que gtk-hello.vala mais on vas juste mettre un
-Gtk.Label au lieu d'un Gtk.Button
+Cette fois on reprend la même structure de base que gtk-hello.vala mais on vas juste mettre un Gtk.Label au lieu d'un Gtk.Button :
 
 .. code-block:: vala
 
    var label = new Gtk.Label ("Hello Again World!");
 
-Et pensez à l'ajouter à votre fenêtre ! Donc si vous avez pigé, vous avez déjà écris window.add
-(label);
+Et pensez à l'ajouter à votre fenêtre ! Donc si vous avez pigé, vous avez déjà écris:
+window.add (label);
 
 Si vous avez fait comme il fallait, vous devriez avoir ceci :
 
@@ -86,15 +86,15 @@ Si vous avez fait comme il fallait, vous devriez avoir ceci :
        Gtk.init (ref args);
 
        var window = new Gtk.Window ();
-       window.title = "Hello World!"
+       window.title = "Hello World!";
        window.set_border_width (12);
-       window.set_position(Gtk.WindowPosition.CENTER);
+       window.set_position (Gtk.WindowPosition.CENTER);
        window.set_default_size (350, 70);
        window.destroy.connect (Gtk.main_quit);
 
-       var label = new Gtk.Label ("Hello Again World!);
+       var label = new Gtk.Label ("Hello Again World!");
 
-       window.add(label);
+       window.add (label);
        window.show_all ();
 
        Gtk.main ();
@@ -141,6 +141,7 @@ Entrons dedans et créons un fichier .desktop
 .. code-block:: bash
 
    $ cd data
+   $ touch hello-again.desktop
    $ scratch-text-editor hello-again.desktop
 
 Ce type de fichier répond à des normes spécifiques pour elementary, elles sont consultables ici :
@@ -221,6 +222,7 @@ Dans le dossier hello-again, on crée un fichier CmakeLists.txt
 
 .. code-block:: bash
 
+   $ touch CmakeListe.txt
    $ scratch-text-editor CmakeLists.txt
 
 Dans ce fichier copiez ce qui suit, pas avec les commentaires qui sont là pour vous expliquer à
@@ -392,7 +394,7 @@ paquet .deb. Voici à qui il doit ressembler :
    Architecture: any
    Depends: ${misc:Depends}, ${shlibs:Depends}
    Description: Hey young world
-    This is a Hello World written in Vala using the Autovala build system.
+   This is a Hello World written in Vala using the Autovala build system.
 
 Donc ici on indique le nom et l'email du mainteneur du paquet, les dépendances de construction,
 les dépendances (notez la séparation par des virgules), la description de l'application...
