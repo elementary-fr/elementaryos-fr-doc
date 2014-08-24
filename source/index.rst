@@ -13,8 +13,8 @@ Guide non-officiel du développeur Elementary OS
 
    intro
    mise-en-route
-   simple-projet
    premiere-application
+   premier-projet
    plus-de-possibilites-avec-vala
 
 
