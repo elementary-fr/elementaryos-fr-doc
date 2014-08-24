@@ -63,10 +63,10 @@ Sur la page suivante, cliquer sur Finish sign up en laissant les choix par défa
 
 Et voilà, la création du compte est finie.
 
-.. figure:: _static/mise-en-route/github-welcome-screen.png
+.. figure:: _static/mise-en-route/github-welcom-screen.png
     :align: center
 
-Gestion de la destribution
+Gestion de la distribution
 ==========================
 
 Création d'un compte launchpad
