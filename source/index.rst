@@ -11,6 +11,7 @@ Guide non-officiel du développeur Elementary OS
 .. toctree::
    :maxdepth: 2
 
+   intro
    launchpad
    simple-projet
    premiere-application
@@ -25,7 +26,4 @@ Indices and tables
 * :ref:`modindex`
 * :ref:`search`
 
-Voici un guide pour l'utilisateur d'elementary OS qui désire débuter à développer sous ce même
-environnement des applications elementary. Ce guide est en français mais avoir des notions sera un plus.
 
-Le contenu est plaçé sous Licence CC BY-SA 3.0 - https://creativecommons.org/licenses/by-sa/3.0/
