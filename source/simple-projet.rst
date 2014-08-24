@@ -11,11 +11,6 @@ tout vos projets et on le nommera Projects comme les pros sur elementary:D
 
 Nos outils seront l'éditeur de texte Scratch pour écrire notre code et Terminal pour éxécuter
 certaines commandes. Ces deux applications sont installées apr défaut sur elementary OS.
-Cependant nous allons avoir besoin de quelques biblihotèques de développement :
-
-.. code-block:: bash
-
-   $ sudo apt-get build-dep granite-demo
 
 Avec cette commande nous allons installer les dépendances de construction de granite-demo qui
 seront suffisantes pour compiler un projet de base.

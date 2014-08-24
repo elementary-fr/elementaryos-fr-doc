@@ -12,7 +12,7 @@ Guide non-officiel du développeur Elementary OS
    :maxdepth: 2
 
    intro
-   launchpad
+   mise-en-route
    simple-projet
    premiere-application
    plus-de-possibilites-avec-vala
