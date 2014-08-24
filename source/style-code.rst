@@ -25,7 +25,7 @@ En plus, celà rendra plus facile pour tous les développeurs de travailler sur
 des applications dont ils n'ont pas l'habitude, parceque le code sera conforme
 à leur habitude. Finallement, comme le dit Guido Van Rossum [#1]_ *Le code est
 plus souvent lu qu'écrit* .
-Ainsi, em avoir un bien écrit est crucial.
+Ainsi, en avoir un bien écrit est crucial.
 
 
 
@@ -93,84 +93,127 @@ et une ligne de fermeture de la fonction avec une accolade fermante.
        return e;
    }
 
-On conditionals and loops, if there's only one line of code, no braces are used:
+Dans les conditions et les boucles, si il n'y a qu'une seule ligne de code, les accolades
+ne sont pas utilisées:
 
-if (my_var > 2)
-print ("hello\n");
+.. code-block:: vala
+   :linenos:
 
-Cuddled else and else if:
+   if (my_var > 2)
+       print ("hello\n");
 
-if (a == 4) {
-b = 1;
-print ("Yay");
-} else if (a == 3) {
-b = 3;
-print ("Not so good...");
-} else {
-b = 5;
-print ("Terrible!");
-}
+Pour les instructions else et else if, on utilise le style emboités.
 
-3. Classes and files
+.. code-block:: vala
+   :linenos:
 
-Only having one class per file is recommended.
+   if (a == 4) {
+       b = 1;
+       print ("Yay");
+   } else if (a == 3) {
+       b = 3;
+       print ("Not so good...");
+   } else {
+       b = 5;
+       print ("Terrible!");
+   }
 
-All files have the same name of the class in them.
+Classes et fichiers
+===================
 
-Separate code into classes for easier extensibility.
-4. Comments
+Il est recommandé de n'avoir qu'un classe par fichier.
 
+Tous les fichiers ont le nom de la classe qu'il contiennent.
+
+Le code doit être séparer en classes pour permettre une évolution
+plus facile.
+
+
+Commentaires
+============
+
+Les commentaires sont soit sur la même ligne que le code, soit
+sur une ligne à part.
+
+Les commentaires sont indentés sur le coté du code, et les commentaires
 Comments are either on the same line as the code or in a special line.
 
-Comments are indented alongside the code, and obvious comments do more harm than good.
+Comments are indented alongside the code. Les commentaires évident doivent
+être éviter. Il font plus de mal que de bien.
 
-/* User chose number five */
-if (a == 5) {
-B = 4; // Update value of b
-c = 0; // No need for c to be positive
-l = n * 2 + 4; // Clear l variable
-}
+.. code-block:: vala
+   :linenos:
 
-5. Variable names, class names, function names
+   /* User chose number five */
+   if (a == 5) {
+       B = 4;           // Update value of b
+       c = 0;           // No need for c to be positive
+       l = n * 2 + 4;   // Clear l variable
+   }
 
-my_variable = 5; // Variable names
-MyClass // Class names
-my_function_name (); // Type/Function/Method names
-MY_C // Constants are all caps with underscores
-/* For enum members, all uppercase and underscores */
-enum OperatingSystem { // An enum name is the same as ClassesNames
-UBUNTU,
-ELEMENTARY_OS,
-VERY_LONG_OS_NAME
-}
+Nom de variables, de classes et de fonctions
+============================================
 
-Also worth referring that there should be no Hungarian notation, and no mix of any kinds of notations.
-6. Vala namespaces
+.. code-block:: vala
+   :linenos:
 
-Referring to GLib is not necessary. If you want to print something:
+   my_variable = 5;      // Variable names
+   MyClass               // Class names
+   my_function_name ();  // Type/Function/Method names
+   MY_C       // Constants are all caps with underscores
 
-GLib.print ("Hello World");
-print ("Hello World");
+   /* For enum members, all uppercase and underscores */
+   enum OperatingSystem { // An enum name is the same as ClassesNames
+       UBUNTU,
+       ELEMENTARY_OS,
+       VERY_LONG_OS_NAME
+   }
 
-Opt for the second one, it's much cleaner.
-7. Columns per line
+Il faut également convenir, qu'il n'y as pas d'utilisation de la notation Hongroise [#4]_ , ni de mélange
+entre plusieurs sorte de notation.
 
-Ideally, lines should have no more than 80 characters per line, because this is the default terminal size. However, as an exception, more characters could be added, because most people have wide-enough monitors nowadays. The hard limit is 120 characters.
-8. GPL Header
+Espace de noms de Vala
+======================
 
-/***
-Copyright (C) 2011-2012 Application Name Developers
-This program is free software: you can redistribute it and/or modify it
-under the terms of the GNU Lesser General Public License version 3, as published
-by the Free Software Foundation.
-This program is distributed in the hope that it will be useful, but
-WITHOUT ANY WARRANTY; without even the implied warranties of
-MERCHANTABILITY, SATISFACTORY QUALITY, or FITNESS FOR A PARTICULAR
-PURPOSE. See the GNU General Public License for more details.
-You should have received a copy of the GNU General Public License along
-with this program. If not, see
-***/
+Se référer à la GLib n'est pas nécessaire. Si vous voulez afficher quelque chose:
+
+.. code-block:: vala
+   :linenos:
+
+    GLib.print ("Hello World");
+    print ("Hello World");
+
+Choisissez la deuxième méthode, elle est plus propre.
+
+Nombre de colonne par ligne
+===========================
+
+Idéalement, il ne devrait pas y avoir plus de 80 caractères par lignes, car c'est la taille
+par défaut du terminal. Cependant, exceptionnellement, plus de caractère peuvent être ajouter,
+parce que les gens ont aujourd'hui des écrans suffisament large.
+
+La limite maximale est de 120 caractère.
+
+Entête de la license GPL
+========================
+
+.. code-block:: vala
+   :linenos:
+
+   /***
+     Copyright (C) 2011-2012 Application Name Developers
+     This program is free software: you can redistribute it and/or modify it
+     under the terms of the GNU Lesser General Public License version 3, as published
+     by the Free Software Foundation.
+     This program is distributed in the hope that it will be useful, but
+     WITHOUT ANY WARRANTY; without even the implied warranties of
+     MERCHANTABILITY, SATISFACTORY QUALITY, or FITNESS FOR A PARTICULAR
+     PURPOSE. See the GNU General Public License for more details.
+     You should have received a copy of the GNU General Public License along
+     with this program. If not, see
+   ***/
 
 .. [#1] Créateur du language python (ndt)
 .. [#2] Dans sa version anglaise (ndt)
 .. [#3] One True Brace Style
+.. [#4] Voire http://fr.wikipedia.org/wiki/Notation_hongroise (ndt)
