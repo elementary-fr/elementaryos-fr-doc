@@ -30,7 +30,7 @@ On peut ajouter des labels à l'intérieur de cette grille :
    grid.add (new Gtk.Label ("Label 1"));
    grid.add (new Gtk.Label ("Label 2"));
 
-Puis enfin on ajouter notre variable grid à la fenêtre principale :
+Puis enfin on va ajouter notre variable grid à la fenêtre principale :
 
 .. code-block:: vala
    :linenos:
