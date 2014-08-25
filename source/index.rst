@@ -13,6 +13,7 @@ Guide non-officiel du développeur Elementary OS
 
    intro
    premier-pas-en-vala
+   vala-fonctions
    mise-en-route
    premiere-application
    premier-projet
