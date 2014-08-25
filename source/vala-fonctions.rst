@@ -8,7 +8,7 @@ Dans cette partie, nous allons apprendre les toutes permières bases du Vala.
 Les Fontions
 =========================
 
-Dans la partie suivante, nous avons créer un premier programme dont le code
+Dans la partie précédente, nous avons créer un premier programme dont le code
 était le suivant:
 
 .. code-block
