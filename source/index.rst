@@ -19,12 +19,8 @@ Guide non-officiel du dévelopeur Elementary OS
    premier-projet
    plus-de-possibilites-avec-vala
    style-code
-   switchboard-plug
-<<<<<<< HEAD
-
-=======
    contractor
->>>>>>> bcb341cb493f99d96d51df2c3f71e74e20a99964
+   switchboard-plug
 
 *******************
 Indices and tables
