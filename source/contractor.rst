@@ -14,7 +14,7 @@ Les fichiers sont stockés dans `/usr/share/contractor/`
 Format des fichiers .contract
 =============================
 
-.. code-block::
+.. code-block:: text
 
   [Contractor Entry]
   Name=Archives
