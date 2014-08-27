@@ -20,7 +20,7 @@ Guide non-officiel du dévelopeur Elementary OS
    plus-de-possibilites-avec-vala
    style-code
    switchboard-plug
-
+   contractor
 
 *******************
 Indices and tables
