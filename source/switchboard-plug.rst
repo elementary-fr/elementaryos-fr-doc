@@ -19,7 +19,7 @@ Format des fichiers .plug
 
 Exemple ici avec About Plug (À Propos)
 
-.. code-block::
+.. code-block:: text
 
     [Plugin]
     Module=about
