@@ -1,11 +1,10 @@
 *************************
-Piste à explorer
+Les Plugs Switchboard
 *************************
 
 .. note:: Document en cours d'écriture
 
-Les Plugs Switchboard
-======================
+
 
 Les plugs (pligins) pour Switchboard se retrouvent dans Paramètres Système.
 
