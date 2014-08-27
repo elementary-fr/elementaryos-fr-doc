@@ -10,6 +10,8 @@ Guide non-officiel du dévelopeur Elementary OS
 
 .. toctree::
    :maxdepth: 2
+   :numbered:
+
 
    intro
    premier-pas-en-vala
