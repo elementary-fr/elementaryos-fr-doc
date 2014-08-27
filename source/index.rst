@@ -19,6 +19,7 @@ Guide non-officiel du dévelopeur Elementary OS
    premier-projet
    plus-de-possibilites-avec-vala
    style-code
+   switchboard-plug
 
 
 *******************
