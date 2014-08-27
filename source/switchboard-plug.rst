@@ -1,5 +1,11 @@
+*************************
+Piste à explorer
+*************************
+
+.. note:: Document en cours d'écriture
+
 Les Plugs Switchboard
-==========
+======================
 
 Les plugs (pligins) pour Switchboard se retrouvent dans Paramètres Système.
 
@@ -12,7 +18,7 @@ Il existe un template ici: http://bazaar.launchpad.net/~elementary-pantheon/pant
 Format des fichiers .plug
 =============================
 
-Exemple ici avec About Plug (À Poropos)
+Exemple ici avec About Plug (À Propos)
 
 .. code-block::
 
