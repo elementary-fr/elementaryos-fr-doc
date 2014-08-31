@@ -16,4 +16,5 @@ Le langage Vala
    intro
    premier-pas-en-vala
    syntaxe
+   variables
    vala-fonctions
