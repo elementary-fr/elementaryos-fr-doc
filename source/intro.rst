@@ -1,7 +1,7 @@
 
-************
+############
 Introduction
-************
+############
 
 Ce guide a pour but de guider un développeur Linux
 vers le kit de développement Elementary OS.
@@ -23,15 +23,23 @@ Les erreurs éventuelles peuvent être signaler à l'adresse suivante: https://g
 
 
 
-Auteurs et Licences
-===================
+Licences
+========
 
-Ce guide reprend des idées, du codes et du texte depuis
-le site officiel de développement d'Elementary OS, disponible à l'adresse suivante:
-http://elementaryos.org/developer
+Ce guide reprend des idées, du codes et du texte depuis divers sites anglophone ou francophone. 
+
+Les parties crée entièrement pour les besoins de cette documentation sont plaçée sous 
+Licence CC BY-SA 3.0 - https://creativecommons.org/licenses/by-sa/3.0/
+
+Les parties traduites ou adaptées à partir d'une source externe peuvent avoir une
+licence différente. Cette license est en générale précisée dans la partie introduction
+de la partie en question.
+
+Auteurs
+=======
 
 Ce guide a été créer par la communauté francophone
 ElementaryOS-FR et ne dois pas être considérer comme
 une publication officiel de l'équipe Elementary OS.
 
-Le contenu est placé sous Licence CC BY-SA 3.0 - https://creativecommons.org/licenses/by-sa/3.0/
+

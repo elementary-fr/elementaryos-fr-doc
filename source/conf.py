@@ -48,7 +48,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'Guide non-officiel du dévelopeur Elementary OS'
-copyright = u'2014, Communauté francophone Elementary OS - Contenu sous licence CC BY-SA'
+copyright = u'2014, Communauté francophone Elementary OS'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the

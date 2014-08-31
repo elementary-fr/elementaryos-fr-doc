@@ -3,26 +3,22 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-***********************************************
+##############################################
 Guide non-officiel du dévelopeur Elementary OS
-***********************************************
+##############################################
 
 
 .. toctree::
    :maxdepth: 2
    :numbered:
 
-
    intro
-   premier-pas-en-vala
-   vala-fonctions
-   mise-en-route
-   premiere-application
-   premier-projet
-   plus-de-possibilites-avec-vala
-   style-code
-   contractor
-   switchboard-plug
+   vala/index
+   gtk/index
+   projet/index
+   elementary/index
+   
+   
 
 *******************
 Indices and tables
