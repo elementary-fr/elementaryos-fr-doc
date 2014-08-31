@@ -17,6 +17,7 @@ Guide non-officiel du dévelopeur Elementary OS
    gtk/index
    projet/index
    elementary/index
+   hig/index
    
    
 
