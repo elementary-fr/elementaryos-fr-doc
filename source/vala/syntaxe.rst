@@ -40,7 +40,8 @@ celle-ci.
 Par exemple, si à la fin de mon instruction, je retire le point-virgule ou si
 j’orthographie mal le mot print, j’aurai le message d'erreur suivant:
 
-.. note:: Rajouter une image de scratch avec l'erreur
+.. figure:: _static/syntaxe/Print-erreur.png
+    :align: center
 
 Ce sont des erreurs de compilation qu’il va falloir résoudre si l’on souhaite 
 que l’application console puisse s’exécuter.
@@ -162,8 +163,6 @@ un commentaire.
 L'éditeur Scratch colore les commentaires en *gris* pour faciliter leurs
 identifications.
 
-.. note:: A vérifier la couleur de commentaire sur scratch
-
 .. code-block:: vala
    :linenos:
 
@@ -180,4 +179,3 @@ En résumé
   de compilation.
 - Il est possible de commenter son code grâce aux caractères « // », « ``/*`` » 
   et « ``*/`` ».
-
