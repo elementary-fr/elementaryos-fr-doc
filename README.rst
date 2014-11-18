@@ -9,13 +9,18 @@ Téléchargement et Accès
 La dernière version de ce guide est disponible à l'adresse http://elementaryos-fr-doc.readthedocs.org/fr/latest/ sous format
 WEB, PDF et ePub.
 
-Dépendance
-==========
+Dépendances
+===========
 
-.. code-block:: python
+La documentation est construite avec Sphinx, en utilisant le thème "sphinx_rtd_theme".
 
-   pip install sphinx
-   pip install sphinx_rtd_theme
+Sur elementary OS, il faut installer les paquets suivants:
+
+.. code-block:: bash
+
+   sudo apt-get install python3 python3-pip
+   sudo pip3 install sphinx
+   sudo pip3 install sphinx_rtd_theme
    
 Construction
 ============
