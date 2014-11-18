@@ -6,7 +6,7 @@ Guide non officiel du développeur elementary OS
 Téléchargement et Accès
 =======================
 
-La dernière version de ce guide est disponible à l'adresse http://elementaryos-fr-doc.readthedocs.org/fr/latest/ sous format
+La dernière version de ce guide est disponible à l'adresse http://elementaryos-fr-doc.readthedocs.org/ sous format
 WEB, PDF et ePub.
 
 Dépendances
