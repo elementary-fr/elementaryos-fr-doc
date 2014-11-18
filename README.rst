@@ -25,8 +25,11 @@ Sur elementary OS, il faut installer les paquets suivants:
 Construction
 ============
 
+Pour lancer la compilation de la documentation, et créer un site web statique complet, il faut lancer la commande suivante
+à la racine du projet:
+
 .. code-block:: bash
 
    make html
    
-Les fichiers sont créés dans le repertoire build.
+Les fichiers sont créés dans le repertoire build/html.
