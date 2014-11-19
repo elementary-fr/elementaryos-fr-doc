@@ -9,7 +9,7 @@ Liste des Modification a faire
 03 - la compilation (ajouter les options disponible sur valac)
 04 - le type char (manque)
 05 - boucle et conditions (manque les boucles)
-06 - les tableaux (manque le cours
+06 - les tableaux (manque le cours)
 07 - variable et fonctions (????)
 08 - Usage avancee des variables (a voir)
 09 - Les bibliotheque statiques (bonus)
