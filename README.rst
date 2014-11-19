@@ -3,23 +3,24 @@ elementaryos-fr-doc pour Prep'Etna
 *******************
 Liste des Modification a faire
 ==============================
+.. code-block:: bash
 
-01 - Premiers pas (ok)
-02 - Fonction et variables (manque des notions)
-03 - la compilation (ajouter les options disponible sur valac)
-04 - le type char (manque)
-05 - boucle et conditions (manque les boucles)
-06 - les tableaux (manque le cours)
-07 - variable et fonctions (????)
-08 - Usage avancee des variables (a voir)
-09 - Les bibliotheque statiques (bonus)
-10 - Le passage de parametres (a faire)
-11 - Le makefile (pas obligatoire)
-12 - Allocation Dynamique (bonus)
-13 - Preprocesseur (bonus)
-14 - Les structures de donnees (bonus)
-15 - Les pointeurs sur fonction (bonus)
-16 - Les listes chainees (bonus)
+   01 - Premiers pas (ok)
+   02 - Fonction et variables (manque des notions)
+   03 - la compilation (ajouter les options disponible sur valac)
+   04 - le type char (manque)
+   05 - boucle et conditions (manque les boucles)
+   06 - les tableaux (manque le cours)
+   07 - variable et fonctions (????)
+   08 - Usage avancee des variables (a voir)
+   09 - Les bibliotheque statiques (bonus)
+   10 - Le passage de parametres (a faire)
+   11 - Le makefile (pas obligatoire)
+   12 - Allocation Dynamique (bonus)
+   13 - Preprocesseur (bonus)
+   14 - Les structures de donnees (bonus)
+   15 - Les pointeurs sur fonction (bonus)
+   16 - Les listes chainees (bonus)
 
 Objectif:
 =========
