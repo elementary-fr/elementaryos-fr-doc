@@ -50,7 +50,7 @@ Gcc qui va convertir les fichier .c en programme executable.
 
 .. code-block:: bash
 
-   $ sudo apt install valac build-essential
+   $ sudo apt-get install valac build-essential
 
 
 Hello World en console
