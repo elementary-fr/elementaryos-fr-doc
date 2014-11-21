@@ -2,56 +2,77 @@
 Premiers pas en Vala
 ********************
 
-Présentation
-=============
+Notion de fonction
+==================
 
-Vala est un langage de programmation apparu en 2006. Il a été créé
-par Jürg Billeter.
+Une fonction regroupe une suite d'instructions qui permet de faire une chose precise: afficher un bonjour, faire un calcul ...
+Une fois construite, une fonction peut étre utilisé dans une autre fonction. Pendants l'execution de notre programme, celui ci lance automatiquement la fonction "main", c'est dans ce dernier que ce deroule la partie la plus atractif ;)  
 
-Depuis toujours, le langage de prédilection de Gnome est le C. C'est un des
-langages de programmation le plus utilisé de nos jours. Le C est un
-langage très puissant; pour preuvre, c'est le langage du noyau Linux.
+- Un code source en Vala est composé de fonctions.
+- Chaque fonction est composée d'instructions.
+- Chaque fonction est indépendante.
+- La première fonction appelée dans un programme s'appelle "main".
 
-L'équipe de Gnome avait décidé d'utiliser le C pour construire son bureau
-libre. Cependant, lorsqu'il a fallut amélioré la librairie permettant de
-créer l'interface graphique, ils se sont rendus compte qu'ils devaient
-réécrire le code avec un style orienté objet.
+.. code-block:: vala
+   :linenos:
+ 
+       void main (){
+      
+   }
 
-Le C ne permettant pas de base la création d'objet, ils ont créé leur système,
-appelé GObject, par dessus le C.
+Structure d'une fonction
+------------------------
 
-Ainsi, Gnome a pu faire de l'orienté objet et profité des autres
-avantages du C.
+une fonction est composée de deux parties:
 
-Le principal avantage, les librairies Gnome peuvent être utilisées facilement
-dans presque tous les autres langages, y compris les tous derniers langages
-à la mode, les langages interprétés comme le Python.
+* Son prototype qui est lui-même composé de 3 parties:
+	1. Le type de retour (int)
+	2. Le nom (pas d'espace entre le nom, pas de majuscul)
+	3. Les paramètres, entre parenthèses: (int a, int b)
+* Son corps:
+	1. Délimité par des accolades
+	2. Un return(), qui retourne le type de la fonction.
 
-Les langages interprétés ne sont pas directement convertis en langage machine
-par le dévelopeur mais seulement lors de l'exécution, par l'interpréteur,
-qui convertit le code à la volée.
+.. code-block:: vala
+   :linenos:
+ 
+       int addition (int a, int b){
+       return(a + b);
+   }
 
-Cette methode permet de faire des langages très flexibles et simples, mais en
-perdant un peu en performance.
+Corps d'une fonction
+--------------------
 
-Vala a été créé pour palier au problème de performance des langages
-interprétés. Le compilateur Vala traduit le code en language C, puis le
-compilateur C, en langage machine. De plus, le langage Vala amène toutes
-les principales nouveautés des langages modernes, ce qui permet d'écrire des
-programmes facilement tout en gardant une vitesse d'exécution proche du C.
+Dans l'exemple plus haut, il n'y avait pas de déclaration de variable car "a" et "b" sont déjà initialisé.
+Voici une autre façon de le faire pour vous montrez la creation d'une variable:
 
+.. code-block:: vala
+   :linenos:
+ 
+   int addition (int a,int b){
+       int	result;
+       
+       result = a * b;
+       return(result);
+   }
 
-Installation
-============
+.. note::
+	Pour une meilleur lisibiliter, je vous conseil d'utiliser une partie déclarative et une partie instructions.
 
-Pour utiliser le langage Vala, nous devons installer le compilateur Valac, qui
-va convertir nos fichiers .vala en ficier .c. Il nous faut aussi le compilateur
-Gcc qui va convertir les fichier .c en programme executable.
+La fonction main()
+------------------
 
-.. code-block:: bash
+ A FAIRE EN VALA!
+ 
+ .. code-block:: vala
+   :linenos:
+ 
+   int main (int argc, char **argv){
+       return(0);
+   }
 
-   $ sudo apt install valac build-essential
-
+Notion de variable
+==================
 
 Hello World en console
 ======================
@@ -78,7 +99,7 @@ suivant:
    :linenos:
  
        void main (){
-       print("Hello World!\n");
+       print("Hello world!\n");
    }
 
 Ensuite, on retourne dans le terminal et on lance la compilation. Si
