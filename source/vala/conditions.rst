@@ -25,7 +25,7 @@ Opérateur  Description
 =========  ========================
 ==         Egalité
 
-!=         Diférence
+!=         Différence
 
 >          Supérieur à
 
@@ -91,7 +91,7 @@ chose », ce qui se traduit en Vala par :
        print("Votre compte est débiteur\n");
 
 Il faut bien se rendre compte que l’instruction if teste si une valeur est vraie
-(dans l’exemple précédent la comparaison compteEnBanque >= 0).
+(dans l’exemple précédent la comparaison compte_en_banque >= 0).
 
 On a vu rapidement dans les chapitres précédents qu’il existait un type de
 variable qui permettait de stocker une valeur vraie ou fausse : le type bool,
@@ -161,7 +161,7 @@ D’autres opérateurs de logiques existent, nous avons notamment l’opérateur
        print("Vous êtes un homme\n");
 
 L’exemple parle de lui-même, si la civilité de la personne est *Mme* ou *Mlle*,
-alors nous avons à faire avec une femme.
+alors nous avons à faire à une femme.
 
 A noter ici que si la première condition du **if** est vraie alors la deuxième
 ne sera pas évaluée. C’est un détail ici, mais cela peut s’avérer important dans
@@ -257,7 +257,7 @@ parenthèses. Avec le mot clé **case** on énumère les différents cas possibl
 pour la variable et on exécute les instructions correspondante jusqu’au mot clé
 **break** qui signifie que l’on sort du **switch**.
 
-Nous pouvons également enchainer plusieurs cas pour qu’ils fassent la même
+Nous pouvons également enchaîner plusieurs cas pour qu’ils fassent la même
 chose, ce qui reproduit le fonctionnement de l’opérateur logique **||** (OU).
 
 Par exemple :
