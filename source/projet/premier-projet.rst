@@ -15,7 +15,7 @@ Puis dedans on crée un autre dossier pour notre nouvelle application.
    $ cd hello-world
    $ mkdir hello-again
 
-Créeons le dossier src puis éditons notre nouveau fichier hello-again.vala
+Créons le dossier src puis éditons notre nouveau fichier hello-again.vala
 
 .. code-block:: bash
    
@@ -55,7 +55,7 @@ Cette fois on reprend la même structure de base que gtk-hello.vala mais on vas 
 
    var label = new Gtk.Label ("Hello Again World!");
 
-Et pensez à l'ajouter à votre fenêtre ! Donc si vous avez pigé, vous avez déjà écris:
+Et pensez à l'ajouter à votre fenêtre ! Donc si vous avez compris, vous avez déjà écris:
 window.add (label);
 
 Si vous avez fait comme il fallait, vous devriez avoir ceci :
@@ -121,7 +121,7 @@ fichier sur un autre dépôt :
 
    $ bzr push lp:~votre-login-launchpad/+junk/hello-again
 
-Cous pouvez vérifier si cela a bien marché en allant sur launchpad :
+Vous pouvez vérifier si cela a bien marché en allant sur launchpad :
 https://code.launchpad.net/people/+me/
 
 Maintenant nous allons créer des fichiers indispensables pour agrémenter notre application
@@ -164,7 +164,7 @@ Passons à l'écriture :
    X-GNOME-Gettext-Domain=hello-again
    X-GNOME-Keywords=Hello;World;Example;
 
-Don rapidement, on a crée un raccourci par rapport à notre application Hello Again comportant
+Donc rapidement, on a crée un raccourci par rapport à notre application Hello Again comportant
 un nom, un nom générique, une description, la commande d'exécution, l'icône qui sera utilisée,
 le type...
 
@@ -197,7 +197,7 @@ généralement la GPL : http://www.gnu.org/licenses/quick-guide-gplv3.html
 Vous pouvez récupérer le COPYING de mon dépôt :
 http://bazaar.launchpad.net/~devil505/+junk/hello-packaging/view/head:/COPYING
 
-Maintenant vous pouvez commiter ces deux fichiers comme nous l'avons fait pour le fichier
+Maintenant vous pouvez commit ces deux fichiers comme nous l'avons fait pour le fichier
 .desktop
 
 Maintenant attardons-nous la compilation de notre application.
@@ -225,7 +225,7 @@ Dans le dossier hello-again, on crée un fichier CmakeLists.txt
    $ touch CmakeListe.txt
    $ scratch-text-editor CmakeLists.txt
 
-Dans ce fichier copiez ce qui suit, pas avec les commentaires qui sont là pour vous expliquer à
+Dans ce fichier copiez ce qui suit, pas avec les commentaires qui sont là pour vous expliquer à quoi
 corresponde telles ou telles lignes :
 
 .. code-block:: cmake
@@ -265,7 +265,7 @@ corresponde telles ou telles lignes :
    find_package(Vala REQUIRED)
    # pour être sûr qu'on utilise vala
    include(ValaVersion)
-   # pour être sûr de la version de vala utilisée36. ensure_vala_version("0.16" MINIMUM)
+   # pour être sûr de la version de vala utilisée. ensure_vala_version("0.16" MINIMUM)
 
    # les fichiers que nous voulons compiler
    include(ValaPrecompile)
