@@ -16,7 +16,7 @@ quoi servent les variables lors du développement d'une application informatique
 Qu’est-ce qu’une variable ?
 ===========================
 
-Comme tous les langages de programmations, le Vala va pouvoir conserver des
+Comme tous les langages de programmation, le Vala va pouvoir conserver des
 données grâce à des variables. Ce sont en fait des blocs de mémoire qui vont
 contenir des nombres, des chaines de caractères, des dates ou plein d’autres
 choses.
@@ -51,7 +51,7 @@ entier et accessible par la variable *age*. Ce qui s’écrit en Vala :
 On appelle ceci la déclaration de la variable *age*.
 
 Le mot clé *int* permet d’indiquer au compilateur que la variable *age* est un
-entier numérique. *int* correspond au début d’ "integer" qui veut dire
+entier numérique. *int* correspond au début d’"integer" qui veut dire
 "entier" en anglais.
 
 Ici, la variable *age* n’a pas été initialisée. Elle ne pourra pas être 
@@ -129,7 +129,7 @@ De même, on ne pourra pas nommer une variable en commençant par des chiffres.
    supplémentaire lors de la lecture du code. Mais libre à vous de le faire.
 
 En général, une variable commence par une minuscule et si son nom représente
-plusieurs mots, on les séparera par des tirets "en bas". Par exemple :
+plusieurs mots, on les séparera par des "underscore" à savoir ces caractères la : "_" (Sans les guillemets) . Celui qui le nommera par "tiret du bas" se fera lyncher par ses collèges. Exemple :
 
 
 .. code-block:: vala
@@ -139,7 +139,7 @@ plusieurs mots, on les séparera par des tirets "en bas". Par exemple :
 
 .. important::
 
-   A noter un détail qui peut paraitre évident, mais toutes les variables sont
+   A noter un détail qui peut paraître évident, mais toutes les variables sont
    réinitialisées à chaque nouvelle exécution du programme. Dès qu’on démarre le
    programme, les classeurs sont vidés, comme si on emménageait dans des
    nouveaux locaux à chaque fois.
@@ -164,7 +164,7 @@ Par exemple, nous pouvons stocker une chaine de caractères grâce au type *stri
 
    string prenom = "nicolas";
 
-ou encors un boolean (qui représente une valeur vraie ou fausse) avec
+ou encors un boolean (qui représente une valeur vraie ou fausse) avec :
 
 .. code-block:: vala
 
@@ -187,7 +187,7 @@ Nombre décimal à taille garantie:
 =========  ====================================================================
 Type       Description
 =========  ====================================================================
-int8       Entier de -127 à +127
+int8       Entier de -128 à +127
 int16      Entier de -32768 à 32767
 int32      Entier de -2147483648 à 2147483647
 int64      Entier de -9223372036854775808 à 9223372036854775807
@@ -411,12 +411,12 @@ stocker des nombres à virgule.)
 Les caractères spéciaux dans les chaines de caractères
 ======================================================
 
-En ce qui concerne l’affectation de chaines de caractères, vous risquez 
+En ce qui concerne l’affectation de chaînes de caractères, vous risquez 
 d’avoir des surprises si vous tentez de mettre des caractères spéciaux dans
 des variables de type string.
 
-En effet, une chaine de caractères étant délimitée par des guillemets " ",
-comment faire pour que notre chaine de caractères puisse contenir des guillemets ?
+En effet, une chaîne de caractères étant délimitée par des guillemets " ",
+comment faire pour que notre chaîne de caractères puisse contenir des guillemets ?
 
 C’est là qu’intervient le caractère spécial \ qui sera à mettre juste devant le
 guillemet, par exemple le code suivant :
@@ -478,9 +478,9 @@ permettra d’afficher des tabulations, comme illustré ci-dessous :
 
 Nous avons vu que le caractère \ était un caractère spécial et qu’il permettait
 de dire au compilateur que nous voulions l’utiliser combiné à la valeur qui le
-suit, permettant d’ avoir une tabulation ou un retour à la ligne.
+suit, permettant d’avoir une tabulation ou un retour à la ligne.
 
-Comment pourrons-nous avoir une chaine de caractères qui contienne ce fameux
+Comment pourrons-nous avoir une chaîne de caractères qui contienne ce fameux
 caractère ?
 
 Le principe est le même, il suffira de faire suivre ce fameux caractère spécial
@@ -500,6 +500,3 @@ En résumé
   chaînes de caractères (string), etc.
 - On utilise l'opérateur = pour affecter une valeur à une variable.
 - Il est possible de faire des opérations entre les variables.
-
-
-
