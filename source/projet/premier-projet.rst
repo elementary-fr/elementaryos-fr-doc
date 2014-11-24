@@ -2,13 +2,13 @@
 Premier projet
 **************
 
-De retour dans notre dossier Projects, on crée un sous-dossier hello-world
+De retour dans notre dossier Projects, on créer un sous-dossier hello-world
 
 .. code-block:: bash
 
    $ mkdir hello-world
 
-Puis dedans on crée un autre dossier pour notre nouvelle application.
+Puis dedans on créer un autre dossier pour notre nouvelle application.
 
 .. code-block:: bash
 
