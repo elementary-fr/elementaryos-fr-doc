@@ -2,7 +2,7 @@
 Plus de possibilités avec Vala
 ******************************
 
-Dans cette partie nous allons nous amuser un peu avec Vala ets es possibilités vis à vis de Gtk.
+Dans cette partie nous allons nous amuser un peu avec Vala et ses possibilités vis à vis de Gtk.
 Nous verrons la fonction Gtk.Grid et Attach. Bien sûr vous trouverez plein d'infos sur
 http://valadoc.org/
 Reprenez votre fichier hello-again.vala
@@ -37,7 +37,7 @@ Puis enfin on va ajouter notre variable grid à la fenêtre principale :
    
    this.add (grid);
 
-Au final, si vous avez tout compris vous devriez avoir un fichier comme ceci :Ensuite on compile et on teste, souvenez-vous :
+Au final, si vous avez tout compris vous devriez avoir un fichier comme ceci : Ensuite on compile et on teste, souvenez-vous :
 
 .. code-block:: bash
 
@@ -94,7 +94,7 @@ Démonstration :
 .. figure:: _static/plus-de-possibilites-avec-vala/Bouton-enfonce.png
     :align: center
 
-Amusez-vous à changer des valeurs, par exemple le sensitive sur true, virer la ligne de position
+Amusez-vous à changer les valeurs, par exemple le sensitive sur true, virer la ligne de position
 verticale...etc :-)
 
 Attach
