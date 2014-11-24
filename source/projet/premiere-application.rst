@@ -10,7 +10,7 @@ tout vos projets et on le nommera Projects comme les pros sur elementary:D
    $ mkdir ~/Projects
 
 Nos outils seront l'éditeur de texte Scratch pour écrire notre code et Terminal pour exécuter
-certaines commandes. Ces deux applications sont installées apr défaut sur elementary OS.
+certaines commandes. Ces deux applications sont installées par défaut sur elementary OS.
 
 
 
@@ -128,7 +128,7 @@ Et donc vous devriez avoir votre petite application :
 .. figure:: _static/exemple-simple-de-projet/Click-me.png
     :align: center
 
-Sympa non ?
+Sympas non ?
 Poussons notre code sur Launchpad maintenant !
 
 
