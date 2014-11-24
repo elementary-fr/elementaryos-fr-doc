@@ -8,7 +8,7 @@ Gestion du codes
 Installation et configuration de Git
 ------------------------------------
 
-Tous projet logiciel sérieux doit utiliser un logiciel de versions. Ce logiciel
+Tous projet logiciel sérieux doit utiliser un logiciel de versioning. Ce logiciel
 va vous permettre de sauvegarder votre code, de revenir en arrière en cas
 d'erreur et même de travailler en équipe.
 
@@ -21,8 +21,8 @@ peut facilement l'installer avec la commande suivante:
 
 Avant de passer à l'étape suivante, il faut encore configurer Git. 
 
-Nous allons tous d'abors ajoutter notre nom réel et notre addresse email.
-C'est très important, d'un point de vue légale, il est important de savoire 
+Nous allons tout d'abord ajouter notre nom réel et notre adresse email.
+C'est très important, d'un point de vue légal, il est important de savoir 
 qui a fait quoi dans un logiciel. Pour se faire, il faut lancer les commandes 
 suivantes:
 
@@ -48,7 +48,7 @@ nous utilisons Github, qui est gratuit pour les projets sous licence libre.
 Si vous n'avez pas déjà un compte, rendez vous à l'adresse suivante:
 https://github.com/
 
-Sur la page qui apparait, remplisser le formulaire avec un nom d'utilisateur,
+Sur la page qui apparait, remplissez le formulaire avec un nom d'utilisateur,
 votre email et un mot de passe.
 
 .. figure:: _static/mise-en-route/github-signup.png
@@ -88,7 +88,7 @@ Bien sûr si vous avez déjà un compte, vous pouvez passer cette partie.
     :figwidth: 75%
     
     
-Pour créer un compte cliquez en haut à droite sur Create account.ou aller 
+Pour créer un compte cliquez en haut à droite sur Create account. Ou allez 
 directement sur https://login.launchpad.net/+login
 
 .. figure:: _static/mise-en-route/launchpad-login.png
@@ -147,7 +147,7 @@ il faudra importer chaque clé par ordinateur.
 
 Maintenant on peut vérifier si tout va bien avec bzr. Bazaar (ou bzr en ligne de commande)
 est le gestionnaire de gestion de code utilisé sur Launchpad, nous verrons plus loin comment
-l'utiliser avec Launchpad. Toutefois, on peut déjà signaler à bzr quel est notre identité Launchpad,
+l'utiliser avec Launchpad. Toutefois, on peut déjà signaler à bzr quelle est notre identité Launchpad,
 Remplacez your-launchpad-id par votre nom d'utilisateur Launchpad.
 
 .. code-block:: bash
@@ -160,7 +160,7 @@ Ajout de la clef sur Github
 
 De la manière, aller sur la page suivante: https://github.com/settings/ssh
 
-Une fois dessus, un click sur le bouton "Add SSH Key" va vous permettre
+Une fois dessus, un clic sur le bouton "Add SSH Key" va vous permettre
 d'ajouter votre clef.
 
 .. figure:: _static/mise-en-route/github-ssh-key.png
@@ -171,7 +171,7 @@ Installation du SDK d'Elementary OS
 ===================================
 
 Une application Elementary est crée en utilisant certaines technologies, qui rendront votre projet
-intégré au système. En réutilisant ces outils. vos applications ressembleront à celle que vous avez
+intégré au système. En réutilisant ces outils, vos applications ressembleront à celle que vous avez
 déjà sur votre machine.
 
 Pour installer ces outils de développement, lancer la commande suivante:
