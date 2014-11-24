@@ -5,8 +5,8 @@ Premiers pas en Vala
 Notion de fonction
 ==================
 
-Une fonction regroupe une suite d'instructions qui permet de faire une chose precise: afficher un bonjour, faire un calcul ...
-Une fois construite, une fonction peut étre utilisé dans une autre fonction. Pendants l'execution de notre programme, celui ci lance automatiquement la fonction "main", c'est dans ce dernier que ce deroule la partie la plus atractif ;)  
+Une fonction regroupe une suite d'instructions qui permet de faire une chose précise: afficher un bonjour, faire un calcul...
+Une fois construite, une fonction peut être utilisée dans une autre fonction. Pendant l'exécution de notre programme, celui ci lance automatiquement la fonction "main", c'est dans ce dernier que se déroule la partie la plus attractive ;)  
 
 - Un code source en Vala est composé de fonctions.
 - Chaque fonction est composée d'instructions.
@@ -23,11 +23,11 @@ Une fois construite, une fonction peut étre utilisé dans une autre fonction. P
 Structure d'une fonction
 ------------------------
 
-une fonction est composée de deux parties:
+Une fonction est composée de deux parties:
 
 * Son prototype qui est lui-même composé de 3 parties:
 	1. Le type de retour (int)
-	2. Le nom (pas d'espace entre le nom, pas de majuscul)
+	2. Le nom (pas d'espace entre le nom, pas de majuscules)
 	3. Les paramètres, entre parenthèses: (int a, int b)
 * Son corps:
 	1. Délimité par des accolades
@@ -43,8 +43,8 @@ une fonction est composée de deux parties:
 Corps d'une fonction
 --------------------
 
-Dans l'exemple plus haut, il n'y avait pas de déclaration de variable car "a" et "b" sont déjà initialisé.
-Voici une autre façon de le faire pour vous montrez la creation d'une variable:
+Dans l'exemple plus haut, il n'y avait pas de déclaration de variable car "a" et "b" sont déjà initialisés.
+Voici une autre façon de le faire pour vous montrez la création d'une variable:
 
 .. code-block:: vala
    :linenos:
@@ -57,12 +57,12 @@ Voici une autre façon de le faire pour vous montrez la creation d'une variable:
    }
 
 .. note::
-	Pour une meilleur lisibiliter, je vous conseil d'utiliser une partie déclarative et une partie instructions.
+	Pour une meilleur lisibilitée, je vous conseil d'utiliser une partie déclarative et une partie instructions.
 
 La fonction main()
 ------------------
 
- A FAIRE EN VALA!
+ À FAIRE EN VALA!
  
  .. code-block:: vala
    :linenos:
@@ -79,20 +79,20 @@ Hello World en console
 La tradition veut que lorsqu'on apprend un nouveau langage de programmation,
 on commence par écrire un programme qui affiche *Hello World!* dans la console.
 
-On commence par créer un un dossier Projets, avec un sous dossier
+On commence par créer un dossier Projets, avec un sous dossier
 *console-hello*. Dans ce sous dossier, on va créer un fichier hello.vala et on
 va l'ouvrir avec notre éditeur de texte.
 
 .. code-block:: bash
 
-   $ cd ~  # Permet de revenir dans notre dossier personnel
-   $ mkdir Projets # Crée le dossier Projets
-   $ mkdir Projets/console-hello # Crée le dossier console-hello dans Projets
-   $ cd Projets/console-hello # On se déplace dans le nouveau répertoire
-   $ touch hello.vala # On crée le fichier
-   $ xdg-open hello.vala # On ouvre le fichier avec le programe par défaut
+   $ cd ~  # Permet de revenir dans notre dossier personnel.
+   $ mkdir Projets # Créer le dossier Projets.
+   $ mkdir Projets/console-hello # Créer le dossier console-hello dans Projets.
+   $ cd Projets/console-hello # On se déplace dans le nouveau répertoire.
+   $ touch hello.vala # On créer le fichier.
+   $ xdg-open hello.vala # On ouvre le fichier avec le programe par défaut.
 
-L'éditeur de text *Scratch* a dû s'ouvrir. Copié dans le fichier le code
+L'éditeur de text *Scratch* a dû s'ouvrir. Copiez dans le fichier le code
 suivant:
 
 .. code-block:: vala
@@ -111,7 +111,7 @@ de commande.
    $ valac hello.vala
    $ ./hello
 
-La deuxième ligne lance notre premier programme. Ci tous ce passe bien, la
+La deuxième ligne lance notre premier programme. Si tout ce passe bien, la
 phrase *Hello World!* devrait s'être affichée dans le terminal.
 
 .. note::
