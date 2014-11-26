@@ -27,16 +27,26 @@ Une fois construite, une fonction peut être utilisée dans une autre fonction. 
 Structure d'une fonction
 ------------------------
 
+Il y a plusieurs types de fonctions. On ne va pour le moment parler que des trois basiques. 
+
 Une fonction est composée de deux parties:
 
-* Son prototype qui est lui-même composé de 3 parties:
-	1. Le type de retour (int)
+* Son prototype qui est lui-même composé de 3 parties :
+	1. Le type de retour.
+	  -int qui retournera un entier.
+	  -char qui retournera un caractère ou une chaîne.
+	  -void qui ne demande pas de valeur de retour.
 	2. Le nom (pas d'espace entre le nom, pas de majuscules)
-	3. Les paramètres, entre parenthèses: (int a, int b)
+	3. Les paramètres, entre parenthèses (dépend du type de la fonction): int a, char b, ou autre
+        Exemple : int    Nom_de_la_fonction(int a, int b)
 * Son corps:
 	1. Délimité par des accolades
-	2. Un return(), qui retourne le type de la fonction.
-
+	2. Un return(), qui retourne le type de la fonction. sauf pour la fonction void qui n'en demande pas.
+	Exemple : int    Nom_de_la_fonction(int a, int b, int c)
+	          {
+                   c = a + b;
+                   return(c);
+                  }
 .. code-block:: vala
    :linenos:
  
