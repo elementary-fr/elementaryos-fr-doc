@@ -42,11 +42,12 @@ Une fonction est composée de deux parties:
 * Son corps:
 	1. Délimité par des accolades
 	2. Un return(), qui retourne le type de la fonction. sauf pour la fonction void qui n'en demande pas.
-	Exemple : int    Nom_de_la_fonction(int a, int b, int c)
-	          {
-                   c = a + b;
-                   return(c);
-                  }
+	Exemple : 
+	int    Nom_de_la_fonction(int a, int b, int c)
+	 {
+          c = a + b;
+          return(c);
+         }
 .. code-block:: vala
    :linenos:
  
