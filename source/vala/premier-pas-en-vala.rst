@@ -35,40 +35,30 @@ Une fonction est composée de deux parties:
 		int qui retournera un entier.
 		char qui retournera un caractère ou une chaîne.
 		void qui ne demande pas de valeur de retour.
-	2. Le nom (pas d'espace entre le nom, pas de majuscules) :
-	3. Les paramètres, entre parenthèses (dépend du type de la fonction): int a, char b, ou autre
-        4. Exemple : int    nom_de_la_fonction(int a, int b)
+	2. Le nom (pas d'espace entre le nom, pas de majuscules)
+	3. Les paramètres, entre parenthèses (dépend du type de la fonction)
+        4. Exemple : ``int nom_de_la_fonction(int a, int b)``
 * Son corps:
 	1. Délimité par des accolades
-	2. Un return(), qui retourne le type de la fonction.  Sauf pour la fonction void qui n'en demande pas.
+	2. Un return, qui retourne le type de la fonction.  Sauf pour la fonction void qui n'en demande pas.
 	3. Exemple :
 .. code-block::
-   :linenos:
+
 	int    function_addition(int a, int b, int c)
 	 {
           c = a + b;
           return(c);
          }
-
-**Tout ce qui va être exécuté se trouve dans le corps de la fonction.**
-Corps d'une fonction
---------------------
-
-Dans l'exemple plus haut, il n'y avait pas de déclaration de variable car "a" et "b" sont déjà initialisés.
-Voici une autre façon de le faire pour vous montrez la création d'une variable:
-
-.. code-block:: vala
-   :linenos:
  
-   int addition (int a,int b){
-       int	result;
-       
-       result = a * b;
-       return(result);
-   }
+**Tout ce qui va être exécuté se trouve dans le corps de la fonction.**
 
-.. note::
-	Pour une meilleur lisibilitée, je vous conseil d'utiliser une partie déclarative et une partie instructions.
+Ne pas oublier :
+----------------
+
+Voici une petite liste des choses importantes à ne pas oublier quand vous aller coder. vous allez, au moins une fois, faire chaqu'une des erreurs listée si dessous :
+ \-Ne surtout pas oublier le **point virgule ;** à la fin de vos ligne de code. \
+ \-N'oubliez pas le return quand votre fonction en demande un. \
+ \-Ouvrez et fermez vos paranthèses et accollades avant d'écrire quoi que ce soit dedans. Cela vous évitera d'en oublier une ou de vous perdre au moment de toutes les fermer.
 
 La fonction main()
 ------------------
