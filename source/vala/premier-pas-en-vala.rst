@@ -31,7 +31,7 @@ Il y a plusieurs types de fonctions. On ne va pour le moment parler que des troi
 Une fonction est composée de deux parties:
 
 * Son prototype qui est lui-même composé de 3 parties :
-	1. Le type de retour :
+	1. Le type de retour
 		int qui retournera un entier.
 		char qui retournera un caractère ou une chaîne.
 		void qui ne demande pas de valeur de retour.
