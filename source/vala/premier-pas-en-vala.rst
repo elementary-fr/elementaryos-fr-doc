@@ -6,8 +6,8 @@ Un programme ?
 ==============
 
 Avant de commencer à coder quoi que ce soit il serait déjà bien de savoir de quoi on parle, non ?
-Alors un programme qu'est-ce que c'est ? Un programme est un emsemble de fonctions. 
-Une fonction regroupe une suite d'instructions qui permettent de faire une chose précise: afficher un bonjour, faire un calcul et j'en passe.
+Alors un programme qu'est-ce que c'est ? 
+Un programme est un emsemble de **fonctions**. Chaque fonction regroupe une suite d'instructions qui permettent de faire une chose précise: afficher un bonjour, faire un calcul et j'en passe.
 Une fois construite, une fonction peut être utilisée dans une autre fonction. Pendant l'exécution de notre programme, celui ci lance automatiquement la fonction "main", qui est la fonction principale du programme, c'est dans celle ci que se déroule la partie la plus attractive ;)  
 
 - Un code source en Vala est composé de fonctions.
