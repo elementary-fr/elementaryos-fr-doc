@@ -18,8 +18,7 @@ Une fois construite, une fonction peut être utilisée dans une autre fonction. 
 - La première fonction appelée dans un programme s'appelle "main".
 
 .. code-block:: vala
-   :linenos:
- 
+  :linenos:
        void main (){
       
    }
