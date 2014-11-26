@@ -31,7 +31,7 @@ Il y a plusieurs types de fonctions. On ne va pour le moment parler que des troi
 
 Une fonction est composée de deux parties:
 
-* Son prototype qui est lui-même composé de 3 parties :*
+* Son prototype qui est lui-même composé de 3 parties :
 	1. Le type de retour :
 		int qui retournera un entier.
 		char qui retournera un caractère ou une chaîne.
@@ -41,8 +41,8 @@ Une fonction est composée de deux parties:
         Exemple : int    nom_de_la_fonction(int a, int b)
 * Son corps:
 	1. Délimité par des accolades
-	2. Un return(), qui retourne le type de la fonction. Sauf pour la fonction void qui n'en demande pas.
-	Exemple :
+	2. Un return(), qui retourne le type de la fonction.  Sauf pour la fonction void qui n'en demande pas.
+	3. xemple :
 .. code-block::
 
 	int    function_addition(int a, int b, int c)
