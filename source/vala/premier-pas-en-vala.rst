@@ -36,7 +36,7 @@ Une fonction est composée de deux parties:
 		int qui retournera un entier.
 		char qui retournera un caractère ou une chaîne.
 		void qui ne demande pas de valeur de retour.
-	2. Le nom (pas d'espace entre le nom, pas de majuscules)
+	2. Le nom (pas d'espace entre le nom, pas de majuscules) :
 	3. Les paramètres, entre parenthèses (dépend du type de la fonction): int a, char b, ou autre
         Exemple : int    nom_de_la_fonction(int a, int b)
 * Son corps:
