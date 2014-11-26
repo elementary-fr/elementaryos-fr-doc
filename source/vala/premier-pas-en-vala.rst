@@ -41,7 +41,7 @@ Une fonction est composée de deux parties:
         Exemple : int    nom_de_la_fonction(int a, int b)
 * Son corps:
 	1. Délimité par des accolades
-	2. Un return(), qui retourne le type de la fonction. sauf pour la fonction void qui n'en demande pas.
+	2. Un return(), qui retourne le type de la fonction. Sauf pour la fonction void qui n'en demande pas.
 	Exemple :
 .. code-block::
 
@@ -51,7 +51,7 @@ Une fonction est composée de deux parties:
           return(c);
          }
 
-**/!\ Tout ce qui va être exécuté se trouve dans le corps de la fonction. /!\**
+**Tout ce qui va être exécuté se trouve dans le corps de la fonction.**
 Corps d'une fonction
 --------------------
 
