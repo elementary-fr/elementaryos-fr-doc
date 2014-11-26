@@ -44,7 +44,7 @@ Une fonction est composée de deux parties:
 	2. Un return(), qui retourne le type de la fonction.  Sauf pour la fonction void qui n'en demande pas.
 	3. xemple :
 .. code-block::
-
+   :linenos:
 	int    function_addition(int a, int b, int c)
 	 {
           c = a + b;
