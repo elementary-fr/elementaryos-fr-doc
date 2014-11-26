@@ -33,19 +33,19 @@ Une fonction est composée de deux parties:
 
 * Son prototype qui est lui-même composé de 3 parties :
 	1. Le type de retour.
-	   int qui retournera un entier.
-	   char qui retournera un caractère ou une chaîne.
-	   void qui ne demande pas de valeur de retour.
+	   --int qui retournera un entier.
+	   --char qui retournera un caractère ou une chaîne.
+	   --void qui ne demande pas de valeur de retour.
 	2. Le nom (pas d'espace entre le nom, pas de majuscules)
 	3. Les paramètres, entre parenthèses (dépend du type de la fonction): int a, char b, ou autre
-        Exemple : int    Nom_de_la_fonction(int a, int b)
+        Exemple : int    nom_de_la_fonction(int a, int b)
 * Son corps:
 	1. Délimité par des accolades
 	2. Un return(), qui retourne le type de la fonction. sauf pour la fonction void qui n'en demande pas.
 	Exemple :
 .. code-block::
 
-	int    Nom_de_la_fonction(int a, int b, int c)
+	int    function_addition(int a, int b, int c)
 	 {
           c = a + b;
           return(c);
