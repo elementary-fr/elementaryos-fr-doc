@@ -33,9 +33,9 @@ Une fonction est composée de deux parties:
 
 * Son prototype qui est lui-même composé de 3 parties :
 	1. Le type de retour :
-		a.int qui retournera un entier.
-		b.char qui retournera un caractère ou une chaîne.
-		c.void qui ne demande pas de valeur de retour.
+		-int qui retournera un entier.
+		-char qui retournera un caractère ou une chaîne.
+		-void qui ne demande pas de valeur de retour.
 	2. Le nom (pas d'espace entre le nom, pas de majuscules)
 	3. Les paramètres, entre parenthèses (dépend du type de la fonction): int a, char b, ou autre
         Exemple : int    nom_de_la_fonction(int a, int b)
