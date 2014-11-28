@@ -95,7 +95,8 @@ De même, on ne pourra pas nommer une variable en commençant par des chiffres.
    supplémentaire lors de la lecture du code. Mais libre à vous de le faire.
 
 En général, une variable commence par une minuscule et si son nom représente
-plusieurs mots, on les séparera par des "underscore" à savoir ces caractères la : "_" (Sans les guillemets) . Celui qui le nommera par "tiret du bas" se fera lyncher par ses collèges. Exemple :
+plusieurs mots, on les séparera par des "underscore" à savoir ces caractères la : "_" (Sans les guillemets) . 
+Celui qui le nommera par "tiret du bas" se fera lyncher par ses collèges. Exemple :
 
 
 .. code-block:: vala
@@ -107,11 +108,11 @@ plusieurs mots, on les séparera par des "underscore" à savoir ces caractères 
 
    A noter un détail qui peut paraître évident, mais toutes les variables sont
    réinitialisées à chaque nouvelle exécution du programme. Dès qu’on démarre le
-   programme, les classeurs sont vidés, comme si on emménageait dans des
+   programme, l'emplacement de memoire vive est vidés, comme si on emménageait dans des
    nouveaux locaux à chaque fois.
 
    Il est donc impossible de faire persister une information entre deux
-   exécutions du programme en utilisant des variables. Pour ceci, on utilisera
+   exécutions du programme en utilisant des variables normal. Pour ceci, on utilisera
    d’autres solutions, comme enregistrer des valeurs dans un fichier ou dans une
    base de données. Nous y reviendrons ultérieurement.
 
@@ -211,24 +212,8 @@ Vala et qu'on peut également construire les siens.
 Affectations, opérations, concaténation
 =======================================
 
-Il est possible d’effectuer des opérations sur les variables et entre les
-variables. Nous avons déjà vu comment affecter une valeur à une variable grâce
-à l’opérateur *=*.
-
-.. code-block:: vala
-
-   int age = 30;
-   string prenom = "nicolas";
-
-.. note::
-
-   Dans ce paragraphe, je vais vous donner plusieurs exemples d’affectations.
-   Ces affectations seront faites sur la même instruction que la déclaration
-   pour des raisons de concision. Mais ces exemples sont évidemment
-   fonctionnels pour des affectations qui se situent à un endroit différent de 
-   la déclaration.
-
-En plus de la simple affectation, nous pouvons également faire des opérations, 
+Nous allons voir comment intéagire avec les variable. 
+Nous pouvons également faire des opérations *+*, *``*``*, */* ou encore *-*, 
 par exemple :
 
 .. code-block:: vala
@@ -244,10 +229,7 @@ ou encore
    int age2 = 30;
    int moyenne = (age1 + age2) / 2;
 
-Les opérateurs *+*, *``*``*, */* ou encore *-* (que nous n’avons pas
-encore utilisés) servent bien évidemment à faire les opérations mathématiques
-qui leur correspondent, à savoir respectivement l’addition, la multiplication,
-la division et la soustraction.
+
 
 Vous aurez donc surement deviné que la variable *resultat* contient 6 et que
 la moyenne vaut 25.
@@ -266,25 +248,8 @@ Ainsi, si j’ai le code suivant :
    age2 = 40;
    
 
-La variable moyenne vaudra toujours 25 même si j’ai changé la valeur de la 
-variable *age2*.
-
-En effet, lors du calcul de la moyenne, j’ai rangé dans mon classeur la valeur
-25 grâce à l’opérateur d’affectation *=* et j’ai refermé mon classeur. Le
-fait de changer la valeur du classeur *age2* n’influence en rien le classeur
-*moyenne* dans la mesure où il est fermé.
-
-Pour le modifier, il faudrait ré-exécuter l’opération d’affectation de la
-variable moyenne, en écrivant à nouveau l’instruction de calcul, c’est-à-dire :
-
-.. code-block:: vala
-   :linenos:
-   
-   int age1 = 20;
-   int age2 = 30;
-   int moyenne = (age1 + age2) / 2;
-   age2 = 40;
-   moyenne = (age1 + age2) / 2;
+Les initialisations de variable auront toujours la même valeur définit, 
+les calculs dans le programme ne sera pas sauvegarder. 
 
 D’autres opérateurs particuliers existent que nous ne trouvons pas dans les
 cours de mathématiques. Par exemple, l’opérateur ++ qui permet de réaliser une
