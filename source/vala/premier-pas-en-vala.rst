@@ -42,6 +42,7 @@ Une fonction est composée de deux parties:
 	1. Délimité par des accolades
 	2. Un return, qui retourne le type de la fonction.  Sauf pour la fonction void qui n'en demande pas.
 	3. Exemple :
+
 .. code-block::
 
 	int    function_addition(int a, int b, int c)
@@ -58,7 +59,7 @@ Ne pas oublier :
 Voici une petite liste des choses importantes à ne pas oublier quand vous aller coder. vous allez, au moins une fois, faire chaqu'une des erreurs listée si dessous :
  \-Ne surtout pas oublier le **point virgule ;** à la fin de vos ligne de code. \
  \-N'oubliez pas le return quand votre fonction en demande un. \
- \-Ouvrez et fermez vos paranthèses et accollades avant d'écrire quoi que ce soit dedans. Cela vous évitera d'en oublier une ou de vous perdre au moment de toutes les fermer.
+ \-Ouvrez et fermez vos parenthèses et accolades avant d'écrire quoi que ce soit dedans. Cela vous évitera d'en oublier une ou de vous perdre au moment de toutes les fermer.
 
 La fonction main()
 ------------------
@@ -71,9 +72,6 @@ La fonction main()
    int main (int argc, char **argv){
        return(0);
    }
-
-Notion de variable
-==================
 
 Hello World en console
 ======================
@@ -99,8 +97,8 @@ suivant:
 .. code-block:: vala
    :linenos:
  
-       void main (){
-       print("Hello world!\n");
+   void main (){
+      print("Hello world!\n");
    }
 
 Ensuite, on retourne dans le terminal et on lance la compilation. Si
