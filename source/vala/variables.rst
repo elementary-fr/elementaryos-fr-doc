@@ -17,8 +17,11 @@ Une variable est représentée par son nom, caractérisée par son type et conti
 une valeur.
 
 .. note::
-   Le type correspond à ce que la variable représente : un entier, une chaîne
-   de caractères, une date, ...etc.
+    Le type correspond à ce que la variable représente : un entier, une chaîne
+    de caractères, une date, ...etc.
+
+Déclaration/initialisation de variable
+======================================
 
 Déclaration
 -----------
@@ -78,6 +81,9 @@ exemple :
    
    Les caractères *\n*, eux, indiquent à la console de faire un saut de ligne.
    Nous en reparlerons dans un chapitre plus en detail sur la lecture/ecriture.
+
+la norme des noms
+-----------------
 
 Vous pouvez nommer vos variables à peu près n’importe comment, à quelques
 détails près. Les noms de variables ne peuvent pas avoir le même nom qu’un type.
@@ -251,6 +257,9 @@ Ainsi, si j’ai le code suivant :
 Les initialisations de variable auront toujours la même valeur définit, 
 les calculs dans le programme ne sera pas sauvegarder. 
 
+Concaténation
+-------------
+
 D’autres opérateurs particuliers existent que nous ne trouvons pas dans les
 cours de mathématiques. Par exemple, l’opérateur ++ qui permet de réaliser une
 incrémentation de 1, ou l’opérateur -- qui permet de faire une décrémentation
@@ -271,6 +280,9 @@ Par exemple :
    age--; // age contient 30 (décrémentation de 1)
    age += 10; // équivalent à age = age + 10 (age contient 40)
    age /= 2; // équivalent à age = age / 2 => (age contient 20)
+
+Notion de math
+==============
 
 Comme nous avons pu le voir dans nos cours de mathématiques, il est possible de
 grouper des opérations avec des parenthèses pour agir sur leurs priorités.
