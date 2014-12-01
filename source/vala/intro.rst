@@ -52,8 +52,13 @@ Gcc qui va convertir les fichier .c en programme exécutable.
 .. code-block:: bash
 
    $ sudo apt-get install valac build-essential
-   
-Notre programme d'aprentisage
-=============================
 
+Auteurs et licences
+===================
 
+Cette partie est une adaptation du cours "Apprenez à développer en C#" de Nicolas Hilaire,
+disponible à l'adresse suivante :
+http://fr.openclassrooms.com/informatique/cours/apprenez-a-developper-en-c
+ 
+Conformément à la licence d'origine, cette partie est placée sous licence 
+**CC BY-NC-SA 2.0** - http://creativecommons.org/licenses/by-nc-sa/2.0/
