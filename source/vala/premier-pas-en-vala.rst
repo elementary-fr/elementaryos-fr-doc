@@ -11,8 +11,8 @@ Avant de commencer à coder quoi que ce soit il serait déjà bien de savoir de
 Alors un programme qu'est-ce que c'est ?
 
 Un programme est un emsemble de **fonctions**. Chaque fonction regroupe une
-  suite d'**instructions** qui permettent de faire une chose précise: afficher
-  un bonjour, faire un calcul et j'en passe.
+suite d'**instructions** qui permettent de faire une chose précise: afficher
+un bonjour, faire un calcul et j'en passe.
 Une fois construite, une fonction peut être utilisée dans une autre fonction.
 Pendant l'exécution de notre programme, celui ci lance automatiquement la
 fonction "**main**", qui est la fonction principale du programme, c'est dans
@@ -67,12 +67,13 @@ Ne pas oublier :
 Voici une petite liste des choses importantes à ne pas oublier quand vous
 aller coder. vous allez, au moins une fois, faire chaqu'une des erreurs
 listée si dessous :
- \-Ne surtout pas oublier le **point virgule ;** à la fin de vos ligne de
- code. \
- \-N'oubliez pas le return quand votre fonction en demande un. \
- \-Ouvrez et fermez vos parenthèses et accolades avant d'écrire quoi que ce
- soit dedans. Cela vous évitera d'en oublier une ou de vous perdre au moment
- de toutes les fermer.
+
+* Ne surtout pas oublier le **point virgule ;** à la fin de vos ligne de
+  code.
+* N'oubliez pas le return quand votre fonction en demande un.
+* Ouvrez et fermez vos parenthèses et accolades avant d'écrire quoi que ce
+  soit dedans. Cela vous évitera d'en oublier une ou de vous perdre au moment
+  de toutes les fermer.
 
 La fonction main()
 ------------------

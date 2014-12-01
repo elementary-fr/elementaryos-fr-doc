@@ -3,7 +3,7 @@ Les tableaux
 ************
 
 Qu'est-ce qu'un tableau en programmation ?
-========================================
+==========================================
 
 Pour faire simple un tableau est une variable
 un peu spéciale qui permet de stocker plusieurs valeurs

@@ -179,7 +179,7 @@ Une incrémentation de 1 revient à faire ``x = x + 1;``
 Une décrémentation de 1 revient à faire ``x = x - 1;`` 
 
 De même, les opérateurs que nous avons déjà vus peuvent se cumuler à l’opérateur
- pour simplifier une opération qui prend une variable comme opérande et
+pour simplifier une opération qui prend une variable comme opérande et
 cette même variable comme résultat.
 
 Par exemple :

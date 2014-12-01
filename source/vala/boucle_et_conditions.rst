@@ -470,6 +470,7 @@ l'initialiser, très utile pour faire un compteur. L'avantage de cette méthode
 est de ne pas perdre une ligne avec la création de la variable.
 
 .. code-block:: vala
+
    void main () {
       int entier = 10;
       for (int i = 0; entier >= i ; i++ ) {

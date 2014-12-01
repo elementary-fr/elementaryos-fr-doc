@@ -91,11 +91,6 @@ Bien sûr si vous avez déjà un compte, vous pouvez passer cette partie.
 Pour créer un compte cliquez en haut à droite sur Create account. Ou allez 
 directement sur https://login.launchpad.net/+login
 
-.. figure:: _static/mise-en-route/launchpad-login.png
-    :align: center
-    :figwidth: 75%
-
-
 Après rien de bien compliqué, vous pouvez compléter les infos de votre compte à votre guise.
 
 
