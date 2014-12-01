@@ -1,6 +1,6 @@
-*********************************
+********************************
 Les instructions conditionnelles
-*********************************
+********************************
 
 Dans nos programmes Vala, nous allons régulièrement avoir besoin de faire des
 opérations en fonction d'un résultat précédent. Par exemple, lors d'un processus
@@ -25,7 +25,7 @@ Opérateur  Description
 =========  ========================
 ==         Egalité
 
-!=         Diférence
+!=         Différence
 
 >          Supérieur à
 
@@ -91,7 +91,7 @@ chose », ce qui se traduit en Vala par :
        print("Votre compte est débiteur\n");
 
 Il faut bien se rendre compte que l’instruction if teste si une valeur est vraie
-(dans l’exemple précédent la comparaison compteEnBanque >= 0).
+(dans l’exemple précédent la comparaison compte_en_banque >= 0).
 
 On a vu rapidement dans les chapitres précédents qu’il existait un type de
 variable qui permettait de stocker une valeur vraie ou fausse : le type bool,
@@ -121,11 +121,14 @@ fonctionnement du type bool :
 
 .. code-block:: vala
    :linenos:
-   
+
    int age = 30;
    bool est_age_de_30_ans = (age == 30); // Valeur vrai (true)
    bool est_superieur_a_10 = age > 10; // Valeur vrai (true)
    bool est_different_de_30 = age != 30; // Valeur fausse (false)
+
+Combinaison
+-----------
 
 Il est également possible de combiner les tests grâce aux opérateurs de logique
 conditionnelle, par exemple && qui correspond à l’opérateur *ET*.
@@ -149,19 +152,19 @@ correspond pas, nous irons dans l’instruction **else**.
    confondre avec l’opérateur d’affection **=**. C’est une erreur classique de
    débutant.
 
-D’autres opérateurs de logiques existent, nous avons notamment l’opérateur 
+D’autres opérateurs de logiques existent, nous avons notamment l’opérateur
 **||** qui correspond au *OU* logique :
 
 .. code-block:: vala
    :linenos:
-   
+
    if (civilite == "Mme" || civilite == "Mlle")
        print("Vous êtes une femme\n");
    else
        print("Vous êtes un homme\n");
 
 L’exemple parle de lui-même, si la civilité de la personne est *Mme* ou *Mlle*,
-alors nous avons à faire avec une femme.
+alors nous avons à faire à une femme.
 
 A noter ici que si la première condition du **if** est vraie alors la deuxième
 ne sera pas évaluée. C’est un détail ici, mais cela peut s’avérer important dans
@@ -195,7 +198,7 @@ Et si nous écrivions l’exemple précédent de cette façon ?
 
 .. code-block:: vala
    :linenos:
-   
+
    bool est_vrai = true;
    if (!est_vrai) print("C'est faux !\n");
    else print("C'est vrai !\n");
@@ -208,6 +211,7 @@ Vous aurez l’occasion de rencontrer dans les chapitres suivants d’autres
 instructions qui ne se terminent pas obligatoirement par un point-virgule.
 
 .. note:
+
    Nous verrons dans le chapitre suivant comment exécuter plusieurs instructions
    après une instruction conditionnelle en les groupant dans des blocs de code.
 
@@ -216,7 +220,7 @@ plusieurs conditions en utilisant la combinaison **else if**. Cela donne :
 
 .. code-block:: vala
    :linenos:
-   
+
    if (civilite == "Mme")
        print("Vous êtes une femme\n");
    else if (civilite == "Mlle")
@@ -226,17 +230,88 @@ plusieurs conditions en utilisant la combinaison **else if**. Cela donne :
    else
        print("Je n'ai pas pu déterminer votre civilité\n");
 
+
+Notion très avancée: Les ternaires
+==================================
+
+Les ternaires sont ni plus ni moins qu'un if/else qui a la particularitée de
+tenir sur une ligne. on les utilises pour envoyer une information dans une
+variable voir un return
+
+.. note::
+
+  Si vous venez tout juste d'apprendre la programmation, vous pouvez passer cette
+  partie, cependant il est important de savoir utiliser à la fin de ce cours.
+
+.. code-block:: vala
+
+   void main () {
+      string nom = "Nolan";
+      print ((nom == "Nolan")? "oui \n" : "non \n");
+   }
+
+Le résultat est:
+
+.. code-block:: text
+
+   oui
+
+Explication
+-----------
+
+Pour mon exemple, je retourne une condition à un print, la lecture en pseudo code serait:
+
+.. code-block:: text
+
+   affiche ((condition)si "alors" sinon "ça");
+
+La condition est avant le **si (?)**, et pour le **sinon (:)**  ne se ferme
+que avec la première paranthese.
+
+.. important::
+
+   Contrairement au **if**, il est obligatoire d'avoir un **else** dans une ternaire.
+
+   dans le cas ou vous utilisez une ternaire sur une variable, je vous conseil de retourner la même variable
+
+Voici un exemple un peu plus concret:
+
+.. code-block:: vala
+
+   void main () {
+      int nb = -5;
+
+      nb = ((nb < 0)? nb * -1 : nb);
+      print ("%d \n", nb);
+   }
+
+Admettons que pour une raison x ou y je cherche à convertir un nombre négatif
+en nombre positif, la solution la plus ergonomique serait de faire une ternaire.
+Dans le cas contraire, si nb est superieur à 0, nb serait devenu nb.
+
+Une, deux ou trois ternaire dans une ternaire
+---------------------------------------------
+
+Le prototype d'une ternaire imbriqué est la suivante:
+
+.. code-block:: text
+   
+   affiche ((condition)si "alors" sinon ((condition2)si "alors" sinon "ca"));
+
+Pour rendre plus lisible la deuxieme ternaire, je vous conseil de le placer
+dans une parenthèse.
+
 L'instruction **switch**
 =========================
 
 L’instruction **switch** peut être utilisée lorsqu’une variable peut prendre
 beaucoup de valeurs. Elle permet de simplifier l’écriture.
 
-Ainsi, le code précédant peut aussi s'écrire de la manière suivante :
+Ainsi, le code précédent peut aussi s'écrire de la manière suivante :
 
 .. code-block:: vala
    :linenos:
-   
+
    switch(civilite) {
        case "Mme":
            print("Vous êtes une femme\n");
@@ -257,14 +332,14 @@ parenthèses. Avec le mot clé **case** on énumère les différents cas possibl
 pour la variable et on exécute les instructions correspondante jusqu’au mot clé
 **break** qui signifie que l’on sort du **switch**.
 
-Nous pouvons également enchainer plusieurs cas pour qu’ils fassent la même
+Nous pouvons également enchaîner plusieurs cas pour qu'ils fassent la même
 chose, ce qui reproduit le fonctionnement de l’opérateur logique **||** (OU).
 
 Par exemple :
 
 .. code-block:: vala
    :linenos:
-   
+
    switch (mois) {
        case "Mars":
        case "Avril":
@@ -288,7 +363,139 @@ Par exemple :
            break;
    }
 
+.. note::
+
+   Il n'est pas obligatoire de retenir le switch, il reste très pratique pour
+   faire les menus, mais facilement remplacable par une boucle avec des if.
+
+Les boucles
+===========
+
+Cette instruction permet de répéter une action tant que la condition est vraie,
+il en existe trois, le troisieme étant quelque peu spécial, nous le verrons dans
+le chapitre des tableaux.
+
+L'instruction while
+-------------------
+
+**while (condition)** sigifie **tant que la condition est vrai, on revient à la
+même ligne**.
+
+.. code-block:: vala
+   :linenos:
+
+   void main () {
+      int entier = 0;
+      while (entier <= 5) {
+        print ("%d \n", entier);
+        entier++;
+      }
+   }
+
+Le résultat attendu:
+
+.. code-block:: text
+
+   0
+   1
+   2
+   3
+   4
+   5
+
+
+.. note::
+
+   c'est clairement la plus importante instruction de boucle, avec un peu de
+   réflexion, il est possible de se passer des deux prochaines instruction.
+
+l'instruction do ... while
+--------------------------
+
+le **do ... while** est la même chose que notre while plus haut. Cependant ,
+il ne réagit pas au même règle: la particularité de cette dernière est de
+faire un tour dans la boucle avant tout de chose, puis, si la condition est
+correcte, de continuer tant qu'elle est vrai.
+
+.. code-block:: vala
+
+   void main  () {
+      int entier = 0;
+      do {
+         print ("%d \n", entier);
+         entier++;
+      } while (entier <= 10);
+   }
+
+Avec cette condition, le resulta sera :
+
+.. code-block:: text
+
+   0
+   1
+   2
+   3
+   4
+   5
+   6
+   7
+   8
+   9
+   10
+
+Maintenant, si je change la condition:
+
+.. code-block:: vala
+
+   void main  () {
+      int entier = 0;
+      do {
+         print ("%d \n", entier);
+         entier++;
+      } while (entier >= 10);
+   }
+
+Le résultat sera:
+
+.. code-block:: text
+
+  0
+
+
+L'instruction for
+-----------------
+
+Le **for** est un peu paticulier, il permet de créer une variable et de
+l'initialiser, très utile pour faire un compteur. L'avantage de cette méthode
+est de ne pas perdre une ligne avec la création de la variable.
+
+.. code-block:: vala
+   void main () {
+      int entier = 10;
+      for (int i = 0; entier >= i ; i++ ) {
+         print ("%d \n", i);
+      }
+   }
+
+le résultat de ce code sera:
+
+.. code-block:: text
+
+   0
+   1
+   2
+   3
+   4
+   5
+   6
+   7
+   8
+   9
+   10
+
+=========
 En résumé
+=========
 
 - Les instructions conditionnelles permettent d'exécuter des instructions
   seulement si une condition est vérifiée.

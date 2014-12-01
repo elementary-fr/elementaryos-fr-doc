@@ -26,7 +26,7 @@ Ecrire une ligne de code
 
 Les lignes de code écrites avec le langage de développement Vala doivent
 s’écrire dans des fichiers dont l’extension est .vala, comme dans le chapitre
-précédant, lorsque nous avons créer un fichier hello.vala. Nous y avons
+précédent, lorsque nous avons créer un fichier hello.vala. Nous y avons
 notamment rajouté une instruction permettant d’afficher du texte.
 
 Les lignes de code Vala se lisent et s’écrivent de haut en bas et
@@ -35,7 +35,7 @@ Aussi, une instruction écrite avant une autre sera en général exécutée avan
 celle-ci.
 
 .. important::
-   Attention, chaque ligne de code doit être correcte syntaxiquement sinon le
+   Attention, chaque ligne de code doit être syntaxiquement correcte sinon le
    compilateur ne saura pas le traduire en langage exécutable.
 
 Par exemple, si à la fin de mon instruction, je retire le point-virgule ou si
@@ -68,7 +68,6 @@ par un point-virgule.
 Ainsi, l’instruction que nous avons vue plus haut :
 
 .. code-block:: vala
-   :linenos:
 
     print("Hello World!");
 
@@ -77,7 +76,6 @@ se termine au niveau du point-virgule.
 Il aurait été possible de remplacer le code écrit :
 
 .. code-block:: vala
-   :linenos:
 
    void main (){
        print("Hello World!");
@@ -86,14 +84,12 @@ Il aurait été possible de remplacer le code écrit :
 par :
 
 .. code-block:: vala
-   :linenos:
 
    void main (){print("Hello World!");}
 
 ou encore :
 
 .. code-block:: vala
-   :linenos:
 
    void main (){
 
@@ -123,25 +119,24 @@ ou encore :
 Décortiquons à présent cette ligne de code :
 
 .. code-block:: vala
-   :linenos:
 
     print("Hello World!");
 
 Pour simplifier, nous dirons que nous appelons la méthode print qui permet
-d’écrire une chaine de caractères sur la console.
+d’écrire une chaîne de caractères sur la console.
 
 Une méthode représente une fonctionnalité, écrite avec du code, qui est
 utilisable par d’autres bouts de code (par exemple, calculer la racine carrée
 d'un nombre ou afficher du texte ...).
 
 L’instruction "Hello World!" représente une chaine de caractères et est passée
-en paramètre de la méthode print à l’aide des parenthèses. La chaine de
+en paramètre de la méthode print à l’aide des parenthèses. La chaîne de
 caractères est délimitée par les guillemets. Enfin, le point-virgule permet
 d’indiquer que l’instruction est terminée et que l’on peut enchaîner sur la
 suivante.
 
 Certains points ne sont peut-être pas encore tout à fait clairs, comme ce
-qu’est vraiment une méthode, ou comment utiliser des chaines de caractères.
+qu’est vraiment une méthode, ou comment utiliser des chaînes de caractères.
 Mais ne vous inquiétez pas, nous allons y revenir plus en détail dans les
 chapitres suivants et découvrir au fur et à mesure les arcanes du Vala.
 
@@ -167,7 +162,6 @@ L'éditeur Scratch colore les commentaires en *gris* pour faciliter leur
 identification.
 
 .. code-block:: vala
-   :linenos:
 
    /* permet d'afficher du texte
       sur la console */

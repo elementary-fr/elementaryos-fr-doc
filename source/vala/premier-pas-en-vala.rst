@@ -2,83 +2,124 @@
 Premiers pas en Vala
 ********************
 
-Présentation
-=============
+Un programme ?
+==============
 
-Vala est un langage de programmation apparu en 2006. Il a été créé
-par Jürg Billeter.
+Avant de commencer à coder quoi que ce soit il serait déjà bien de savoir de
+  quoi on parle, non ?
 
-Depuis toujours, le langage de prédilection de Gnome est le C. C'est un des
-langages de programmation le plus utilisé de nos jours. Le C est un
-langage très puissant; pour preuvre, c'est le langage du noyau Linux.
+Alors un programme qu'est-ce que c'est ?
 
-L'équipe de Gnome avait décidé d'utiliser le C pour construire son bureau
-libre. Cependant, lorsqu'il a fallut amélioré la librairie permettant de
-créer l'interface graphique, ils se sont rendus compte qu'ils devaient
-réécrire le code avec un style orienté objet.
+Un programme est un emsemble de **fonctions**. Chaque fonction regroupe une
+  suite d'**instructions** qui permettent de faire une chose précise: afficher
+  un bonjour, faire un calcul et j'en passe.
+Une fois construite, une fonction peut être utilisée dans une autre fonction.
+Pendant l'exécution de notre programme, celui ci lance automatiquement la
+fonction "**main**", qui est la fonction principale du programme, c'est dans
+celle ci que se déroule la partie la plus attractive ;)
 
-Le C ne permettant pas de base la création d'objet, ils ont créé leur système,
-appelé GObject, par dessus le C.
+- Un programme en Vala est composé de fonctions.
+- Chaque fonction est composée d'instructions.
+- Chaque fonction est indépendante.
+- La première fonction appelée dans un programme s'appelle "main".
 
-Ainsi, Gnome a pu faire de l'orienté objet et profité des autres
-avantages du C.
+.. code-block:: vala
 
-Le principal avantage, les librairies Gnome peuvent être utilisées facilement
-dans presque tous les autres langages, y compris les tous derniers langages
-à la mode, les langages interprétés comme le Python.
+       void main (){
 
-Les langages interprétés ne sont pas directement convertis en langage machine
-par le dévelopeur mais seulement lors de l'exécution, par l'interpréteur,
-qui convertit le code à la volée.
+   }
 
-Cette methode permet de faire des langages très flexibles et simples, mais en
-perdant un peu en performance.
+Structure d'une fonction
+------------------------
 
-Vala a été créé pour palier au problème de performance des langages
-interprétés. Le compilateur Vala traduit le code en language C, puis le
-compilateur C, en langage machine. De plus, le langage Vala amène toutes
-les principales nouveautés des langages modernes, ce qui permet d'écrire des
-programmes facilement tout en gardant une vitesse d'exécution proche du C.
+Il y a plusieurs types de fonctions. On ne va pour le moment parler que des
+trois basiques.
 
+Une fonction est composée de deux parties:
 
-Installation
-============
+* Son prototype qui est lui-même composé de 3 parties :
+	1. Le type de retour :
+		int qui retournera un entier.
+		char qui retournera un caractère ou une chaîne.
+		void qui ne demande pas de valeur de retour.
+	2. Le nom (pas d'espace entre le nom, pas de majuscules)
+	3. Les paramètres, entre parenthèses (dépend du type de la fonction)
+        4. Exemple : ``int nom_de_la_fonction(int a, int b)``
+* Son corps:
+	1. Délimité par des accolades
+	2. Un return, qui retourne le type de la fonction.  Sauf pour la fonction
+  void qui n'en demande pas.
+	3. Exemple :
 
-Pour utiliser le langage Vala, nous devons installer le compilateur Valac, qui
-va convertir nos fichiers .vala en ficier .c. Il nous faut aussi le compilateur
-Gcc qui va convertir les fichier .c en programme executable.
+.. code-block:: text
 
-.. code-block:: bash
+	int    function_addition(int a, int b, int c)
+	 {
+          c = a + b;
+          return(c);
+         }
 
-   $ sudo apt-get install valac build-essential
+**Tout ce qui va être exécuté se trouve dans le corps de la fonction.**
 
+Ne pas oublier :
+----------------
+
+Voici une petite liste des choses importantes à ne pas oublier quand vous
+aller coder. vous allez, au moins une fois, faire chaqu'une des erreurs
+listée si dessous :
+ \-Ne surtout pas oublier le **point virgule ;** à la fin de vos ligne de
+ code. \
+ \-N'oubliez pas le return quand votre fonction en demande un. \
+ \-Ouvrez et fermez vos parenthèses et accolades avant d'écrire quoi que ce
+ soit dedans. Cela vous évitera d'en oublier une ou de vous perdre au moment
+ de toutes les fermer.
+
+La fonction main()
+------------------
+
+.. code-block:: vala
+
+   int main  (string[] args) {
+      print ("Salut le peuple de la Terre!\n");
+      return(0);
+   }
+
+voici un exemple avec le type de retour **void** :
+
+.. code-block:: vala
+
+   void main (string[] args) {
+      print ("Je ne retourne rien ! Mais je suis très utile!\n");
+   }
+
+.. note::
+   le **\n** permet de faire un retour a la ligne, cela évite d'avoir une phrase qui ce colle dans le prompte du terminal.
 
 Hello World en console
 ======================
 La tradition veut que lorsqu'on apprend un nouveau langage de programmation,
 on commence par écrire un programme qui affiche *Hello World!* dans la console.
 
-On commence par créer un un dossier Projets, avec un sous dossier
+On commence par créer un dossier Projets, avec un sous dossier
 *console-hello*. Dans ce sous dossier, on va créer un fichier hello.vala et on
 va l'ouvrir avec notre éditeur de texte.
 
 .. code-block:: bash
 
-   $ cd ~  # Permet de revenir dans notre dossier personnel
-   $ mkdir Projets # Crée le dossier Projets
-   $ mkdir Projets/console-hello # Crée le dossier console-hello dans Projets
-   $ cd Projets/console-hello # On se déplace dans le nouveau répertoire
-   $ touch hello.vala # On crée le fichier
-   $ xdg-open hello.vala # On ouvre le fichier avec le programe par défaut
+   $ cd ~  # Permet de revenir dans notre dossier personnel.
+   $ mkdir Projets # Créer le dossier Projets.
+   $ mkdir Projets/console-hello # Créer le dossier console-hello dans Projets.
+   $ cd Projets/console-hello # On se déplace dans le nouveau répertoire.
+   $ touch hello.vala # On créer le fichier.
+   $ xdg-open hello.vala # On ouvre le fichier avec le programme par défaut.
 
-L'éditeur de text *Scratch* a dû s'ouvrir. Copié dans le fichier le code
+L'éditeur de text *Scratch* à dû s'ouvrir. Copiez dans le fichier le code
 suivant:
 
 .. code-block:: vala
-   :linenos:
- 
-       void main (){
-       print("Hello World!\n");
+
+   void main (){
+      print("Hello world!\n");
    }
 
 Ensuite, on retourne dans le terminal et on lance la compilation. Si
@@ -90,10 +131,9 @@ de commande.
    $ valac hello.vala
    $ ./hello
 
-La deuxième ligne lance notre premier programme. Ci tous ce passe bien, la
+La deuxième ligne lance notre premier programme. Si tout se passe bien, la
 phrase *Hello World!* devrait s'être affichée dans le terminal.
 
 .. note::
    Le code source des mini-projets de ce guide peut être consulté à l'adresse
    suivante : https://github.com/Elementary-fr/elementaryos-fr-exemple
-
