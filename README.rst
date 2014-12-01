@@ -6,11 +6,11 @@ Liste des Modification a faire
 .. code-block:: bash
 
    01 - Premiers pas (ok)
-   02 - Fonction et variables (manque des notions)
-   03 - la compilation (ajouter les options disponible sur valac)
-   04 - le type char (manque)
-   05 - boucle et conditions (manque les boucles)
-   06 - les tableaux (manque le cours)
+   02 - Fonction et variables (ok)
+   03 - la compilation (dans une autre section)
+   04 - le type char (non)
+   05 - boucle et conditions (ok)
+   06 - les tableaux (en cours)
    07 - variable et fonctions (????)
    08 - Usage avancee des variables (a voir)
    09 - Les bibliotheque statiques (bonus)
