@@ -68,7 +68,6 @@ par un point-virgule.
 Ainsi, l’instruction que nous avons vue plus haut :
 
 .. code-block:: vala
-   :linenos:
 
     print("Hello World!");
 
@@ -77,7 +76,6 @@ se termine au niveau du point-virgule.
 Il aurait été possible de remplacer le code écrit :
 
 .. code-block:: vala
-   :linenos:
 
    void main (){
        print("Hello World!");
@@ -86,14 +84,12 @@ Il aurait été possible de remplacer le code écrit :
 par :
 
 .. code-block:: vala
-   :linenos:
 
    void main (){print("Hello World!");}
 
 ou encore :
 
 .. code-block:: vala
-   :linenos:
 
    void main (){
 
@@ -123,7 +119,6 @@ ou encore :
 Décortiquons à présent cette ligne de code :
 
 .. code-block:: vala
-   :linenos:
 
     print("Hello World!");
 
@@ -167,7 +162,6 @@ L'éditeur Scratch colore les commentaires en *gris* pour faciliter leur
 identification.
 
 .. code-block:: vala
-   :linenos:
 
    /* permet d'afficher du texte
       sur la console */

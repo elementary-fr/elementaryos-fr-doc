@@ -18,9 +18,9 @@ Une fois construite, une fonction peut être utilisée dans une autre fonction. 
 - La première fonction appelée dans un programme s'appelle "main".
 
 .. code-block:: vala
-  :linenos:
+  
        void main (){
-      
+   
    }
 
 Structure d'une fonction
@@ -67,7 +67,6 @@ La fonction main()
  À FAIRE EN VALA!
  
  .. code-block:: vala
-   :linenos:
  
    int main (int argc, char **argv){
        return(0);
@@ -95,7 +94,6 @@ L'éditeur de text *Scratch* a dû s'ouvrir. Copiez dans le fichier le code
 suivant:
 
 .. code-block:: vala
-   :linenos:
  
    void main (){
       print("Hello world!\n");

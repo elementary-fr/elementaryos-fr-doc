@@ -52,4 +52,8 @@ Gcc qui va convertir les fichier .c en programme exécutable.
 .. code-block:: bash
 
    $ sudo apt-get install valac build-essential
+   
+Notre programme d'aprentisage
+=============================
+
 

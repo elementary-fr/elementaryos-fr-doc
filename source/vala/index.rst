@@ -17,4 +17,6 @@ Le langage Vala
    premier-pas-en-vala
    syntaxe
    variables
-   conditions
+   variable_avence
+   boucle_et_conditions
+   tableau
