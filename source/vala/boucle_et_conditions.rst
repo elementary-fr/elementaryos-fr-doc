@@ -1,6 +1,6 @@
-*********************************
+********************************
 Les instructions conditionnelles
-*********************************
+********************************
 
 Dans nos programmes Vala, nous allons régulièrement avoir besoin de faire des
 opérations en fonction d'un résultat précédent. Par exemple, lors d'un processus
@@ -231,17 +231,17 @@ plusieurs conditions en utilisant la combinaison **else if**. Cela donne :
        print("Je n'ai pas pu déterminer votre civilité\n");
 
 
-Notion très avancer: Les ternaires
+Notion très avancée: Les ternaires
 ==================================
 
-Les ternaires sont ni plus ni moins qu'un if/else qui a la particulariter de
-tenir sur une ligne. on les utilses pour envoyer une information dans une
-variable voir un return.
+Les ternaires sont ni plus ni moins qu'un if/else qui a la particularitée de
+tenir sur une ligne. on les utilises pour envoyer une information dans une
+variable voir un return
 
 .. note::
 
-  Si vous venez tous juste d'apprendre la programmation, vous pouvez passer cette
-  partie, cepandant il est important de savoir utiliser a la fin de ce cours.
+  Si vous venez tout juste d'apprendre la programmation, vous pouvez passer cette
+  partie, cependant il est important de savoir utiliser à la fin de ce cours.
 
 .. code-block:: vala
 
@@ -250,7 +250,7 @@ variable voir un return.
       print ((nom == "Nolan")? "oui \n" : "non \n");
    }
 
-Le resultat est:
+Le résultat est:
 
 .. code-block:: text
 
@@ -259,20 +259,20 @@ Le resultat est:
 Explication
 -----------
 
-Pour mon exemple, je retourne une condition a un print, la lecture en pseudo code serait:
+Pour mon exemple, je retourne une condition à un print, la lecture en pseudo code serait:
 
 .. code-block:: text
 
-   affiche ((condition)si "alors" sinon "ca");
+   affiche ((condition)si "alors" sinon "ça");
 
-La conditions est avant le **si (?)**, et pour le **sinon (:)**  ne se ferme
-que avec la premier paranthese.
+La condition est avant le **si (?)**, et pour le **sinon (:)**  ne se ferme
+que avec la première paranthese.
 
 .. important::
 
-   Contrirement au **if**, il est obligatoire d'avoir un **else** dans une ternaire.
+   Contrairement au **if**, il est obligatoire d'avoir un **else** dans une ternaire.
 
-   dans le cas que vous utilisez une ternaire sur une variable, je vous conseil de retourner la même variable
+   dans le cas ou vous utilisez une ternaire sur une variable, je vous conseil de retourner la même variable
 
 Voici un exemple un peu plus concret:
 
@@ -285,21 +285,21 @@ Voici un exemple un peu plus concret:
       print ("%d \n", nb);
    }
 
-Admeton que pour une raison x ou y je cherche a convertir un nombre negatif
+Admettons que pour une raison x ou y je cherche à convertir un nombre négatif
 en nombre positif, la solution la plus ergonomique serait de faire une ternaire.
-Dans le cas contraire, si nb est superieur a 0, nb serais devenu nb.
+Dans le cas contraire, si nb est superieur à 0, nb serait devenu nb.
 
-une, deux ou trois ternaire dans une ternaire
+Une, deux ou trois ternaire dans une ternaire
 ---------------------------------------------
 
-le prototype d'une ternaire imbriqué est la suivante:
+Le prototype d'une ternaire imbriqué est la suivante:
 
 .. code-block:: text
    
    affiche ((condition)si "alors" sinon ((condition2)si "alors" sinon "ca"));
 
 Pour rendre plus lisible la deuxieme ternaire, je vous conseil de le placer
-dans une paranthese.
+dans une parenthèse.
 
 L'instruction **switch**
 =========================
@@ -307,7 +307,7 @@ L'instruction **switch**
 L’instruction **switch** peut être utilisée lorsqu’une variable peut prendre
 beaucoup de valeurs. Elle permet de simplifier l’écriture.
 
-Ainsi, le code précédant peut aussi s'écrire de la manière suivante :
+Ainsi, le code précédent peut aussi s'écrire de la manière suivante :
 
 .. code-block:: vala
    :linenos:
@@ -332,7 +332,7 @@ parenthèses. Avec le mot clé **case** on énumère les différents cas possibl
 pour la variable et on exécute les instructions correspondante jusqu’au mot clé
 **break** qui signifie que l’on sort du **switch**.
 
-Nous pouvons également enchaîner plusieurs cas pour qu’ils fassent la même
+Nous pouvons également enchaîner plusieurs cas pour qu'ils fassent la même
 chose, ce qui reproduit le fonctionnement de l’opérateur logique **||** (OU).
 
 Par exemple :
@@ -365,20 +365,20 @@ Par exemple :
 
 .. note::
 
-   Il n'est pas obligatoir de retenir le switch, il reste très pratique pour
+   Il n'est pas obligatoire de retenir le switch, il reste très pratique pour
    faire les menus, mais facilement remplacable par une boucle avec des if.
 
-les boucles
+Les boucles
 ===========
 
-Cette instruction permet de repeter une action tant que la condition est valide,
-il en existe trois, le troisieme etant quelque peut special, nous le vérons dans
+Cette instruction permet de répéter une action tant que la condition est vraie,
+il en existe trois, le troisieme étant quelque peu spécial, nous le verrons dans
 le chapitre des tableaux.
 
-l'instruction while
+L'instruction while
 -------------------
 
-**while (condition)** sigifie **tant que condition est vrais, on revient à la
+**while (condition)** sigifie **tant que la condition est vrai, on revient à la
 même ligne**.
 
 .. code-block:: vala
@@ -392,7 +392,7 @@ même ligne**.
       }
    }
 
-Le resultat attendu:
+Le résultat attendu:
 
 .. code-block:: text
 
@@ -407,15 +407,15 @@ Le resultat attendu:
 .. note::
 
    c'est clairement la plus importante instruction de boucle, avec un peu de
-   reflexion, il est possible de ce passer des deux prochaines instruction.
+   réflexion, il est possible de se passer des deux prochaines instruction.
 
 l'instruction do ... while
 --------------------------
 
 le **do ... while** est la même chose que notre while plus haut. Cependant ,
-il ne réagit pas au même regle: la particulariter de cette derniere est de
-faire un tour dans la boucle avant tous de chose, puis, si la condition est
-correcte de continuer tant qu'elle est vrai.
+il ne réagit pas au même règle: la particularité de cette dernière est de
+faire un tour dans la boucle avant tout de chose, puis, si la condition est
+correcte, de continuer tant qu'elle est vrai.
 
 .. code-block:: vala
 
@@ -455,19 +455,19 @@ Maintenant, si je change la condition:
       } while (entier >= 10);
    }
 
-Le resultat sera:
+Le résultat sera:
 
 .. code-block:: text
 
   0
 
 
-l'instruction for
+L'instruction for
 -----------------
 
 Le **for** est un peu paticulier, il permet de créer une variable et de
-l'initialiser, très utiles pour faire un compteur. L'avatage de cette methode
-est de ne pas perdre une ligne avec la creation de la variable.
+l'initialiser, très utile pour faire un compteur. L'avantage de cette méthode
+est de ne pas perdre une ligne avec la création de la variable.
 
 .. code-block:: vala
    void main () {
@@ -477,7 +477,7 @@ est de ne pas perdre une ligne avec la creation de la variable.
       }
    }
 
-le resultat de ce code sera:
+le résultat de ce code sera:
 
 .. code-block:: text
 
