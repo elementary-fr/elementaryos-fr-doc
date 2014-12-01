@@ -5,12 +5,18 @@ Premiers pas en Vala
 Un programme ?
 ==============
 
-Avant de commencer à coder quoi que ce soit il serait déjà bien de savoir de quoi on parle, non ?
+Avant de commencer à coder quoi que ce soit il serait déjà bien de savoir de
+  quoi on parle, non ?
 
-Alors un programme qu'est-ce que c'est ? 
+Alors un programme qu'est-ce que c'est ?
 
-Un programme est un emsemble de **fonctions**. Chaque fonction regroupe une suite d'**instructions** qui permettent de faire une chose précise: afficher un bonjour, faire un calcul et j'en passe.
-Une fois construite, une fonction peut être utilisée dans une autre fonction. Pendant l'exécution de notre programme, celui ci lance automatiquement la fonction "**main**", qui est la fonction principale du programme, c'est dans celle ci que se déroule la partie la plus attractive ;)  
+Un programme est un emsemble de **fonctions**. Chaque fonction regroupe une
+  suite d'**instructions** qui permettent de faire une chose précise: afficher
+  un bonjour, faire un calcul et j'en passe.
+Une fois construite, une fonction peut être utilisée dans une autre fonction.
+Pendant l'exécution de notre programme, celui ci lance automatiquement la
+fonction "**main**", qui est la fonction principale du programme, c'est dans
+celle ci que se déroule la partie la plus attractive ;)
 
 - Un programme en Vala est composé de fonctions.
 - Chaque fonction est composée d'instructions.
@@ -18,15 +24,16 @@ Une fois construite, une fonction peut être utilisée dans une autre fonction. 
 - La première fonction appelée dans un programme s'appelle "main".
 
 .. code-block:: vala
-  
+
        void main (){
-   
+
    }
 
 Structure d'une fonction
 ------------------------
 
-Il y a plusieurs types de fonctions. On ne va pour le moment parler que des trois basiques. 
+Il y a plusieurs types de fonctions. On ne va pour le moment parler que des
+trois basiques.
 
 Une fonction est composée de deux parties:
 
@@ -40,7 +47,8 @@ Une fonction est composée de deux parties:
         4. Exemple : ``int nom_de_la_fonction(int a, int b)``
 * Son corps:
 	1. Délimité par des accolades
-	2. Un return, qui retourne le type de la fonction.  Sauf pour la fonction void qui n'en demande pas.
+	2. Un return, qui retourne le type de la fonction.  Sauf pour la fonction
+  void qui n'en demande pas.
 	3. Exemple :
 
 .. code-block::
@@ -50,27 +58,42 @@ Une fonction est composée de deux parties:
           c = a + b;
           return(c);
          }
- 
+
 **Tout ce qui va être exécuté se trouve dans le corps de la fonction.**
 
 Ne pas oublier :
 ----------------
 
-Voici une petite liste des choses importantes à ne pas oublier quand vous aller coder. vous allez, au moins une fois, faire chaqu'une des erreurs listée si dessous :
- \-Ne surtout pas oublier le **point virgule ;** à la fin de vos ligne de code. \
+Voici une petite liste des choses importantes à ne pas oublier quand vous
+aller coder. vous allez, au moins une fois, faire chaqu'une des erreurs
+listée si dessous :
+ \-Ne surtout pas oublier le **point virgule ;** à la fin de vos ligne de
+ code. \
  \-N'oubliez pas le return quand votre fonction en demande un. \
- \-Ouvrez et fermez vos parenthèses et accolades avant d'écrire quoi que ce soit dedans. Cela vous évitera d'en oublier une ou de vous perdre au moment de toutes les fermer.
+ \-Ouvrez et fermez vos parenthèses et accolades avant d'écrire quoi que ce
+ soit dedans. Cela vous évitera d'en oublier une ou de vous perdre au moment
+ de toutes les fermer.
 
 La fonction main()
 ------------------
 
- À FAIRE EN VALA!
- 
- .. code-block:: vala
- 
-   int main (int argc, char **argv){
-       return(0);
+.. code-block:: vala
+
+   int main  (string[] args) {
+      print ("Salut le peuple de la Terre!\n");
+      return(0);
    }
+
+voici un exemple avec le type de retour **void** :
+
+.. code-block:: vala
+
+   void main (string[] args) {
+      print ("Je ne retourne rien ! mais je suis très utile!\n");
+   }
+
+.. note::
+   le **\n** permet de faire un retour a la ligne, cela évite d'avoir une phrase qui ce colle dans le prompte du terminal.
 
 Hello World en console
 ======================
@@ -94,7 +117,7 @@ L'éditeur de text *Scratch* a dû s'ouvrir. Copiez dans le fichier le code
 suivant:
 
 .. code-block:: vala
- 
+
    void main (){
       print("Hello world!\n");
    }
@@ -114,4 +137,3 @@ phrase *Hello World!* devrait s'être affichée dans le terminal.
 .. note::
    Le code source des mini-projets de ce guide peut être consulté à l'adresse
    suivante : https://github.com/Elementary-fr/elementaryos-fr-exemple
-
