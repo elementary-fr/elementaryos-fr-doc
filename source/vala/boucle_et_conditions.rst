@@ -294,7 +294,8 @@ une, deux ou trois ternaire dans une ternaire
 
 le prototype d'une ternaire imbriqué est la suivante:
 
-.. code-block::
+.. code-block:: text
+   
    affiche ((condition)si "alors" sinon ((condition2)si "alors" sinon "ca"));
 
 Pour rendre plus lisible la deuxieme ternaire, je vous conseil de le placer
