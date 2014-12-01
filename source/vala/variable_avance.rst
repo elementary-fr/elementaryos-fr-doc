@@ -1,6 +1,6 @@
-***************
-Variable avencé
-***************
+*******************************
+Maîtrise des variable : avancée
+*******************************
 
 
 Les différents types de variables
@@ -10,13 +10,13 @@ Nous avons vu juste au-dessus que la variable *nombre* pouvait être un entier
 numérique grâce au mot clé *int*. Le langage Vala dispose de beaucoup de types
 permettant de représenter beaucoup de choses différentes.
 
-Par exemple, nous pouvons stocker une chaine de caractères grâce au type *string*.
+Par exemple, nous pouvons stocker une chaîne de caractères grâce au type *string*.
 
 .. code-block:: vala
 
 string prenom = "nicolas";
 
-ou encors un boolean (qui représente une valeur vraie ou fausse) avec :
+ou encore un boolean (qui représente une valeur vraie ou fausse) avec :
 
 .. code-block:: vala
 
@@ -54,8 +54,8 @@ uint64     Entier non-signé de 0 à 18446744073709551615
 Nombre décimal à taille variable:
 ---------------------------------
 
-Les nombres ci-dessus ont une taille qui varie ont fonction de la plateforme
-sur laquelle le code a été compilé. Les valeurs limites sont données, à titre
+Les nombres ci-dessus ont une taille qui varie en fonction de la plateforme
+sur laquelle le code a été compilé. Les valeurs limitées sont données, à titre
 indicatif, pour un ordinateur 32 bits.
 
 
@@ -88,7 +88,7 @@ Type       Description
 =========  ====================================================================
 bool       Boolean, vrai ou faux
 unichar    Un caractère (utilisant l'encodage *unicode*)
-string     Une chaine de caractère
+string     Une chaîne de caractère
 =========  ====================================================================
 
 Vous verrez plus loin qu'il existe encore d'autres types dans le langage
