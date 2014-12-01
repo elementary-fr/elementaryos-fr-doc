@@ -51,7 +51,7 @@ Une fonction est composée de deux parties:
   void qui n'en demande pas.
 	3. Exemple :
 
-.. code-block::
+.. code-block:: text
 
 	int    function_addition(int a, int b, int c)
 	 {

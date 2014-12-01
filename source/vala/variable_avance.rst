@@ -1,4 +1,3 @@
-
 ***************
 Variable avencé
 ***************
@@ -29,7 +28,7 @@ bool est_faux = false;
   Il est important de stocker des données dans des variables ayant le bon type.
 
   On ne peut par exemple pas stocker le prénom "Nicolas" dans un entier.
-  
+
 
 Les principaux types de base du langage Vala sont :
 

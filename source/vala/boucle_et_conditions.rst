@@ -211,6 +211,7 @@ Vous aurez l’occasion de rencontrer dans les chapitres suivants d’autres
 instructions qui ne se terminent pas obligatoirement par un point-virgule.
 
 .. note:
+
    Nous verrons dans le chapitre suivant comment exécuter plusieurs instructions
    après une instruction conditionnelle en les groupant dans des blocs de code.
 
@@ -251,7 +252,7 @@ variable voir un return.
 
 Le resultat est:
 
-.. code-block::
+.. code-block:: text
 
    oui
 
@@ -260,7 +261,8 @@ Explication
 
 Pour mon exemple, je retourne une condition a un print, la lecture en pseudo code serait:
 
-.. code-block::
+.. code-block:: text
+
    affiche ((condition)si "alors" sinon "ca");
 
 La conditions est avant le **si (?)**, et pour le **sinon (:)**  ne se ferme
@@ -391,7 +393,7 @@ même ligne**.
 
 Le resultat attendu:
 
-.. code-block::
+.. code-block:: text
 
    0
    1
@@ -426,7 +428,7 @@ correcte de continuer tant qu'elle est vrai.
 
 Avec cette condition, le resulta sera :
 
-.. code-block::
+.. code-block:: text
 
    0
    1
@@ -450,11 +452,11 @@ Maintenant, si je change la condition:
          print ("%d \n", entier);
          entier++;
       } while (entier >= 10);
-}
+   }
 
 Le resultat sera:
 
-.. code-block::
+.. code-block:: text
 
   0
 
@@ -476,7 +478,7 @@ est de ne pas perdre une ligne avec la creation de la variable.
 
 le resultat de ce code sera:
 
-.. code-block::
+.. code-block:: text
 
    0
    1
@@ -490,7 +492,9 @@ le resultat de ce code sera:
    9
    10
 
+=========
 En résumé
+=========
 
 - Les instructions conditionnelles permettent d'exécuter des instructions
   seulement si une condition est vérifiée.
