@@ -89,7 +89,7 @@ voici un exemple avec le type de retour **void** :
 .. code-block:: vala
 
    void main (string[] args) {
-      print ("Je ne retourne rien ! mais je suis très utile!\n");
+      print ("Je ne retourne rien ! Mais je suis très utile!\n");
    }
 
 .. note::
@@ -111,9 +111,9 @@ va l'ouvrir avec notre éditeur de texte.
    $ mkdir Projets/console-hello # Créer le dossier console-hello dans Projets.
    $ cd Projets/console-hello # On se déplace dans le nouveau répertoire.
    $ touch hello.vala # On créer le fichier.
-   $ xdg-open hello.vala # On ouvre le fichier avec le programe par défaut.
+   $ xdg-open hello.vala # On ouvre le fichier avec le programme par défaut.
 
-L'éditeur de text *Scratch* a dû s'ouvrir. Copiez dans le fichier le code
+L'éditeur de text *Scratch* à dû s'ouvrir. Copiez dans le fichier le code
 suivant:
 
 .. code-block:: vala
@@ -131,7 +131,7 @@ de commande.
    $ valac hello.vala
    $ ./hello
 
-La deuxième ligne lance notre premier programme. Si tout ce passe bien, la
+La deuxième ligne lance notre premier programme. Si tout se passe bien, la
 phrase *Hello World!* devrait s'être affichée dans le terminal.
 
 .. note::
