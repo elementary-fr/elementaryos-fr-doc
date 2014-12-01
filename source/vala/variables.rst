@@ -7,7 +7,7 @@ Qu’est-ce qu’une variable ?
 
 Comme tous les langages de programmation, le Vala va pouvoir conserver des
 données grâce à des variables. Ce sont en fait des blocs de mémoire qui vont
-contenir des nombres, des chaines de caractères, des dates ou plein d’autres
+contenir des nombres, des chaînes de caractères, des dates ou plein d’autres
 choses.
 
 Les variables vont nous permettre d’effectuer des calculs mathématiques,
@@ -46,7 +46,7 @@ Dans cette exemple plus haut, la variable n'a pas été initialisé. Elle ne
 pourra pas être utilisée car le compilateur ne sait pas quelle valeur il y a dans la variable.
 
 Pour l’initialiser (on parle également d’affecter une valeur) on utilisera
-l’opérateur égal (*=*) :
+l’opérateur "égal à" (*=*) :
 
 .. code-block:: vala
 
@@ -65,7 +65,7 @@ déclaration. Ainsi, on pourra remplacer le code précédent par :
    int nombre = 30;
 
 .. note::
-   Nous ne recomandons pas cette façon de faire, nous reparlerons de la
+   Nous ne recommandons pas cette façon de faire, nous reparlerons de la
    norme dans un autre chapitre.
 
 Nous pouvons à tout moment demander la valeur contenue dans la variable
@@ -83,9 +83,9 @@ exemple :
    décimal.
 
    Les caractères *\n*, eux, indiquent à la console de faire un saut de ligne.
-   Nous en reparlerons dans un chapitre plus en detail sur la lecture/ecriture.
+   Nous en reparlerons dans un chapitre plus en détails sur la lecture/écriture.
 
-la norme des noms
+La norme des noms
 -----------------
 
 Vous pouvez nommer vos variables à peu près n’importe comment, à quelques
@@ -119,18 +119,18 @@ Exemple :
 
    A noter un détail qui peut paraître évident, mais toutes les variables sont
    réinitialisées à chaque nouvelle exécution du programme. Dès qu’on démarre le
-   programme, l'emplacement de memoire vive est vidés, comme si on emménageait dans des
+   programme, l'emplacement de mémoire vive est vidé, comme si on emménageait dans des
    nouveaux locaux à chaque fois.
 
    Il est donc impossible de faire persister une information entre deux
-   exécutions du programme en utilisant des variables normal. Pour ceci, on utilisera
+   exécutions du programme en utilisant des variables normales. Pour ceci, on utilisera
    d’autres solutions, comme enregistrer des valeurs dans un fichier ou dans une
    base de données. Nous y reviendrons ultérieurement.
 
 Affectations, opérations, concaténation
 =======================================
 
-Nous allons voir comment intéagire avec les variable.
+Nous allons voir comment intéragir avec les variable.
 Nous pouvons également faire des opérations *+*, *``*``*, */* ou encore *-*,
 par exemple :
 
@@ -164,19 +164,22 @@ Ainsi, si j’ai le code suivant :
    age2 = 40;
 
 
-Les initialisations de variable auront toujours la même valeur définit,
-les calculs dans le programme ne sera pas sauvegarder.
+Les initialisations de variable auront toujours la même valeur définie,
+les calculs dans le programme ne seront pas sauvegardé.
 
 Concaténation
 -------------
 
-D’autres opérateurs particuliers existent que nous ne trouvons pas dans les
-cours de mathématiques. Par exemple, l’opérateur ++ qui permet de réaliser une
-incrémentation de 1, ou l’opérateur -- qui permet de faire une décrémentation
+D’autres opérateurs particuliers, que nous ne trouvons pas dans les
+cours de mathématiques, existent. Par exemple, l’opérateur ++ qui permet de réaliser une
+**incrémentation** de 1, ou l’opérateur -- qui permet de faire une **décrémentation**
 de 1.
 
+Une incrémentation de 1 revient à faire ``x = x + 1;`` 
+Une décrémentation de 1 revient à faire ``x = x - 1;`` 
+
 De même, les opérateurs que nous avons déjà vus peuvent se cumuler à l’opérateur
-= pour simplifier une opération qui prend une variable comme opérande et
+ pour simplifier une opération qui prend une variable comme opérande et
 cette même variable comme résultat.
 
 Par exemple :
@@ -229,7 +232,7 @@ Prenons cet exemple :
 Si nous l'exécutons, nous voyons que moyenne vaut 2.
 
 .. hint::
-   2 ? Si je me rappelle bien de mes cours de math ... c'est pas plutôt 2.5 ?
+   2 ? Si je me rappelle bien de mes cours de math ... N'est-ce pas plutôt 2.5 ?
 
 Oui et non.
 
@@ -269,7 +272,7 @@ des variables de type string.
 En effet, une chaîne de caractères étant délimitée par des guillemets " ",
 comment faire pour que notre chaîne de caractères puisse contenir des guillemets ?
 
-C’est là qu’intervient le caractère spécial \ qui sera à mettre juste devant le
+C’est là qu’intervient le caractère spécial \ (backslash) qui sera à mettre juste devant le
 guillemet, par exemple le code suivant :
 
 .. code-block:: vala
@@ -292,7 +295,7 @@ Ainsi, le code suivant :
 
    string phrase = "Mon prénom est \"Nicolas\"\n";
    print(phrase);
-   print("Passe\nà\nla\nligne\n");
+   print("Passage\nà\nla\nligne\n");
 
 affichera:
 
@@ -324,7 +327,7 @@ permettra d’afficher des tabulations, comme illustré ci-dessous :
            - Arroser les plantes
            - Laver la voiture
 
-Nous avons vu que le caractère \ était un caractère spécial et qu’il permettait
+Nous avons vu que le caractère "backslash" était un caractère spécial et qu’il permettait
 de dire au compilateur que nous voulions l’utiliser combiné à la valeur qui le
 suit, permettant d’avoir une tabulation ou un retour à la ligne.
 
