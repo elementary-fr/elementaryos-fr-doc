@@ -122,10 +122,10 @@ Il est parfait pour parcourir et donner les valeurs existante du tableau.
    }
 
 Le prototype differt selon le langage, mais voici la version de vala:
-1. creation du variable du même type que le tableau: string key
-2. in" pour preciser la variable du tableau, et "tab" est le nom de notre
+  1. creation du variable du même type que le tableau: string key
+  2. in" pour preciser la variable du tableau, et "tab" est le nom de notre
 exemple plus haut.
-3. ce qu'il faut retenir c'est qu'a chaque tour de boucle, le foreach deplace
+  3. ce qu'il faut retenir c'est qu'a chaque tour de boucle, le foreach deplace
 la position vers le prochain element existant et le stock dans la variable
 "key".
 
@@ -196,7 +196,6 @@ voici la correction du premier exercice:
 .. note::
 
    **A retenir:**
-
    1. Une fonction est toujours au dessus de la fonction "main".
    2. Je n'utilise pas d'acolade si le contenu tien en une ligne.
    3. je respecte l'ordre du prototype de la fonction.
