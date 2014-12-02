@@ -25,7 +25,7 @@ celle ci que se déroule la partie la plus attractive ;)
 
 .. code-block:: vala
 
-       void main (){
+   void main (){
 
    }
 
@@ -53,11 +53,11 @@ Une fonction est composée de deux parties:
 
 .. code-block:: text
 
-	int    function_addition(int a, int b, int c)
-	 {
-          c = a + b;
-          return(c);
-         }
+   int function_addition(int a, int b, int c)
+   {
+       c = a + b;
+       return(c);
+   }
 
 **Tout ce qui va être exécuté se trouve dans le corps de la fonction.**
 

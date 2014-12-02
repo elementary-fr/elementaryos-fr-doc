@@ -14,20 +14,20 @@ Par exemple, nous pouvons stocker une chaîne de caractères grâce au type *str
 
 .. code-block:: vala
 
-string prenom = "nicolas";
+   string prenom = "nicolas";
 
 ou encore un boolean (qui représente une valeur vraie ou fausse) avec :
 
 .. code-block:: vala
 
-bool est_vrai= true;
-bool est_faux = false;
+   bool est_vrai= true;
+   bool est_faux = false;
 
 .. warning::
 
-  Il est important de stocker des données dans des variables ayant le bon type.
+   Il est important de stocker des données dans des variables ayant le bon type.
 
-  On ne peut par exemple pas stocker le prénom "Nicolas" dans un entier.
+   On ne peut par exemple pas stocker le prénom "Nicolas" dans un entier.
 
 
 Les principaux types de base du langage Vala sont :
