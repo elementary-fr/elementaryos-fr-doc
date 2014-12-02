@@ -121,12 +121,11 @@ Il est parfait pour parcourir et donner les valeurs existante du tableau.
 
    }
 
-Le prototype differt selon le langage, mais voici la version de vala:
+**Le prototype differt selon le langage, mais voici la version de vala:**
 
   1. creation du variable du même type que le tableau: string key
   2. in" pour preciser la variable du tableau, et "tab" est le nom de notre exemple plus haut.
-  3. ce qu'il faut retenir c'est qu'a chaque tour de boucle, le foreach deplace la position vers le prochain element existant et le stock dans la variable
-"key".
+  3. ce qu'il faut retenir c'est qu'a chaque tour de boucle, le foreach deplace la position vers le prochain element existant et le stock dans la variable "key".
 
 .. code-block:: vala
 
