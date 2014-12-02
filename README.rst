@@ -22,7 +22,7 @@ Sur elementary OS, il faut installer les paquets suivants:
    sudo apt-get install python3 python3-pip
    sudo pip3 install sphinx
    sudo pip3 install sphinx_rtd_theme
-   
+
 Construction
 ============
 
@@ -32,5 +32,6 @@ Pour lancer la compilation de la documentation, et créer un site web statique c
 .. code-block:: bash
 
    make html
-   
+
 Les fichiers sont créés dans le repertoire build/html.
+ 
