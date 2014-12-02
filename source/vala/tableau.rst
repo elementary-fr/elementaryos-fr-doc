@@ -30,10 +30,11 @@ Pour faire ce tableau en vala, voici comment faire:
    tab = {"a", "b", "c", "d", "e", "f", "i"};
 
 **Ce qu'il faut retenir:**
-1. On reconnait un tableau par sont type suivi des crochets.
-2. En vala, le tableau est dynamique, il n'est pas recomandé de definir la
+
+  1. On reconnait un tableau par sont type suivi des crochets.
+  2. En vala, le tableau est dynamique, il n'est pas recomandé de definir la
 taille du tableau a l'avance (string[7] par exemple).
-3. Pour initialiser le tableau, ne jamais oublier les acolades.
+  3. Pour initialiser le tableau, ne jamais oublier les acolades.
 
 .. note::
 
@@ -122,6 +123,7 @@ Il est parfait pour parcourir et donner les valeurs existante du tableau.
    }
 
 Le prototype differt selon le langage, mais voici la version de vala:
+  
   1. creation du variable du même type que le tableau: string key
   2. in" pour preciser la variable du tableau, et "tab" est le nom de notre
 exemple plus haut.
@@ -196,6 +198,7 @@ voici la correction du premier exercice:
 .. note::
 
    **A retenir:**
+
    1. Une fonction est toujours au dessus de la fonction "main".
    2. Je n'utilise pas d'acolade si le contenu tien en une ligne.
    3. je respecte l'ordre du prototype de la fonction.
