@@ -3,15 +3,43 @@ elementaryos-fr-doc pour Prep'Etna
 *******************
 Liste des Modification a faire
 ==============================
+
+.. code-block:: text
+
+   1. Bonjour je suis... (blabla) [1min]
+   2. presentation du projet [4min]
+      a. pourquoi ce projet:
+         1. proche du c, langage peu conue mais seduisant
+   (plus simple, possible d'utiliser du code c)
+
+   b. presentation de vala:
+   1. creation presentation
+   2. manque a combler
+   3. avantage
+
+   c. notre objectif:
+   1. apprendre le vala
+   2. produire une documentation de notre experience pour le profit de tous
+   3. explication des bases: [4min]
+   a. notion de la programmation
+   b. la fonction main
+   c. notion string/int
+   d. hello world terminal
+   4. exemple d'utilisation de gtk [5min]
+   a. notion bibliotheque
+   b. explication du code
+   c. hello world gtk
+
+
 .. code-block:: bash
 
    01 - Premiers pas (ok)
-   02 - Fonction et variables (ok)
+   02 - Fonctions et variables (ok)
    03 - la compilation (dans une autre section)
    04 - le type char (non)
    05 - boucle et conditions (ok)
    06 - les tableaux (en cours)
-   07 - variable et fonctions (????)
+   07 - variables et fonctions (????)
    08 - Usage avancee des variables (a voir)
    09 - Les bibliotheque statiques (bonus)
    10 - Le passage de parametres (a faire)
@@ -49,7 +77,7 @@ Sur elementary OS, il faut installer les paquets suivants:
    sudo apt-get install python3 python3-pip
    sudo pip3 install sphinx
    sudo pip3 install sphinx_rtd_theme
-   
+
 Construction
 ============
 
@@ -59,5 +87,6 @@ Pour lancer la compilation de la documentation, et créer un site web statique c
 .. code-block:: bash
 
    make html
-   
+
 Les fichiers sont créés dans le repertoire build/html.
+ 

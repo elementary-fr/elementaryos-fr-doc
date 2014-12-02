@@ -18,8 +18,8 @@ Valeur    a   b   c   d   e   f   i
 Position  0   1   2   3   4   5   6
 ======== === === === === === === ===
 
-Comment crée un tableau ?
-=========================
+Comment créer un tableau ?
+==========================
 
 Pour faire ce tableau en vala, voici comment faire:
 
@@ -67,7 +67,7 @@ Le resultat sera:
    f
 
 Cela ne nous choque pas, mais imaginons si je lui demande une position d'une
-valeur non déclaré ?
+valeur non déclarée ?
 
 .. code-block:: vala
 
@@ -84,24 +84,24 @@ Donnera :
 
    (null)
 
-Il nous donne aucune erreur de compilation, sont resulat est juste nul.
+Il nous donnes aucune erreur de compilation, son resulat est juste nul.
 
 .. important::
 
-   Le vala est vraiment bien, le même exemple en c serais un masacre:
-   arret du programme, et un jolie "segfault" (segmentation fault).
+   Le vala est vraiment bien, le même exemple en c serais un massacre:
+   arret du programme, et un joli "segfault" (segmentation fault).
 
 .. note::
 
-   Cependant, c'est un peut a double tranchant:
+   Cependant, c'est un peu a double tranchant:
    je vous recommande de faire attention avec les valeurs de tableau et de
-   toujours vérifier les valeurs de chaque variable avant de faire la fonction.
+   toujours vérifier les valeurs de chaque variables avant de faire la fonction.
 
-Lire plussieurs valeur
-----------------------
+Lire plussieurs valeurs
+-----------------------
 
 Cela n'est pas plus dur que la precedente. Admetons que je souhaite prendre
-plussieurs valeur dans un tableau pour les copiers vers un autre tableau.
+plusieurs valeurs dans un tableau pour les copiers vers un autre tableau.
 
 .. code-block:: vala
 
@@ -120,10 +120,10 @@ Pourquoi pas le **"d"** ? on peut dire qu'il fait quelque chose comme:
 
 .. note::
 
-   Les tableaux sont un éléments important, je vous invite a faire des tests pour mieux comprendre leur comportement.
+   Les tableaux sont un éléments important, je vous invite a faire des tests pour mieux comprendre leurs comportements.
 
-Ajouter une valeur dans un tableau déjà crée
---------------------------------------------
+Ajouter une valeur dans un tableau déjà créer
+---------------------------------------------
 
 voici un exemple en vala pour ajouter des valeurs a la suite d'un tabeau:
 
@@ -141,7 +141,7 @@ le foreach
 ==========
 
 Voici la derniere boucle que je vais vous apprendre, le foreach.
-Il est parfait pour parcourir et donner les valeurs existante du tableau.
+Il est parfait pour parcourir et donner les valeurs existantes du tableau.
 
 .. code-block:: vala
 
@@ -151,8 +151,8 @@ Il est parfait pour parcourir et donner les valeurs existante du tableau.
 
 **Le prototype differt selon le langage, mais voici la version de vala:**
 
-  1. creation du variable du même type que le tableau: string key
-  2. in" pour preciser la variable du tableau, et "tab" est le nom de notre exemple plus haut.
+  1. creation d'une variable du même type que le tableau: string key
+  2. **"in"** pour preciser la variable du tableau, et **"tab"** est le nom de notre exemple plus haut.
   3. ce qu'il faut retenir c'est qu'a chaque tour de boucle, le foreach deplace la position vers le prochain element existant et le stock dans la variable "key".
 
 .. code-block:: vala
@@ -182,13 +182,13 @@ Exercice du chapitre
 ====================
 
 Un peu plus, je vous ai montré comment faire pour ajouter simplement un élément
-dans le tableau, mais je ne vous est pas montré comment faire l'inverse !
+dans le tableau, mais je ne vous ai pas montré comment faire l'inverse !
 
 C'est un bon entrainement que je vous propose la, vous avez toute les cartes en
 main pour:
 
 1. Créer une petite fonction qui prend en parametre un tableau et un string
-(vive l'informatique...), cette fonction a pour but de suprimer le mot (dans
+(vive l'informatique...), cette fonction a pour but de supprimer le mot (dans
 le string) et de refaire un nouveau tableau.
 
 
@@ -224,5 +224,5 @@ voici la correction du premier exercice:
    **A retenir:**
 
    1. Une fonction est toujours au dessus de la fonction "main".
-   2. Je n'utilise pas d'acolade si le contenu tien en une ligne.
+   2. Je n'utilise pas d'acolade si le contenu tiens en une ligne.
    3. je respecte l'ordre du prototype de la fonction.
