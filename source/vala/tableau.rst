@@ -45,6 +45,9 @@ Comment lire une information dans un tableau ?
 Souvenez vous bien du tableau Position/Valeur, un tableau commence toujours
 par un 0 et fini toujour par "le nombre d'éléments" - 1.
 
+Lire une valeur
+---------------
+
 Pour lire un elements dans le tableau, il suffit de donner la position:
 
 .. code-block:: vala
@@ -93,6 +96,31 @@ Il nous donne aucune erreur de compilation, sont resulat est juste nul.
    Cependant, c'est un peut a double tranchant:
    je vous recommande de faire attention avec les valeurs de tableau et de
    toujours vérifier les valeurs de chaque variable avant de faire la fonction.
+
+Lire plussieurs valeur
+----------------------
+
+Cela n'est pas plus dur que la precedente. Admetons que je souhaite prendre
+plussieurs valeur dans un tableau pour les copiers vers un autre tableau.
+
+.. code-block:: vala
+
+   void main () {
+      string[] tab;
+      string[] exp;
+
+      tab = {"a", "b", "c", "d", "e", "f", "i"};
+      exp = tab[1:3];
+   }
+
+Quelle sera le resultat ? et bien, **exp** a maintenant **"b"** et **"c"**.
+Pourquoi pas le **"d"** ? on peut dire qu'il fait quelque chose comme:
+"on démarre à l'index 1, et on prend juste avant l'index 3".
+
+
+.. note::
+
+   Les tableaux sont un éléments important, je vous invite a faire des tests pour mieux comprendre leur comportement.
 
 Ajouter une valeur dans un tableau déjà crée
 --------------------------------------------
