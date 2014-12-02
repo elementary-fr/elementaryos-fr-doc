@@ -32,8 +32,7 @@ Pour faire ce tableau en vala, voici comment faire:
 **Ce qu'il faut retenir:**
 
   1. On reconnait un tableau par sont type suivi des crochets.
-  2. En vala, le tableau est dynamique, il n'est pas recomandé de definir la
-taille du tableau a l'avance (string[7] par exemple).
+  2. En vala, le tableau est dynamique, il n'est pas recomandé de definir la taille du tableau a l'avance (string[7] par exemple).
   3. Pour initialiser le tableau, ne jamais oublier les acolades.
 
 .. note::
@@ -123,12 +122,10 @@ Il est parfait pour parcourir et donner les valeurs existante du tableau.
    }
 
 Le prototype differt selon le langage, mais voici la version de vala:
-  
+
   1. creation du variable du même type que le tableau: string key
-  2. in" pour preciser la variable du tableau, et "tab" est le nom de notre
-exemple plus haut.
-  3. ce qu'il faut retenir c'est qu'a chaque tour de boucle, le foreach deplace
-la position vers le prochain element existant et le stock dans la variable
+  2. in" pour preciser la variable du tableau, et "tab" est le nom de notre exemple plus haut.
+  3. ce qu'il faut retenir c'est qu'a chaque tour de boucle, le foreach deplace la position vers le prochain element existant et le stock dans la variable
 "key".
 
 .. code-block:: vala
