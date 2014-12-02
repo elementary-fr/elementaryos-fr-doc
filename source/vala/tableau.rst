@@ -30,10 +30,10 @@ Pour faire ce tableau en vala, voici comment faire:
    tab = {"a", "b", "c", "d", "e", "f", "i"};
 
 **Ce qu'il faut retenir:**
-1.  On reconnait un tableau par sont type suivi des crochets.
-2.  En vala, le tableau est dynamique, il n'est pas recomandé de definir la
+1. On reconnait un tableau par sont type suivi des crochets.
+2. En vala, le tableau est dynamique, il n'est pas recomandé de definir la
 taille du tableau a l'avance (string[7] par exemple).
-3.  Pour initialiser le tableau, ne jamais oublier les acolades.
+3. Pour initialiser le tableau, ne jamais oublier les acolades.
 
 .. note::
 
@@ -122,10 +122,10 @@ Il est parfait pour parcourir et donner les valeurs existante du tableau.
    }
 
 Le prototype differt selon le langage, mais voici la version de vala:
-1.  creation du variable du même type que le tableau: string key
-2.  "in" pour preciser la variable du tableau, et "tab" est le nom de notre
+1. creation du variable du même type que le tableau: string key
+2. in" pour preciser la variable du tableau, et "tab" est le nom de notre
 exemple plus haut.
-3.  ce qu'il faut retenir c'est qu'a chaque tour de boucle, le foreach deplace
+3. ce qu'il faut retenir c'est qu'a chaque tour de boucle, le foreach deplace
 la position vers le prochain element existant et le stock dans la variable
 "key".
 
@@ -152,18 +152,18 @@ Le resultat:
    f
    i
 
-Ce que je peu faire avec ces carte en main:
-===========================================
+Exercice du chapitre
+====================
 
 Un peu plus, je vous ai montré comment faire pour ajouter simplement un élément
- dans le tableau, mais je ne vous est pas montré comment faire l'inverse !
+dans le tableau, mais je ne vous est pas montré comment faire l'inverse !
 
 C'est un bon entrainement que je vous propose la, vous avez toute les cartes en
- main pour:
+main pour:
 
- 1. Créer une petite fonction qui prend en parametre un tableau et un string
- (vive l'informatique...), cette fonction a pour but de suprimer le mot (dans
- le string) et de refaire un nouveau tableau.
+1. Créer une petite fonction qui prend en parametre un tableau et un string
+(vive l'informatique...), cette fonction a pour but de suprimer le mot (dans
+le string) et de refaire un nouveau tableau.
 
 
 Correction de l'entrainement:
@@ -171,6 +171,8 @@ Correction de l'entrainement:
 
 fonction pour retirer une valeur dans un tableau
 ------------------------------------------------
+
+voici la correction du premier exercice:
 
 .. code-block:: vala
 
@@ -190,3 +192,11 @@ fonction pour retirer une valeur dans un tableau
       foreach (string key in tab)
          print ("%s \n", key);
    }
+
+.. note::
+
+   **A retenir:**
+
+   1. Une fonction est toujours au dessus de la fonction "main".
+   2. Je n'utilise pas d'acolade si le contenu tien en une ligne.
+   3. je respecte l'ordre du prototype de la fonction.
