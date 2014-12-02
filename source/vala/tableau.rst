@@ -85,7 +85,7 @@ Donnera :
 
    (null)
 
-Il nous donnes aucune erreur de compilation, son résulat est juste nul.
+Il nous donnes aucune erreur de compilation, son résultat est juste nul.
 
 .. important::
 
@@ -230,4 +230,4 @@ voici la correction du premier exercice:
 
    1. Une fonction est toujours au dessus de la fonction "main".
    2. Je n'utilise pas d'acolade si le contenu tiens en une ligne.
-   3. je respecte l'ordre du prototype de la foèction.
+   3. je respecte l'ordre du prototype de la fonction.
