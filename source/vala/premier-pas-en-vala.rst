@@ -5,8 +5,7 @@ Premiers pas en Vala
 Un programme ?
 ==============
 
-Avant de commencer à coder quoi que ce soit il serait déjà bien de savoir de
-  quoi on parle, non ?
+Avant de commencer à coder quoi que ce soit il serait déjà bien de savoir de quoi on parle, non ?
 
 Alors un programme qu'est-ce que c'est ?
 
@@ -38,18 +37,18 @@ trois basiques.
 Une fonction est composée de deux parties:
 
 * Son prototype qui est lui-même composé de 3 parties :
-	1. Le type de retour :
-		int qui retournera un entier.
-		char qui retournera un caractère ou une chaîne.
-		void qui ne demande pas de valeur de retour.
-	2. Le nom (pas d'espace entre le nom, pas de majuscules)
-	3. Les paramètres, entre parenthèses (dépend du type de la fonction)
-        4. Exemple : ``int nom_de_la_fonction(int a, int b)``
+	* Le type de retour :
+		* int qui retournera un entier.
+		* char qui retournera un caractère ou une chaîne.
+		* void qui ne demande pas de valeur de retour.
+
+	* Le nom (pas d'espace entre le nom, pas de majuscules)
+	* Les paramètres, entre parenthèses (dépend du type de la fonction)
+
+           Exemple : ``int nom_de_la_fonction(int a, int b)``
 * Son corps:
-	1. Délimité par des accolades
-	2. Un return, qui retourne le type de la fonction.  Sauf pour la fonction
-  void qui n'en demande pas.
-	3. Exemple :
+	* Délimité par des accolades
+	* Un return, qui retourne le type de la fonction. Sauf pour la fonction void qui n'en demande pas.
 
 .. code-block:: text
 
@@ -94,7 +93,7 @@ voici un exemple avec le type de retour **void** :
    }
 
 .. note::
-   le **\n** permet de faire un retour a la ligne, cela évite d'avoir une phrase qui ce colle dans le prompte du terminal.
+   le **\\n** permet de faire un retour a la ligne, cela évite d'avoir une phrase qui ce colle dans le prompte du terminal.
 
 Hello World en console
 ======================
