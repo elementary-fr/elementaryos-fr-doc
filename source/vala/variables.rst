@@ -37,7 +37,7 @@ Voici un exemple de **déclaration** pour chaque type de variable :
    On appelle ceci la déclaration de la variable.
 
 .. important::
-   *int* correspond au début d’"integer" qui veut dire "entier" en anglais.
+   *int* correspond au début de "integer" qui veut dire "entier" en anglais.
 
 Initialisation
 --------------

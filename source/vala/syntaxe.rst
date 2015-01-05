@@ -7,7 +7,7 @@ le cadre d’une application console. Il est en effet possible de créer plein d
 choses différentes avec le Vala comme une application web, des jeux, ...etc.
 
 Dans cette optique, nous allons utiliser très souvent l’instruction :
-**Print("…");** que nous avons vue au chapitre précédent et qui est une instruction
+**print("…");** que nous avons vue au chapitre précédent et qui est une instruction
 dédiée à l’affichage sur la console. C’est une instruction qui va s’avérer très
 pratique pour notre apprentissage car nous pourrons avoir une représentation
 visuelle de ce que nous allons apprendre.

@@ -1,6 +1,6 @@
-*******************************
-Maîtrise des variable : avancée
-*******************************
+********************************
+Maîtrise des variables : avancée
+********************************
 
 
 Les différents types de variables
