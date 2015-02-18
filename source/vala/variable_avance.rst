@@ -54,7 +54,7 @@ uint64     Entier non-signé de 0 à 18446744073709551615
 Nombre décimal à taille variable:
 ---------------------------------
 
-Les nombres ci-dessus ont une taille qui varie en fonction de la plateforme
+Les nombres ci-dessous ont une taille qui varie en fonction de la plateforme
 sur laquelle le code a été compilé. Les valeurs limitées sont données, à titre
 indicatif, pour un ordinateur 32 bits.
 
