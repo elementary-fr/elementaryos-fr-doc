@@ -14,11 +14,11 @@ langages de programmation les plus utilisés de nos jours. Le C est un
 langage très puissant. Pour preuve: c'est le langage du noyau Linux.
 
 L'équipe de Gnome avait décidée d'utiliser le C pour construire son bureau
-libre. Cependant, lorsqu'il a fallut améliorer la librairie permettant de
+libre. Cependant, lorsqu'il a fallu améliorer la librairie permettant de
 créer l'interface graphique, ils se sont rendus compte qu'ils devaient
 réécrire le code avec un style orienté objet.
 
-Le C ne permettant pas de base la création d'objet, ils ont créés leur système,
+Le C ne permettant pas de base la création d'objets, ils ont créés leur système,
 appelé GObject, par dessus le C.
 
 Ainsi, Gnome a pu faire de l'orienté objet et profiter des autres
@@ -32,7 +32,7 @@ Les langages interprétés ne sont pas directement convertis en langage machine
 par le dévelopeur mais seulement lors de l'exécution, par l'interpréteur,
 qui convertit le code à la volée.
 
-Cette methode permet de faire des langages très flexibles et simples, mais en
+Cette méthode permet de faire des langages très flexibles et simples, mais en
 perdant un peu de performance.
 
 Vala a été créé pour palier au problème de performances des langages
