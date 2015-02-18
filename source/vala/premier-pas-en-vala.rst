@@ -9,13 +9,13 @@ Avant de commencer à coder quoi que ce soit il serait déjà bien de savoir de 
 
 Alors un programme qu'est-ce que c'est ?
 
-Un programme est un emsemble de **fonctions**. Chaque fonction regroupe une
+Un programme est un ensemble de **fonctions**. Chaque fonction regroupe une
 suite d'**instructions** qui permettent de faire une chose précise: afficher
 un bonjour, faire un calcul et j'en passe.
 Une fois construite, une fonction peut être utilisée dans une autre fonction.
 Pendant l'exécution de notre programme, celui ci lance automatiquement la
 fonction "**main**", qui est la fonction principale du programme, c'est dans
-celle ci que se déroule la partie la plus attractive ;)
+celle-ci que se déroule la partie la plus attractive ! ;)
 
 - Un programme en Vala est composé de fonctions.
 - Chaque fonction est composée d'instructions.
@@ -36,13 +36,13 @@ trois basiques.
 
 Une fonction est composée de deux parties:
 
-* Son prototype qui est lui-même composé de 3 parties :
-	* Le type de retour :
+* Son prototype qui est lui-même composé de 3 parties:
+	* Le type de retour:
 		* int qui retournera un entier.
 		* char qui retournera un caractère ou une chaîne.
 		* void qui ne demande pas de valeur de retour.
 
-	* Le nom (pas d'espace entre le nom, pas de majuscules)
+	* Le nom (pas d'espace entre le nom, pas de majuscule)
 	* Les paramètres, entre parenthèses (dépend du type de la fonction)
 
            Exemple : ``int nom_de_la_fonction(int a, int b)``
@@ -64,8 +64,8 @@ Ne pas oublier :
 ----------------
 
 Voici une petite liste des choses importantes à ne pas oublier quand vous
-aller coder. vous allez, au moins une fois, faire chaqu'une des erreurs
-listée si dessous :
+allez coder. vous allez, au moins une fois, faire chacune des erreurs
+listées ci-dessous :
 
 * Ne surtout pas oublier le **point virgule ;** à la fin de vos ligne de
   code.
@@ -84,7 +84,7 @@ La fonction main()
       return(0);
    }
 
-voici un exemple avec le type de retour **void** :
+Voici un exemple avec le type de retour **void**:
 
 .. code-block:: vala
 
@@ -93,7 +93,7 @@ voici un exemple avec le type de retour **void** :
    }
 
 .. note::
-   le **\\n** permet de faire un retour a la ligne, cela évite d'avoir une phrase qui ce colle dans le prompte du terminal.
+   Le **\\n** permet de faire un retour à la ligne, cela évite d'avoir une phrase qui se colle dans le prompt du terminal.
 
 Hello World en console
 ======================
@@ -107,10 +107,10 @@ va l'ouvrir avec notre éditeur de texte.
 .. code-block:: bash
 
    $ cd ~  # Permet de revenir dans notre dossier personnel.
-   $ mkdir Projets # Créer le dossier Projets.
-   $ mkdir Projets/console-hello # Créer le dossier console-hello dans Projets.
+   $ mkdir Projets # Crée le dossier Projets.
+   $ mkdir Projets/console-hello # Crée le dossier console-hello dans Projets.
    $ cd Projets/console-hello # On se déplace dans le nouveau répertoire.
-   $ touch hello.vala # On créer le fichier.
+   $ touch hello.vala # On crée le fichier.
    $ xdg-open hello.vala # On ouvre le fichier avec le programme par défaut.
 
 L'éditeur de text *Scratch* à dû s'ouvrir. Copiez dans le fichier le code
@@ -123,7 +123,7 @@ suivant:
    }
 
 Ensuite, on retourne dans le terminal et on lance la compilation. Si
-nécéssaire, un appui sur la touche *enter* permet de créer une nouvelle ligne
+nécessaire, un appui sur la touche *enter* permet de créer une nouvelle ligne
 de commande.
 
 .. code-block:: bash
