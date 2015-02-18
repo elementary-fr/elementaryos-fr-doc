@@ -4,9 +4,9 @@ La syntaxe générale du Vala
 
 Nous allons aborder ici la syntaxe générale du langage de programmation Vala dans
 le cadre d’une application console. Il est en effet possible de créer plein de
-choses différentes avec le Vala comme une application web, des jeux, ...etc.
+choses différentes avec le Vala comme une application web, des jeux, etc.
 
-Dans cette optique, nous allons utiliser très souvent l’instruction :
+Dans cette optique, nous allons utiliser très souvent l’instruction:
 **print("…");** que nous avons vue au chapitre précédent et qui est une instruction
 dédiée à l’affichage sur la console. C’est une instruction qui va s’avérer très
 pratique pour notre apprentissage car nous pourrons avoir une représentation
@@ -36,7 +36,7 @@ celle-ci.
 
 .. important::
    Attention, chaque ligne de code doit être syntaxiquement correcte sinon le
-   compilateur ne saura pas le traduire en langage exécutable.
+   compilateur ne saura pas la traduire en langage exécutable.
 
 Par exemple, si à la fin de mon instruction, je retire le point-virgule ou si
 j’orthographie mal le mot print, j’aurai le message d'erreur suivant:
