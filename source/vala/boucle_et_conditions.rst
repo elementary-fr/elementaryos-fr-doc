@@ -130,8 +130,8 @@ fonctionnement du type bool :
 Combinaison
 -----------
 
-Il est également possible de combiner les tests grâce aux opérateurs de logique
-conditionnelle, par exemple && qui correspond à l’opérateur *ET*.
+Il est également possible de combiner les tests grâce aux opérateurs logique
+conditionnels, par exemple && qui correspond à l’opérateur *ET*.
 
 Dans l’exemple qui suit, nous affichons le message de bienvenue uniquement si le
 login est « Nicolas » ET que le mot de passe est « test ». Si l’un des deux ne
@@ -149,10 +149,10 @@ correspond pas, nous irons dans l’instruction **else**.
 
 .. note::
    Remarquons ici que nous avons utilisé le test d’égalité **==**, à ne pas
-   confondre avec l’opérateur d’affection **=**. C’est une erreur classique de
+   confondre avec l’opérateur d’affectation **=**. C’est une erreur classique de
    débutant.
 
-D’autres opérateurs de logiques existent, nous avons notamment l’opérateur
+D’autres opérateurs logiques existent, nous avons notamment l’opérateur
 **||** qui correspond au *OU* logique :
 
 .. code-block:: vala
@@ -235,13 +235,13 @@ Notion très avancée: Les ternaires
 ==================================
 
 Les ternaires sont ni plus ni moins qu'un if/else qui a la particularitée de
-tenir sur une ligne. on les utilises pour envoyer une information dans une
+tenir sur une ligne. on les utilise pour envoyer une information dans une
 variable voir un return
 
 .. note::
 
   Si vous venez tout juste d'apprendre la programmation, vous pouvez passer cette
-  partie, cependant il est important de savoir utiliser à la fin de ce cours.
+  partie, cependant il est important de savoir les utiliser à la fin de ce cours.
 
 .. code-block:: vala
 
@@ -271,8 +271,7 @@ que avec la première paranthese.
 .. important::
 
    Contrairement au **if**, il est obligatoire d'avoir un **else** dans une ternaire.
-
-   dans le cas ou vous utilisez une ternaire sur une variable, je vous conseil de retourner la même variable
+   Dans le cas ou vous utilisez une ternaire sur une variable, je vous conseil de retourner la même variable.
 
 Voici un exemple un peu plus concret:
 
@@ -372,7 +371,7 @@ Les boucles
 ===========
 
 Cette instruction permet de répéter une action tant que la condition est vraie,
-il en existe trois, le troisieme étant quelque peu spécial, nous le verrons dans
+il en existe trois, la troisième étant quelque peu spécial, nous la verrons dans
 le chapitre des tableaux.
 
 L'instruction while
@@ -412,10 +411,10 @@ Le résultat attendu:
 l'instruction do ... while
 --------------------------
 
-le **do ... while** est la même chose que notre while plus haut. Cependant ,
-il ne réagit pas au même règle: la particularité de cette dernière est de
-faire un tour dans la boucle avant tout de chose, puis, si la condition est
-correcte, de continuer tant qu'elle est vrai.
+La **do ... while** est la même chose que notre while plus haut. Cependant,
+elle ne réagit pas aux même règles: la particularité de cette dernière est de
+faire un tour dans la boucle avant toutes choses, puis, si la condition est
+vérifiée, de continuer tant qu'elle est vraie.
 
 .. code-block:: vala
 
@@ -427,7 +426,7 @@ correcte, de continuer tant qu'elle est vrai.
       } while (entier <= 10);
    }
 
-Avec cette condition, le resulta sera :
+Avec cette condition, le résultat sera :
 
 .. code-block:: text
 
@@ -465,7 +464,7 @@ Le résultat sera:
 L'instruction for
 -----------------
 
-Le **for** est un peu paticulier, il permet de créer une variable et de
+La **for** est un peu particulière, elle permet de créer une variable et de
 l'initialiser, très utile pour faire un compteur. L'avantage de cette méthode
 est de ne pas perdre une ligne avec la création de la variable.
 
@@ -478,7 +477,7 @@ est de ne pas perdre une ligne avec la création de la variable.
       }
    }
 
-le résultat de ce code sera:
+Le résultat de ce code sera:
 
 .. code-block:: text
 
