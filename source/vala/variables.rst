@@ -278,13 +278,17 @@ guillemet, par exemple le code suivant :
 .. code-block:: vala
 
    string phrase = "Mon prénom est \"Nicolas\" \n";
-   print(phrase);
+   stdout.printf(phrase);
 
 affichera :
 
 .. code-block:: text
 
    Mon prénom est "Nicolas"
+
+.. important::
+    Ici nous n'utilisons pas l'instruction print() mais stdout.printf(), tout simplement car en Vala,
+    il n'est pas possible d'afficher des accents avec l'instruction print(), ici le "é" de prénom.
 
 Si vous avez testé par vous-même, vous avez pu remarquer que le caractère
 spécial *\n* effectue un saut de ligne.
@@ -294,7 +298,7 @@ Ainsi, le code suivant :
 .. code-block:: vala
 
    string phrase = "Mon prénom est \"Nicolas\"\n";
-   print(phrase);
+   stdout.printf(phrase);
    print("Passage\nà\nla\nligne\n");
 
 affichera:
@@ -303,7 +307,7 @@ affichera:
 .. code-block:: text
 
    Mon prénom est "Nicolas"
-   Passe
+   Passage
    à
    la
    ligne
