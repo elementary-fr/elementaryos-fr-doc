@@ -75,7 +75,7 @@ Voici le résultat :
 .. figure:: _static/plus-de-possibilites-avec-vala/Label+Click-me.png
     :align: center
 
-On retrouve notre grille avec le bouton Click me dans la première cellule.
+On retrouve notre grille avec le bouton "Click me" dans la première cellule.
 Définissons une action sur le bouton, après window.add (grid), rajoutez ce code :
 
 .. code-block:: vala
@@ -87,7 +87,7 @@ Définissons une action sur le bouton, après window.add (grid), rajoutez ce cod
    
    });
 
-Ici on veut qu'une fois cliqué le bouton affiche un label Hello World ! Avec le sensitive sur false, le
+Ici on veut qu'une fois cliqué, le bouton affiche un label "Hello World !". Avec le sensitive sur false, le
 bouton restera « enfoncé ».
 Démonstration :
 
@@ -213,4 +213,4 @@ Démonstration :
 .. figure:: _static/plus-de-possibilites-avec-vala/rotate-90.png
     :align: center
 
-Voilà, n'hésitez pas à consulter Valadoc pour découvrir d'autres fonctions :-)
+Voilà, n'hésitez pas à consulter Valadoc pour découvrir d'autres fonctions ! :-)
